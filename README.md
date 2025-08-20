@@ -10,3 +10,5 @@ The HealthBridge Ontology is designed within a three-layered ontology architectu
 1. The Top-Level Ontology is developed following the General Formal Ontology (GFO) methodology, providing a foundational framework of high-level abstractions.
 2. The Core Ontology functions as an intermediary layer, linking the top-level concepts with specific applications. It emphasizes three key domain connections: eHealth functions, citizen healthcare functions, and eHealth network requirements.
 3. The Domain-Specific Ontology extends the framework to practical applications, with each of the three domains addressed in dedicated studies.
+
+
