@@ -1,0 +1,29 @@
+{
+  "title": "HealthBridge Ontology",
+  "upload_type": "dataset",
+  "description": "HealthBridge Ontology: National health informatio system and personal health information system Ontology",
+  "creators": [
+    {
+      "name": "Maryam Ghalandari",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany",
+      "orcid": "0009-0000-2028-2023"  
+    },
+    {
+      "name": "Sepehr Maleki",
+      "affiliation": "School of Engineering, College of Health and Science, Lincoln university, Lincoln UK"
+    },
+    {
+      "name": "Kemal Hakan Gülkesen",
+      "affiliation": "Faculty Of Medicine, Department Of Basic Medical Sciences, Department Of Biostatistics and Informatics Medicine, Akdeniz University, Antalya Turkey",
+      "orcid": "0000-0002-2477-2481"  
+    },
+    {
+      "name": "Feyza Nur Kılıçaslan",
+      "affiliation": "Hacettpe university, Department of Computer Engineering, Ankara Turkey"
+    },
+    {
+      "name": "Christoph Beger",
+      "affiliation": "Leipzig University, Institute for Medical Informatics, Statistics and Epidemiology, Leipzig, Germany"
+    },
+    {
+  ]
