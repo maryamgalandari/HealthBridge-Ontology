@@ -14,7 +14,7 @@ The HealthBridge Ontology is designed within a three-layered ontology architectu
 figure of three layer ontology
 figure of core
 
-links
+Links and Files
 
 Core owl
 Core and GFO owl
