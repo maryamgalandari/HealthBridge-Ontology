@@ -1,0 +1,2243 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4">
+        <rdfs:comment>This is core ontology for personalhealth information system and citizen healthcare function domain specific ontology.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MemberOfEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MemberOfEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>Educate MemberOfEducate ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToCarePlanManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToCarePlanManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>CarePlanManagement belongsToCarePlanManagement PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>Educate belongsToEducate Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToElectronicConsultation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToElectronicConsultation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>ElectronicConsultation belongsToElectronicConsultation DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToFindADoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToFindADoctor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>FindADoctor belongsToFindADoctor PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToMedicationManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToMedicationManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>MedicationManagement belongsToMedicationManagement ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#belongsToNutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>Nutrition belongsToNutrition ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#containedInEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#containedInEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>Educate containedInEducate PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#elementOfEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#elementOfEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ForeignPerson"/>
+        <rdfs:comment>Educate elementOfEducate ForeignPerson</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasCarePlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasCarePlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>CarePlan hasCarePlan PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasCarePlanManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasCarePlanManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>CarePlanManagement hasCarePlanManagement ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>Educate hasEducate ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasElectronicConsultation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasElectronicConsultation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>ElectronicConsultation hasElectronicConsultation DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasFindADoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasFindADoctor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>FindADoctor hasFindADoctor DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasFindPlaceForTestAndPharmacy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasFindPlaceForTestAndPharmacy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>FindPlaceForTestAndPharmacy hasFindPlaceForTestAndPharmacy Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasManagePersonalHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasManagePersonalHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>ManagePersonalHealthData hasManagePersonalHealthData ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasMedicationManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasMedicationManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>MedicationManagement hasMedicationManagement DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasNutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>Nutrition hasNutrition ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasOrderingMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasOrderingMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>OrderingMedication hasOrderingMedication DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasReminderTherapyProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasReminderTherapyProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderTherapyProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>ReminderTherapyProcess hasReminderTherapyProcess DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasTestResultReceiptAndAnalysis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasTestResultReceiptAndAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>TestResultReceiptAndAnalysis hasTestResultReceiptAndAnalysis PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>Treatment hasTreatment ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInCarePlanManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInCarePlanManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>CarePlanManagement includedInCarePlanManagement DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>Educate includedInEducate DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInElectronicConsultation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInElectronicConsultation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ElectronicConsultation includedInElectronicConsultation PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInFindADoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInFindADoctor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>FindADoctor includedInFindADoctor Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInFindPlaceForTestAndPharmacy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInFindPlaceForTestAndPharmacy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>FindPlaceForTestAndPharmacy(LabOrHospital) includedInFindPlaceForTestAndPharmacy PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInMedicationManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInMedicationManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>MedicationManagement includedInMedicationManagement PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInNutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>Nutrition includedInNutrition PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInTestResultReceiptAndAnalysis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInTestResultReceiptAndAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>TestResultReceiptAndAnalysis includedInTestResultReceiptAndAnalysis ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#includedInTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>Treatment includedInTreatment DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isContainedWithinEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isContainedWithinEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>Educate isContainedWithinEducate ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAReport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAReport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingAReport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering"/>
+        <rdfs:comment>OrderingAReport isPartOfAReport Ordering</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfATest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfATest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingATest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering"/>
+        <rdfs:comment>OrderingATest isPartOfATest Ordering</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAccessToHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAccessToHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>AccessToHealthData isPartOfAccessToHealthData ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAccessToYourPastHistory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAccessToYourPastHistory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToYourPastHistory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>AccessToYourPastHistory isPartOfAccessToYourPastHistory TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>AddAppointment isPartOfAddAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddNewDocument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddNewDocument">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewDocument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>AddNewDocument isPartOfAddNewDocument ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddNewHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAddNewHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>AddNewHealthData isPartOfAddNewHealthData ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAdmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAdmission">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Admission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>Admission isPartOfAdmission TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAppointmentBookingAndManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfAppointmentBookingAndManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>AppointmentBookingAndManagement isPartOfAppointmentBookingAndManagement ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfBuyMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfBuyMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#BuyMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>BuyMedication isPartOfBuyMedication TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCancelAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCancelAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CancelAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>CancelAppointment isPartOfCancelAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>CarePlan isPartOfCarePlan ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlanForHomeMonitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlanForHomeMonitoring">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanForHomeMonitoring"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>CarePlanForHomeMonitoring isPartOfCarePlanForHomeMonitoring ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlanManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCarePlanManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>CarePlanManagement isPartOfCarePlanManagement DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfChangeAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfChangeAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChangeAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>ChangeAppointment isPartOfChangeAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfChronicDiseaseManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfChronicDiseaseManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>ChronicDiseaseManagement isPartOfChronicDiseaseManagement ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCommunicating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCommunicating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Communicating"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:comment>Communicating isPartOfCommunicating ElectronicConsultation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCommunicationWithYourDoctorOrNurse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCommunicationWithYourDoctorOrNurse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CommunicationWithYourDoctorOrNurse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>CommunicationWithYourDoctorOrNurse isPartOfCommunicationWithYourDoctorOrNurse TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfComplain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfComplain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingComplain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering"/>
+        <rdfs:comment>OrderingComplain isPartOfComplain Ordering</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfConsecutiveTestsOrChecks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfConsecutiveTestsOrChecks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConsecutiveTestsOrChecks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>ConsecutiveTestsOrChecks isPartOfConsecutiveTestsOrChecks CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControlling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControlling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Controlling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>Controlling isPartOfControlling TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingAntenatalCareExamination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingAntenatalCareExamination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingAntenatalCareExamination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ControllingAntenatalCareExamination isPartOfControllingAntenatalCareExamination PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingEarlyPregnancyCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingEarlyPregnancyCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingEarlyPregnancyCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ControllingEarlyPregnancyCondition isPartOfControllingEarlyPregnancyCondition PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingOfImmunizationStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingOfImmunizationStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingOfImmunizationStatus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ControllingOfImmunizationStatus isPartOfControllingOfImmunizationStatus PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingReminderOfMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingReminderOfMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingReminderOfMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>ControllingReminderOfMedication isPartOfControllingReminderOfMedication CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingSideEffects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfControllingSideEffects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingSideEffects"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>ControllingSideEffects isPartOfControllingSideEffects MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCoordinationWithDoctorOrNurse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCoordinationWithDoctorOrNurse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CoordinationWithDoctorOrNurse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>CoordinationWithDoctorOrNurse isPartOfCoordinationWithDoctorOrNurse CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCovid-19Pandemic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfCovid-19Pandemic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConditionBasedFunction"/>
+        <rdfs:comment>Covid-19Pandemic isPartOfCovid-19Pandemic ConditionBasedFunction</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlBloodPressure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlBloodPressure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodPressure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>DailyControlBloodPressure isPartOfDailyControlBloodPressure ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlBloodSugar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlBloodSugar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodSugar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>DailyControlBloodSugar isPartOfDailyControlBloodSugar ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlPulse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDailyControlPulse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlPulse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>DailyControlPulse isPartOfDailyControlPulse ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDecideReferralPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDecideReferralPlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecideReferralPlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>DecideReferralPlan isPartOfDecideReferralPlan PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDecisionSupport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDecisionSupport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecisionSupport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>DecisionSupport isPartOfDecisionSupport TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDeleteAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDeleteAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DeleteAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>DeleteAppointment isPartOfDeleteAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDiseaseManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDiseaseManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>DiseaseManagement isPartOfDiseaseManagement ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDocumentForVaccination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDocumentForVaccination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentForVaccination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>DocumentForVaccination isPartOfDocumentForVaccination Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDocumentationAndSharing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDocumentationAndSharing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentationAndSharing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>DocumentationAndSharing isPartOfDocumentationAndSharing ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDownloadHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfDownloadHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DownloadHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>DownloadHealthData isPartOfDownloadHealthData ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>Educate isPartOfEducate TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEducatingSideEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEducatingSideEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EducatingSideEffectOrEducateMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>EducatingSideEffectOrEducateMedication isPartOfEducatingSideEffect MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfElectronicConsultation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfElectronicConsultation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>ElectronicConsultation isPartOfElectronicConsultation TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEmergencyTimeNote -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfEmergencyTimeNote">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EmergencyTimeNote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>EmergencyTimeNote isPartOfEmergencyTimeNote ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindADoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindADoctor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>FindADoctor isPartOfFindADoctor TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindAPlaceOfPharmacy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindAPlaceOfPharmacy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>FindAPlaceOfPharmacy isPartOfFindAPlaceOfPharmacy TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindAPlaceOfTheLab -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindAPlaceOfTheLab">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfTheLab"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>FindAPlaceOfTheLab isPartOfFindAPlaceOfTheLab TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindARadiology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindARadiology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindARadiology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>FindARadiology isPartOfFindARadiology TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindPlaceForTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindPlaceForTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>FindPlaceForTestAndPharmacy isPartOfFindPlaceForTest ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingHealthcareProfessionals -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingHealthcareProfessionals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingHealthcareProfessionals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>FindingHealthcareProfessionals isPartOfFindingHealthcareProfessionals DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingPlace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>FindingPlace isPartOfFindingPlace DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingRoute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingRoute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingRoute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>FindingRoute isPartOfFindingRoute DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingTheVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfFindingTheVehicle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingTheVehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>FindingTheVehicle isPartOfFindingTheVehicle DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfGiveAppointmentForVaccination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfGiveAppointmentForVaccination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GiveAppointmentForVaccination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>GiveAppointmentForVaccination isPartOfGiveAppointmentForVaccination Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfGivingThePlanOfCare -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfGivingThePlanOfCare">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GivingThePlanOfCare"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>GivingThePlanOfCare isPartOfGivingThePlanOfCare TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfIdentification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfIdentification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Identification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>Identification isPartOfIdentification TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMaintainingMedicationList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMaintainingMedicationList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MaintainingMedicationList"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>MaintainingMedicationList isPartOfMaintainingMedicationList MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMakeAnAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMakeAnAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MakeAnAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>MakeAnAppointment isPartOfMakeAnAppointment TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfManagePersonalHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfManagePersonalHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>ManagePersonalHealthData isPartOfManagePersonalHealthData Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfManagementAndCoordination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfManagementAndCoordination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagementAndCoordination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>ManagementAndCoordination isPartOfManagementAndCoordination TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering"/>
+        <rdfs:comment>OrderingMedication isPartOfMedication Ordering</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationListCreation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationListCreation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationListCreation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>MedicationListCreation isPartOfMedicationListCreation MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>MedicationManagement isPartOfMedicationManagement TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationRefills -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfMedicationRefills">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationRefills"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>MedicationRefills isPartOfMedicationRefills MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfNutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>Nutrition isPartOfNutrition TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfOrderingATest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfOrderingATest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingATest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>OrderingATest isPartOfOrderingATest ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfOrderingMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfOrderingMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>OrderingMedication isPartOfOrderingMedication MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfPrevention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfPrevention">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>Prevention isPartOfPrevention ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfPriorityForTheAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfPriorityForTheAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PriorityForTheAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>PriorityForTheAppointment isPartOfPriorityForTheAppointment DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfProvidingAuthoritativeMedicationInformation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfProvidingAuthoritativeMedicationInformation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ProvidingAuthoritativeMedicationInformation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>ProvidingAuthoritativeMedicationInformation isPartOfProvidingAuthoritativeMedicationInformation MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfRePrescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfRePrescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingRePrescription"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering"/>
+        <rdfs:comment>OrderingRePrescription isPartOfRePrescription Ordering</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReadExperienceOfOther -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReadExperienceOfOther">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReadExperienceOfOther"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>ReadExperienceOfOther isPartOfReadExperienceOfOther TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForControling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForControling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention"/>
+        <rdfs:comment>ReminderForControling isPartOfReminderForControling Prevention</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForControlling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForControlling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>ReminderForControlling isPartOfReminderForControlling ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>ReminderForMedication isPartOfReminderForMedication ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForSecondVaccination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForSecondVaccination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForSecondVaccination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>ReminderForSecondVaccination isPartOfReminderForSecondVaccination Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForTheTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForTheTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForTheTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention"/>
+        <rdfs:comment>ReminderForTheTest isPartOfReminderForTheTest Prevention</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForVaccination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderForVaccination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForVaccination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>ReminderForVaccination isPartOfReminderForVaccination ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderTherapyProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReminderTherapyProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderTherapyProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>ReminderTherapyProcess isPartOfReminderTherapyProcess CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfRemotelyControl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfRemotelyControl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#RemotelyControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>RemotelyControl isPartOfRemotelyControl Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReportYourComplains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfReportYourComplains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReportYourComplains"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>ReportYourComplains isPartOfReportYourComplains TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfResceduleAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfResceduleAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ResceduleAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>ResceduleAppointment isPartOfResceduleAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSceduleAppointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSceduleAppointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SceduleAppointment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:comment>SceduleAppointment isPartOfSceduleAppointment AppointmentBookingAndManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSchedulingOfTests -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSchedulingOfTests">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SchedulingOfTests"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>SchedulingOfTests isPartOfSchedulingOfTests CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningNST -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningNST">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningNST"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ScreeningNST isPartOfScreeningNST PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningOfHigh-riskPregnancy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningOfHigh-riskPregnancy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningOfHigh-riskPregnancy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ScreeningOfHigh-riskPregnancy isPartOfScreeningOfHigh-riskPregnancy PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningUltraSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfScreeningUltraSon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningUltraSon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ScreeningUltraSon isPartOfScreeningUltraSon PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSharing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfSharing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Sharing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:comment>Sharing isPartOfSharing ElectronicConsultation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTakeAReport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTakeAReport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TakeAReport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>TakeAReport isPartOfTakeAReport TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTestResultReceiptAndAnalysis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTestResultReceiptAndAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>TestResultReceiptAndAnalysis isPartOfTestResultReceiptAndAnalysis ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTranslate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTranslate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Translate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ForeignPerson"/>
+        <rdfs:comment>Translate isPartOfTranslate ForeignPerson</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>Treatment isPartOfTreatment DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUpdateHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUpdateHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdateHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>UpdateHealthData isPartOfUpdateHealthData ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUpdatingPersonalMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUpdatingPersonalMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdatingPersonalMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:comment>UpdatingPersonalMedication isPartOfUpdatingPersonalMedication MedicationManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUploadHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUploadHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UploadHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:comment>UploadHealthData isPartOfUploadHealthData ManagePersonalHealthData</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUseSensorDataAttachment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfUseSensorDataAttachment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UseSensorDataAttachment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+        <rdfs:comment>UseSensorDataAttachment isPartOfUseSensorDataAttachment TreatmentGrouping</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfWeightControl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#isPartOfWeightControl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#WeightControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>WeightControl isPartOfWeightControl ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfAppointmentBooking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfAppointmentBooking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>AppointmentBookingAndManagement partOfAppointmentBooking DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfBuyMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfBuyMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#BuyMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>BuyMedication partOfBuyMedication CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfCarePlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfCarePlan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>CarePlan partOfCarePlan DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfCarePlanManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfCarePlanManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>CarePlanManagement partOfCarePlanManagement Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfControlling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfControlling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Controlling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>Controlling partOfControlling DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfDiseaseManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfDiseaseManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>DiseaseManagement partOfDiseaseManagement ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention"/>
+        <rdfs:comment>Educate partOfEducate Prevention</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfElectronicConsultation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfElectronicConsultation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>ElectronicConsultation partOfElectronicConsultation ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindADoctor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindADoctor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>FindADoctor partOfFindADoctor ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindAPlaceOfPharmacy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindAPlaceOfPharmacy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>FindAPlaceOfPharmacy partOfFindAPlaceOfPharmacy CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindAPlaceOfTheLab -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindAPlaceOfTheLab">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfTheLab"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>FindAPlaceOfTheLab partOfFindAPlaceOfTheLab CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindPlaceForTestAndPharmacy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfFindPlaceForTestAndPharmacy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>FindPlaceForTestAndPharmacy(LabOrHospital) partOfFindPlaceForTestAndPharmacy DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfGiveAppointmentForVaccination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfGiveAppointmentForVaccination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GiveAppointmentForVaccination"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare"/>
+        <rdfs:comment>GiveAppointmentForVaccination partOfGiveAppointmentForVaccination ChildrenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfManagePersonalHealthData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfManagePersonalHealthData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>ManagePersonalHealthData partOfManagePersonalHealthData PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfMedicationManagement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfMedicationManagement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>MedicationManagement partOfMedicationManagement ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfNutrition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfNutrition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement"/>
+        <rdfs:comment>Nutrition partOfNutrition CarePlanManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfOrderingATest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfOrderingATest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingATest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement"/>
+        <rdfs:comment>OrderingATest partOfOrderingATest DiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfOrderingMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfOrderingMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>OrderingMedication partOfOrderingMedication ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForControling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForControling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>ReminderForControling partOfReminderForControling ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForControlling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForControlling">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>ReminderForControlling partOfReminderForControlling DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForTheTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderForTheTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForTheTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>ReminderForTheTest partOfReminderForTheTest ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderTherapyProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfReminderTherapyProcess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderTherapyProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement"/>
+        <rdfs:comment>ReminderTherapyProcess partOfReminderTherapyProcess ChronicDiseaseManagement</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfRemotelyControl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfRemotelyControl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#RemotelyControl"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare"/>
+        <rdfs:comment>RemotelyControl partOfRemotelyControl ElderlyPeopleCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfTestResultReceiptAndAnalysis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfTestResultReceiptAndAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+        <rdfs:comment>TestResultReceiptAndAnalysis partOfTestResultReceiptAndAnalysis Covid-19Pandemic</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#partOfTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare"/>
+        <rdfs:comment>Treatment partOfTreatment PregnantWomenCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#subpartOfEducate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#subpartOfEducate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare"/>
+        <rdfs:comment>Educate subpartOfEducate DisabilityCare</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToHealthData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToYourPastHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AccessToYourPastHistory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewDocument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AddNewHealthData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Admission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Admission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#AppointmentBookingAndManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#BuyMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#BuyMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CancelAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CancelAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanForHomeMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanForHomeMonitoring"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChangeAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChangeAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChildrenCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ChronicDiseaseManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagementGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Communicating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Communicating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CommunicationWithYourDoctorOrNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CommunicationWithYourDoctorOrNurse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConditionBasedFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConditionBasedFunction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConsecutiveTestsOrChecks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ConsecutiveTestsOrChecks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Controlling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Controlling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingAntenatalCareExamination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingAntenatalCareExamination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingEarlyPregnancyCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingEarlyPregnancyCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingOfImmunizationStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingOfImmunizationStatus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingReminderOfMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingReminderOfMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingSideEffects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ControllingSideEffects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CoordinationWithDoctorOrNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CoordinationWithDoctorOrNurse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Covid-19Pandemic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodPressure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodSugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlBloodSugar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlPulse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DailyControlPulse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecideReferralPlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecideReferralPlan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecisionSupport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DecisionSupport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DeleteAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DeleteAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DisabilityCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagementGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagementGrouping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DiseaseManagementGrouping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentForVaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentForVaccination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentationAndSharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DocumentationAndSharing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DownloadHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#DownloadHealthData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Educate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EducatingSideEffectOrEducateMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EducatingSideEffectOrEducateMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElderlyPeopleCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ElectronicConsultation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EmergencyTimeNote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#EmergencyTimeNote"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindADoctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfPharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfPharmacy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfTheLab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindAPlaceOfTheLab"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindARadiology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindARadiology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindPlaceForTestAndPharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingHealthcareProfessionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingHealthcareProfessionals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingPlace"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingRoute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingRoute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingTheVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#FindingTheVehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ForeignPerson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ForeignPerson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GiveAppointmentForVaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GiveAppointmentForVaccination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GivingThePlanOfCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#GivingThePlanOfCare"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Identification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Identification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#LegalGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#LegalGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#LegalGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MaintainingMedicationList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MaintainingMedicationList"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MakeAnAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MakeAnAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagePersonalHealthData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#LegalGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagementAndCoordination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ManagementAndCoordination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationListCreation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationListCreation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationRefills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#MedicationRefills"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Nutrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Ordering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingAReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingAReport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingATest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingATest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingComplain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingComplain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingRePrescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OrderingRePrescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OwnershipHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#OwnershipHealthData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#LegalGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PregnantWomenCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PriorityForTheAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#PriorityForTheAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ProvidingAuthoritativeMedicationInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ProvidingAuthoritativeMedicationInformation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReadExperienceOfOther -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReadExperienceOfOther"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForControling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForSecondVaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForSecondVaccination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForTheTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForTheTest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForVaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderForVaccination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderTherapyProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReminderTherapyProcess"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#RemotelyControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#RemotelyControl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReportYourComplains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ReportYourComplains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ResceduleAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ResceduleAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SceduleAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SceduleAppointment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SchedulingOfTests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#SchedulingOfTests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningNST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningNST"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningOfHigh-riskPregnancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningOfHigh-riskPregnancy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningUltraSon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#ScreeningUltraSon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Sharing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#StatusOfCitizen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TakeAReport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TakeAReport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TestResultReceiptAndAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#CarePlanGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Translate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Translate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#TreatmentGrouping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdateHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdateHealthData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdatingPersonalMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UpdatingPersonalMedication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UploadHealthData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UploadHealthData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UseSensorDataAttachment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#UseSensorDataAttachment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#WeightControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4#WeightControl"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

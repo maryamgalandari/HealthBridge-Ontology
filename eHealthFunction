@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction">
+    <Prefix name="" IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is domain ontology for National health information system and eHealth services.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AccountingManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlertsMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnouncementAndNewsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AppointmentBookingAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarePlanManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CareProviderHealthLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChronicDiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionBasedServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsumerHealthLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoronaPreventionManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Covid-19Pandemic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionSupportSystemForHealthcareStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionSupportSystemForManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DentalCareManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalRegistrations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisabilityCitizenServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EAmbulance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicConsultations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicDocumentManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectronicIdentifiers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergencyAutomationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentTrackingManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcareEducation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcareStaffLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanResourceManagementSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicationsPrescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatientPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrescriptionsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalConsultationForPatients"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PsychologicalConsultationForStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicHealthInfotmationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReferralManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReportManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScreeningManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telemedicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestResultsAndAnalysisManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackingCitizenManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackingStaffManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TreatmentTrackingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VaccinationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eLearningForPatients"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eLearningForStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eSignature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CitizenOrientedeHealthServises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ClinicalDecisionSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DecisionSupportForMedicationsPrescribing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DecisionSupportForTestOrdering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DecisionSupportSystemForManagers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ServicesForCitizens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAccountingManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAlertsMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAnnouncementAndNewsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAppointmentBookingAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCarePlanManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCareProviderHealthLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfChronicDiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfClinicalDecisionSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCommunicationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConsumerHealthLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCoronaPreventionManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCovid-19Pandemic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDecisionSupportForMedicationsPrescribing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForHealthcareStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManagers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDentalCareManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDigitalRegistrations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDisabilityCitizenServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfEAmbulance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfElectronicConsultations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfElectronicDocumentManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfElectronicIdentifiers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfEmergencyAutomationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfEquipmentTrackingManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthcareStaffLearningPortal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHumanResourceManagementSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMedicationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMedicationsPrescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPatientPortal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPrescriptionsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForPatients"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPublicHealthInfotmationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfReferralManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfReportManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfResourceManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfScreeningManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfTestResultsAndAnalysisManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfTrackingCitizenManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfTrackingStaffManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfTreatmentTrackingSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfVaccinationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeLearningForPatients"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeLearningForStaff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeSignature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfAppointmentBookingAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfClinicalDecisionSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfDiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfElectronicConsultations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfElectronicIdentifiers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfReportManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfeLearningForPatients"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfeLearningForStaff"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/ServicesForCitizens"/>
+        <Class IRI="/CitizenOrientedeHealthServises"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+        <Class IRI="/CitizenOrientedeHealthServises"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAccountingManagement"/>
+        <Class IRI="#AccountingManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAlertsMonitoringAndManagement"/>
+        <Class IRI="#AlertsMonitoringAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAnnouncementAndNewsManagement"/>
+        <Class IRI="#AnnouncementAndNewsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAppointmentBookingAndManagement"/>
+        <Class IRI="#AppointmentBookingAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCarePlanManagement"/>
+        <Class IRI="#CarePlanManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCareProviderHealthLearningPortal"/>
+        <Class IRI="#CareProviderHealthLearningPortal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfChronicDiseaseManagement"/>
+        <Class IRI="#ChronicDiseaseManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfClinicalDecisionSupport"/>
+        <Class IRI="/ClinicalDecisionSupport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCommunicationManagement"/>
+        <Class IRI="#CommunicationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfConsumerHealthLearningPortal"/>
+        <Class IRI="#ConsumerHealthLearningPortal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCoronaPreventionManagement"/>
+        <Class IRI="#CoronaPreventionManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCovid-19Pandemic"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDecisionSupportForMedicationsPrescribing"/>
+        <Class IRI="/DecisionSupportForMedicationsPrescribing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForHealthcareStaff"/>
+        <Class IRI="#DecisionSupportSystemForHealthcareStaff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManager"/>
+        <Class IRI="#DecisionSupportSystemForManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManagers"/>
+        <Class IRI="/DecisionSupportSystemForManagers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDentalCareManagement"/>
+        <Class IRI="#DentalCareManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDigitalRegistrations"/>
+        <Class IRI="#DigitalRegistrations"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDisabilityCitizenServices"/>
+        <Class IRI="#DisabilityCitizenServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDiseaseManagement"/>
+        <Class IRI="#DiseaseManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfEAmbulance"/>
+        <Class IRI="#EAmbulance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfElectronicConsultations"/>
+        <Class IRI="#ElectronicConsultations"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfElectronicDocumentManagement"/>
+        <Class IRI="#ElectronicDocumentManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfElectronicIdentifiers"/>
+        <Class IRI="#ElectronicIdentifiers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfEmergencyAutomationManagement"/>
+        <Class IRI="#EmergencyAutomationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfEquipmentTrackingManagement"/>
+        <Class IRI="#EquipmentTrackingManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthcareStaffLearningPortal"/>
+        <Class IRI="#HealthcareStaffLearningPortal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHumanResourceManagementSystem"/>
+        <Class IRI="#HumanResourceManagementSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMedicationsManagement"/>
+        <Class IRI="#MedicationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMedicationsPrescription"/>
+        <Class IRI="#MedicationsPrescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPatientPortal"/>
+        <Class IRI="#PatientPortal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPrescriptionsManagement"/>
+        <Class IRI="#PrescriptionsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForPatients"/>
+        <Class IRI="#PsychologicalConsultationForPatients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForStaff"/>
+        <Class IRI="#PsychologicalConsultationForStaff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPublicHealthInfotmationManagement"/>
+        <Class IRI="#PublicHealthInfotmationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfReferralManagement"/>
+        <Class IRI="#ReferralManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfReportManagement"/>
+        <Class IRI="#ReportManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfResourceManagement"/>
+        <Class IRI="#ResourceManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfScreeningManagement"/>
+        <Class IRI="#ScreeningManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfTelemedicine"/>
+        <Class IRI="#Telemedicine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfTestResultsAndAnalysisManagement"/>
+        <Class IRI="#TestResultsAndAnalysisManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfTrackingCitizenManagement"/>
+        <Class IRI="#TrackingCitizenManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfTrackingStaffManagement"/>
+        <Class IRI="#TrackingStaffManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfTreatmentTrackingSystem"/>
+        <Class IRI="#TreatmentTrackingSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfVaccinationManagement"/>
+        <Class IRI="#VaccinationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeLearningForPatients"/>
+        <Class IRI="#eLearningForPatients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeLearningForStaff"/>
+        <Class IRI="#eLearningForStaff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeSignature"/>
+        <Class IRI="#eSignature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfAppointmentBookingAndManagement"/>
+        <Class IRI="#AppointmentBookingAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfClinicalDecisionSupport"/>
+        <Class IRI="/ClinicalDecisionSupport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfDiseaseManagement"/>
+        <Class IRI="#DiseaseManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfElectronicConsultations"/>
+        <Class IRI="#ElectronicConsultations"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfElectronicIdentifiers"/>
+        <Class IRI="#ElectronicIdentifiers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfReportManagement"/>
+        <Class IRI="#ReportManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfTelemedicine"/>
+        <Class IRI="#Telemedicine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfeLearningForPatients"/>
+        <Class IRI="#eLearningForPatients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfeLearningForStaff"/>
+        <Class IRI="#eLearningForStaff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAccountingManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAlertsMonitoringAndManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAnnouncementAndNewsManagement"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAppointmentBookingAndManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCarePlanManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCareProviderHealthLearningPortal"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfChronicDiseaseManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfClinicalDecisionSupport"/>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCommunicationManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfConsumerHealthLearningPortal"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCoronaPreventionManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCovid-19Pandemic"/>
+        <Class IRI="#ConditionBasedServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDecisionSupportForMedicationsPrescribing"/>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForHealthcareStaff"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManager"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDecisionSupportSystemForManagers"/>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDentalCareManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDigitalRegistrations"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDisabilityCitizenServices"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDiseaseManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfEAmbulance"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfElectronicConsultations"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfElectronicDocumentManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfElectronicIdentifiers"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfEmergencyAutomationManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfEquipmentTrackingManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthcareStaffLearningPortal"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHumanResourceManagementSystem"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMedicationsManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMedicationsPrescription"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPatientPortal"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPrescriptionsManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForPatients"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPsychologicalConsultationForStaff"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPublicHealthInfotmationManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfReferralManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfReportManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfResourceManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfScreeningManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfTelemedicine"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfTestResultsAndAnalysisManagement"/>
+        <Class IRI="/ServicesForCitizens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfTrackingCitizenManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfTrackingStaffManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfTreatmentTrackingSystem"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfVaccinationManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeLearningForPatients"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeLearningForStaff"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeSignature"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfAppointmentBookingAndManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfClinicalDecisionSupport"/>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfDiseaseManagement"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfElectronicConsultations"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfElectronicIdentifiers"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfReportManagement"/>
+        <Class IRI="#InternalServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfTelemedicine"/>
+        <Class IRI="#Covid-19Pandemic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfeLearningForPatients"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfeLearningForStaff"/>
+        <Class IRI="#HealthcareEducation"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAccountingManagement</IRI>
+        <Literal>AccountingManagement isPartOfAccountingManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAlertsMonitoringAndManagement</IRI>
+        <Literal>AlertsMonitoringAndManagement isPartOfAlertsMonitoringAndManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAnnouncementAndNewsManagement</IRI>
+        <Literal>AnnouncementAndNewsManagement isPartOfAnnouncementAndNewsManagement HealthcareEducation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAppointmentBookingAndManagement</IRI>
+        <Literal>AppointmentBookingAndManagement isPartOfAppointmentBookingAndManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCarePlanManagement</IRI>
+        <Literal>CarePlanManagement isPartOfCarePlanManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCareProviderHealthLearningPortal</IRI>
+        <Literal>CareProviderHealthLearningPortal isPartOfCareProviderHealthLearningPortal HealthcareEducation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfChronicDiseaseManagement</IRI>
+        <Literal>ChronicDiseaseManagement isPartOfChronicDiseaseManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfClinicalDecisionSupport</IRI>
+        <Literal>ClinicalDecisionSupport isPartOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCommunicationManagement</IRI>
+        <Literal>CommunicationManagement isPartOfCommunicationManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfConsumerHealthLearningPortal</IRI>
+        <Literal>ConsumerHealthLearningPortal isPartOfConsumerHealthLearningPortal HealthcareEducation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCoronaPreventionManagement</IRI>
+        <Literal>CoronaPreventionManagement isPartOfCoronaPreventionManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCovid-19Pandemic</IRI>
+        <Literal>Covid-19Pandemic isPartOfCovid-19Pandemic ConditionBasedServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDecisionSupportForMedicationsPrescribing</IRI>
+        <Literal>DecisionSupportForMedicationsPrescribing isPartOfDecisionSupportForMedicationsPrescribing ServicesForProvidersAndHealthcareProfessionals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDecisionSupportSystemForHealthcareStaff</IRI>
+        <Literal>DecisionSupportSystemForHealthcareStaff isPartOfDecisionSupportSystemForHealthcareStaff InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDecisionSupportSystemForManager</IRI>
+        <Literal>DecisionSupportSystemForManager isPartOfDecisionSupportSystemForManager Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDecisionSupportSystemForManagers</IRI>
+        <Literal>DecisionSupportSystemForManagers isPartOfDecisionSupportSystemForManagers ServicesForProvidersAndHealthcareProfessionals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDentalCareManagement</IRI>
+        <Literal>DentalCareManagement isPartOfDentalCareManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDigitalRegistrations</IRI>
+        <Literal>DigitalRegistrations isPartOfDigitalRegistrations InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDisabilityCitizenServices</IRI>
+        <Literal>DisabilityCitizenServices isPartOfDisabilityCitizenServices ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDiseaseManagement</IRI>
+        <Literal>DiseaseManagement isPartOfDiseaseManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfEAmbulance</IRI>
+        <Literal>EAmbulance isPartOfEAmbulance ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfElectronicConsultations</IRI>
+        <Literal>ElectronicConsultations isPartOfElectronicConsultations ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfElectronicDocumentManagement</IRI>
+        <Literal>ElectronicDocumentManagement isPartOfElectronicDocumentManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfElectronicIdentifiers</IRI>
+        <Literal>ElectronicIdentifiers isPartOfElectronicIdentifiers ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfEmergencyAutomationManagement</IRI>
+        <Literal>EmergencyAutomationManagement isPartOfEmergencyAutomationManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfEquipmentTrackingManagement</IRI>
+        <Literal>EquipmentTrackingManagement isPartOfEquipmentTrackingManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthcareStaffLearningPortal</IRI>
+        <Literal>HealthcareStaffLearningPortal isPartOfHealthcareStaffLearningPortal HealthcareEducation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHumanResourceManagementSystem</IRI>
+        <Literal>HumanResourceManagementSystem isPartOfHumanResourceManagementSystem InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMedicationsManagement</IRI>
+        <Literal>MedicationsManagement isPartOfMedicationsManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMedicationsPrescription</IRI>
+        <Literal>MedicationsPrescription isPartOfMedicationsPrescription ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPatientPortal</IRI>
+        <Literal>PatientPortal isPartOfPatientPortal ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPrescriptionsManagement</IRI>
+        <Literal>PrescriptionsManagement isPartOfPrescriptionsManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPsychologicalConsultationForPatients</IRI>
+        <Literal>PsychologicalConsultationForPatients isPartOfPsychologicalConsultationForPatients Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPsychologicalConsultationForStaff</IRI>
+        <Literal>PsychologicalConsultationForStaff isPartOfPsychologicalConsultationForStaff Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPublicHealthInfotmationManagement</IRI>
+        <Literal>PublicHealthInfotmationManagement isPartOfPublicHealthInfotmationManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfReferralManagement</IRI>
+        <Literal>ReferralManagement isPartOfReferralManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfReportManagement</IRI>
+        <Literal>ReportManagement isPartOfReportManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfResourceManagement</IRI>
+        <Literal>ResourceManagement isPartOfResourceManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfScreeningManagement</IRI>
+        <Literal>ScreeningManagement isPartOfScreeningManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfTelemedicine</IRI>
+        <Literal>Telemedicine isPartOfTelemedicine ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfTestResultsAndAnalysisManagement</IRI>
+        <Literal>TestResultsAndAnalysisManagement isPartOfTestResultsAndAnalysisManagement ServicesForCitizens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfTrackingCitizenManagement</IRI>
+        <Literal>TrackingCitizenManagement isPartOfTrackingCitizenManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfTrackingStaffManagement</IRI>
+        <Literal>TrackingStaffManagement isPartOfTrackingStaffManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfTreatmentTrackingSystem</IRI>
+        <Literal>TreatmentTrackingSystem isPartOfTreatmentTrackingSystem Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfVaccinationManagement</IRI>
+        <Literal>VaccinationManagement isPartOfVaccinationManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeLearningForPatients</IRI>
+        <Literal>eLearningForPatients isPartOfeLearningForPatients Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeLearningForStaff</IRI>
+        <Literal>eLearningForStaff isPartOfeLearningForStaff Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeSignature</IRI>
+        <Literal>eSignature isPartOfeSignature InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfAppointmentBookingAndManagement</IRI>
+        <Literal>AppointmentBookingAndManagement partOfAppointmentBookingAndManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfClinicalDecisionSupport</IRI>
+        <Literal>ClinicalDecisionSupport partOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfDiseaseManagement</IRI>
+        <Literal>DiseaseManagement partOfDiseaseManagement Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfElectronicConsultations</IRI>
+        <Literal>ElectronicConsultations partOfElectronicConsultations Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfElectronicIdentifiers</IRI>
+        <Literal>ElectronicIdentifiers partOfElectronicIdentifiers InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfReportManagement</IRI>
+        <Literal>ReportManagement partOfReportManagement InternalServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfTelemedicine</IRI>
+        <Literal>Telemedicine partOfTelemedicine Covid-19Pandemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfeLearningForPatients</IRI>
+        <Literal>eLearningForPatients partOfeLearningForPatients HealthcareEducation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfeLearningForStaff</IRI>
+        <Literal>eLearningForStaff  partOfeLearningForStaff HealthcareEducation</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

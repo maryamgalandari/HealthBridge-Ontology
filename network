@@ -1,0 +1,1629 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is domain ontology for National health information system and Health information network.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AccessAndAuthorizationCoordinationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdverseEventMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BroadBandConnectivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CitizenAndHealthcareStaffComplianceMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClinicalCodingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnectivityStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsentManagementPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataBreachMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataCenterAndDatabaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataPresentationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSecurityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForAppointments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForCarePlans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForEConcultation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForEventSummaries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForHomecare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForNotifications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForOrderAndTestResults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForPrescriptions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForReal-timeClinicalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForReferrals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureForTelemonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabasesAndMiddlewareManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DentistInformationSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForAdverseEventMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForEConsultation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForEPrescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForEReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForHomecare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForReferrals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopAndManageInfrastructureForTelemonotoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopInfrustructureForeHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DevelopingAndUpdatingLegalFrameworkForHealthData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationProgramsForStaffForDataSecurity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPReferalSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthDataPrivacyAndSecurityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthDataProtectionAndBackup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthDataTrafficMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthITComplianceMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthITRequirementsandAccreditation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationManagementSystemGuideCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationNetworkManagementInstitutions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationOperationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationResearch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthInsuranceDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthNetworkDevelopmentAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthProgramDesignAndOptimization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthSoftwareVendorAccreditation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthcarePolicyDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalInformationSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntegrationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterOrganizationalDataExchangetCoordination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IoTHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LicenseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagementContinuityOfUserAccounts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingDataInfrastructureRequirementsInNewHospitals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingDataSecurityStandards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingDatabasePerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingHealthInformationNetworkInDisasterTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingIntegrationWithOtherStakeholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedDeviceRegistryElectronicEnvironments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalTerminologyStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MessageAndDataTransferStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MessagingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumDataModelInHealthInformaticsCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumDataSetCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinimumLoggingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalAuthenticationService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalHealthDataDictionaryCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalProductCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalSofwareProductCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkIssueTrackingAndResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkParticipantManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeOrPatientAndClinicalManagementSystems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivacyRegulationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProgramsPlanInInfrastructureOfe-HealthInformationNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectCyberSecurity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProviderAndServicesDirectories"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicInstitutionDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicSectorDataIntegrationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskAnalysisAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role-BasedAccessControlManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartHealthDeviceDataIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareAccreditationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareLicenceManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupervisionOfHealthDataExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurveillanceAndAtRiskIdentification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UniversalHealthIdentifierService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WearableAndSensorHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eHealthInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eHealthInfrastructureInvestmentManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eHealthIntegrationManagementWithOtherOrganizations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAccessAndAuthorizationCoordinationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAdverseEventMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfBroadBandConnectivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCitizenAndHealthcareStaffComplianceMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfClinicalManagementSystems"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConnectivityStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfContentManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDataCenterAndDatabaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDataSecurityManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDatabasesAndMiddlewareManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEConsultation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEPrescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForHomecare"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForReferrals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemonotoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfDevelopInfrustructureForeHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfGovernmentDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthDataCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthDataTrafficMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthITComplianceMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthITRequirementsandAccreditation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInformationManagementInInstitution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInformationNetworkManagementInstitutions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInformationOperationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInformationResearch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInformationSystemsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthInsuranceDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthProgramDesignAndOptimization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthSoftwareVendorAccreditation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHealthcarePolicyDevelopment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfInterOrganizationalDataExchangetCoordination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfIoTHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfLicenseManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfLogManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfManagementContinuityOfUserAccounts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfManagingDataInfrastructureRequirementsInNewHospitals"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfManagingDatabasePerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfManagingHealthInformationNetworkInDisasterTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfManagingIntegrationWithOtherStakeholders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMedDeviceRegistry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMessageAndDataTransferStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMobileHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfNationalAuthenticationService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfNationalProductCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfNetworkIssueTrackingAndResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfNetworkParticipantManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPlanBasedOnResearchInInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfProductCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfProgramsPlanInInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfProtectCyberSecurity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfProviderAndServicesDirectories"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPublicInstitutionDataExchangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPublicSectorDataIntegrationManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfRemoteHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfRiskAnalysisAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfRoleBasedAccessControlManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSmartHealthDeviceDataIntegration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSoftwareLicenceManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSofwareProductCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSupervisionOfHealthDataExchange"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSurveillanceAndAtRiskIdentification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfUniversalHealthIdentifierService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfWearableAndSensorHealthDataManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructureInvestmentManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfeHealthIntegrationManagementWithOtherOrganizations"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ClinicalCodingStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsentManagementPolicy"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataBreachMonitoringAndManagement"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataPresentationStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForAppointments"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForCarePlans"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForEConcultation"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForEventSummaries"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForHomecare"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForNotifications"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForOrderAndTestResults"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForPrescriptions"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForReal-timeClinicalData"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForReferrals"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForTelemedicine"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureForTelemonitoring"/>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataStructureStandardsManagementAndUpdate"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DentistInformationSystemGuide"/>
+        <Class IRI="#HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DevelopingAndUpdatingLegalFrameworkForHealthData"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationProgramsForStaffForDataSecurity"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPReferalSystemGuide"/>
+        <Class IRI="#HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthDataPrivacyAndSecurityManagement"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthDataProtectionAndBackup"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthInformationManagementSystemGuideCatalogue"/>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HospitalInformationSystemGuide"/>
+        <Class IRI="#HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntegrationStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagingDataSecurityStandards"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalTerminologyStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MessagingStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumDataModelInHealthInformaticsCatalogue"/>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumDataSetCatalogue"/>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinimumLoggingStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalHealthDataDictionaryCatalogue"/>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalNetwork"/>
+        <Class IRI="#HealthNetworkDevelopmentAndManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivacyRegulationsManagement"/>
+        <Class IRI="#Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareAccreditationStandardsManagement"/>
+        <Class IRI="#Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualNetwork"/>
+        <Class IRI="#HealthNetworkDevelopmentAndManagement"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#HealthNetworkDevelopmentAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAccessAndAuthorizationCoordinationManagement"/>
+        <Class IRI="#AccessAndAuthorizationCoordinationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfAdverseEventMonitoring"/>
+        <Class IRI="#AdverseEventMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfBroadBandConnectivity"/>
+        <Class IRI="#BroadBandConnectivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCitizenAndHealthcareStaffComplianceMonitoring"/>
+        <Class IRI="#CitizenAndHealthcareStaffComplianceMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfClinicalManagementSystems"/>
+        <Class IRI="#PracticeOrPatientAndClinicalManagementSystems"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfConnectivityStandardsManagement"/>
+        <Class IRI="#ConnectivityStandardsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfContentManagement"/>
+        <Class IRI="#ContentManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDataCenterAndDatabaseManagement"/>
+        <Class IRI="#DataCenterAndDatabaseManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDataSecurityManagement"/>
+        <Class IRI="#DataSecurityManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDatabasesAndMiddlewareManagement"/>
+        <Class IRI="#DatabasesAndMiddlewareManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring"/>
+        <Class IRI="#DevelopAndManageInfrastructureForAdverseEventMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEConsultation"/>
+        <Class IRI="#DevelopAndManageInfrastructureForEConsultation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEPrescription"/>
+        <Class IRI="#DevelopAndManageInfrastructureForEPrescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEReport"/>
+        <Class IRI="#DevelopAndManageInfrastructureForEReport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForHomecare"/>
+        <Class IRI="#DevelopAndManageInfrastructureForHomecare"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForReferrals"/>
+        <Class IRI="#DevelopAndManageInfrastructureForReferrals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemedicine"/>
+        <Class IRI="#DevelopAndManageInfrastructureForTelemedicine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemonotoring"/>
+        <Class IRI="#DevelopAndManageInfrastructureForTelemonotoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfDevelopInfrustructureForeHealthServices"/>
+        <Class IRI="#DevelopInfrustructureForeHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfGovernmentDataExchangeManagement"/>
+        <Class IRI="#GovernmentDataExchangeManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthDataCatalogue"/>
+        <Class IRI="#NationalHealthDataCatalogue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthDataTrafficMonitoringAndManagement"/>
+        <Class IRI="#HealthDataTrafficMonitoringAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthITComplianceMonitoring"/>
+        <Class IRI="#HealthITComplianceMonitoring"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthITRequirementsandAccreditation"/>
+        <Class IRI="#HealthITRequirementsandAccreditation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInformationManagementInInstitution"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInformationNetworkManagementInstitutions"/>
+        <Class IRI="#HealthInformationNetworkManagementInstitutions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInformationOperationsManagement"/>
+        <Class IRI="#HealthInformationOperationsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInformationResearch"/>
+        <Class IRI="#HealthInformationResearch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInformationSystemsManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthInsuranceDataExchangeManagement"/>
+        <Class IRI="#HealthInsuranceDataExchangeManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthProgramDesignAndOptimization"/>
+        <Class IRI="#HealthProgramDesignAndOptimization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthSoftwareVendorAccreditation"/>
+        <Class IRI="#HealthSoftwareVendorAccreditation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHealthcarePolicyDevelopment"/>
+        <Class IRI="#HealthcarePolicyDevelopment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfInterOrganizationalDataExchangetCoordination"/>
+        <Class IRI="#InterOrganizationalDataExchangetCoordination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfIoTHealthDataManagement"/>
+        <Class IRI="#IoTHealthDataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfLicenseManagement"/>
+        <Class IRI="#LicenseManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfLogManagement"/>
+        <Class IRI="#LogManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfManagementContinuityOfUserAccounts"/>
+        <Class IRI="#ManagementContinuityOfUserAccounts"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfManagingDataInfrastructureRequirementsInNewHospitals"/>
+        <Class IRI="#ManagingDataInfrastructureRequirementsInNewHospitals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfManagingDatabasePerformance"/>
+        <Class IRI="#ManagingDatabasePerformance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfManagingHealthInformationNetworkInDisasterTime"/>
+        <Class IRI="#ManagingHealthInformationNetworkInDisasterTime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfManagingIntegrationWithOtherStakeholders"/>
+        <Class IRI="#ManagingIntegrationWithOtherStakeholders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMedDeviceRegistry"/>
+        <Class IRI="#MedDeviceRegistryElectronicEnvironments"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMessageAndDataTransferStandardsManagement"/>
+        <Class IRI="#MessageAndDataTransferStandardsManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMobileHealthDataManagement"/>
+        <Class IRI="#MobileHealthDataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfNationalAuthenticationService"/>
+        <Class IRI="#NationalAuthenticationService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfNationalProductCatalogue"/>
+        <Class IRI="#NationalProductCatalogue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfNetworkIssueTrackingAndResolution"/>
+        <Class IRI="#NetworkIssueTrackingAndResolution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfNetworkParticipantManagement"/>
+        <Class IRI="#NetworkParticipantManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPlanBasedOnResearchInInfrastructure"/>
+        <Class IRI="#ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfProductCatalogue"/>
+        <Class IRI="#NationalProductCatalogue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfProgramsPlanInInfrastructure"/>
+        <Class IRI="#ProgramsPlanInInfrastructureOfe-HealthInformationNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfProtectCyberSecurity"/>
+        <Class IRI="#ProtectCyberSecurity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfProviderAndServicesDirectories"/>
+        <Class IRI="#ProviderAndServicesDirectories"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPublicInstitutionDataExchangeManagement"/>
+        <Class IRI="#PublicInstitutionDataExchangeManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPublicSectorDataIntegrationManagement"/>
+        <Class IRI="#PublicSectorDataIntegrationManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfRemoteHealthDataManagement"/>
+        <Class IRI="#RemoteHealthDataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfRiskAnalysisAndManagement"/>
+        <Class IRI="#RiskAnalysisAndManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfRoleBasedAccessControlManagement"/>
+        <Class IRI="#Role-BasedAccessControlManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfSmartHealthDeviceDataIntegration"/>
+        <Class IRI="#SmartHealthDeviceDataIntegration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfSoftwareLicenceManagement"/>
+        <Class IRI="#SoftwareLicenceManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfSofwareProductCatalogue"/>
+        <Class IRI="#NationalSofwareProductCatalogue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfSupervisionOfHealthDataExchange"/>
+        <Class IRI="#SupervisionOfHealthDataExchange"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfSurveillanceAndAtRiskIdentification"/>
+        <Class IRI="#SurveillanceAndAtRiskIdentification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfUniversalHealthIdentifierService"/>
+        <Class IRI="#UniversalHealthIdentifierService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfWearableAndSensorHealthDataManagement"/>
+        <Class IRI="#WearableAndSensorHealthDataManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructure"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructureInvestmentManagement"/>
+        <Class IRI="#eHealthInfrastructureInvestmentManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfeHealthIntegrationManagementWithOtherOrganizations"/>
+        <Class IRI="#eHealthIntegrationManagementWithOtherOrganizations"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAccessAndAuthorizationCoordinationManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAdverseEventMonitoring"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfBroadBandConnectivity"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCitizenAndHealthcareStaffComplianceMonitoring"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfClinicalManagementSystems"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfConnectivityStandardsManagement"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfContentManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDataCenterAndDatabaseManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDataSecurityManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDatabasesAndMiddlewareManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEConsultation"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEPrescription"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForEReport"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForHomecare"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForReferrals"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemedicine"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopAndManageInfrastructureForTelemonotoring"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfDevelopInfrustructureForeHealthServices"/>
+        <Class IRI="#eHealthServicesInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfGovernmentDataExchangeManagement"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthDataCatalogue"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthDataTrafficMonitoringAndManagement"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthITComplianceMonitoring"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthITRequirementsandAccreditation"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInformationManagementInInstitution"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInformationNetworkManagementInstitutions"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInformationOperationsManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInformationResearch"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInformationSystemsManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthInsuranceDataExchangeManagement"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthProgramDesignAndOptimization"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthSoftwareVendorAccreditation"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHealthcarePolicyDevelopment"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfInterOrganizationalDataExchangetCoordination"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfIoTHealthDataManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfLicenseManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfLogManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfManagementContinuityOfUserAccounts"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfManagingDataInfrastructureRequirementsInNewHospitals"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfManagingDatabasePerformance"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfManagingHealthInformationNetworkInDisasterTime"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfManagingIntegrationWithOtherStakeholders"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMedDeviceRegistry"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMessageAndDataTransferStandardsManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMobileHealthDataManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfNationalAuthenticationService"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfNationalProductCatalogue"/>
+        <Class IRI="#MedDeviceRegistryElectronicEnvironments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfNetworkIssueTrackingAndResolution"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfNetworkParticipantManagement"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPlanBasedOnResearchInInfrastructure"/>
+        <Class IRI="#HealthInformationResearch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfProductCatalogue"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfProgramsPlanInInfrastructure"/>
+        <Class IRI="#HealthInformationResearch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfProtectCyberSecurity"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfProviderAndServicesDirectories"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPublicInstitutionDataExchangeManagement"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPublicSectorDataIntegrationManagement"/>
+        <Class IRI="#HealthInformationManagementInInstitution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfRemoteHealthDataManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfRiskAnalysisAndManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfRoleBasedAccessControlManagement"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfSmartHealthDeviceDataIntegration"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfSoftwareLicenceManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfSofwareProductCatalogue"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfSupervisionOfHealthDataExchange"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfSurveillanceAndAtRiskIdentification"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfUniversalHealthIdentifierService"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfWearableAndSensorHealthDataManagement"/>
+        <Class IRI="#HealthInformationSystemsManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructure"/>
+        <Class IRI="#eHealthInfrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeHealthInfrastructureInvestmentManagement"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfeHealthIntegrationManagementWithOtherOrganizations"/>
+        <Class IRI="#NationalHealthcareNetworkManagement"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOf</IRI>
+        <Literal>HealthNetworkDevelopmentAndManagement isPartOf eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAccessAndAuthorizationCoordinationManagement</IRI>
+        <Literal>AccessAndAuthorizationCoordinationManagement isPartOfAccessAndAuthorizationCoordinationManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfAdverseEventMonitoring</IRI>
+        <Literal>AdverseEventMonitoring isPartOfAdverseEventMonitoring NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfBroadBandConnectivity</IRI>
+        <Literal>BroadBandConnectivity isPartOfBroadBandConnectivity eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCitizenAndHealthcareStaffComplianceMonitoring</IRI>
+        <Literal>CitizenAndHealthcareStaffComplianceMonitoring isPartOfCitizenAndHealthcareStaffComplianceMonitoring NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfClinicalManagementSystems</IRI>
+        <Literal>PracticeOrPatientAndClinicalManagementSystems isPartOfClinicalManagementSystems eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfConnectivityStandardsManagement</IRI>
+        <Literal>ConnectivityStandardsManagement isPartOfConnectivityStandardsManagement eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfContentManagement</IRI>
+        <Literal>ContentManagement isPartOfContentManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDataCenterAndDatabaseManagement</IRI>
+        <Literal>DataCenterAndDatabaseManagement isPartOfDataCenterAndDatabaseManagement HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDataSecurityManagement</IRI>
+        <Literal>DataSecurityManagement isPartOfDataSecurityManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDatabasesAndMiddlewareManagement</IRI>
+        <Literal>DatabasesAndMiddlewareManagement isPartOfDatabasesAndMiddlewareManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring</IRI>
+        <Literal>DevelopAndManageInfrastructureForAdverseEventMonitoring isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForEConsultation</IRI>
+        <Literal>DevelopAndManageInfrastructureForEConsultation isPartOfDevelopAndManageInfrastructureForEConsultation eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForEPrescription</IRI>
+        <Literal>DevelopAndManageInfrastructureForEPrescription isPartOfDevelopAndManageInfrastructureForEPrescription eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForEReport</IRI>
+        <Literal>DevelopAndManageInfrastructureForEReport isPartOfDevelopAndManageInfrastructureForEReport eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForHomecare</IRI>
+        <Literal>DevelopAndManageInfrastructureForHomecare isPartOfDevelopAndManageInfrastructureForHomecare eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForReferrals</IRI>
+        <Literal>DevelopAndManageInfrastructureForReferrals isPartOfDevelopAndManageInfrastructureForReferrals eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForTelemedicine</IRI>
+        <Literal>DevelopAndManageInfrastructureForTelemedicine isPartOfDevelopAndManageInfrastructureForTelemedicine eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopAndManageInfrastructureForTelemonotoring</IRI>
+        <Literal>DevelopAndManageInfrastructureForTelemonotoring isPartOfDevelopAndManageInfrastructureForTelemonotoring eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfDevelopInfrustructureForeHealthServices</IRI>
+        <Literal>DevelopInfrustructureForeHealthServices isPartOfDevelopInfrustructureForeHealthServices eHealthServicesInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfGovernmentDataExchangeManagement</IRI>
+        <Literal>GovernmentDataExchangeManagement isPartOfGovernmentDataExchangeManagement HealthInformationManagementInInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthDataCatalogue</IRI>
+        <Literal>NationalHealthDataCatalogue isPartOfHealthDataCatalogue eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthDataTrafficMonitoringAndManagement</IRI>
+        <Literal>HealthDataTrafficMonitoringAndManagement isPartOfHealthDataTrafficMonitoringAndManagement eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthITComplianceMonitoring</IRI>
+        <Literal>HealthITComplianceMonitoring isPartOfHealthITComplianceMonitoring HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthITRequirementsandAccreditation</IRI>
+        <Literal>HealthITRequirementsandAccreditation isPartOfHealthITRequirementsandAccreditation HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInformationManagementInInstitution</IRI>
+        <Literal>HealthInformationManagementInInstitution isPartOfHealthInformationManagementInInstitution HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInformationNetworkManagementInstitutions</IRI>
+        <Literal>HealthInformationNetworkManagementInstitutions isPartOfHealthInformationNetworkManagementInstitutions HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInformationOperationsManagement</IRI>
+        <Literal>HealthInformationOperationsManagement isPartOfHealthInformationOperationsManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInformationResearch</IRI>
+        <Literal>HealthInformationResearch isPartOfHealthInformationResearch NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInformationSystemsManagement</IRI>
+        <Literal>HealthInformationSystemsManagement isPartOfHealthInformationSystemsManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthInsuranceDataExchangeManagement</IRI>
+        <Literal>HealthInsuranceDataExchangeManagement isPartOfHealthInsuranceDataExchangeManagement HealthInformationManagementInInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthProgramDesignAndOptimization</IRI>
+        <Literal>HealthProgramDesignAndOptimization isPartOfHealthProgramDesignAndOptimization NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthSoftwareVendorAccreditation</IRI>
+        <Literal>HealthSoftwareVendorAccreditation isPartOfHealthSoftwareVendorAccreditation HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHealthcarePolicyDevelopment</IRI>
+        <Literal>HealthcarePolicyDevelopment isPartOfHealthcarePolicyDevelopment NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfInterOrganizationalDataExchangetCoordination</IRI>
+        <Literal>InterOrganizationalDataExchangetCoordination isPartOfInterOrganizationalDataExchangetCoordination HealthInformationManagementInInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfIoTHealthDataManagement</IRI>
+        <Literal>IoTHealthDataManagement isPartOfIoTHealthDataManagement HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfLicenseManagement</IRI>
+        <Literal>LicenseManagement isPartOfLicenseManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfLogManagement</IRI>
+        <Literal>LogManagement isPartOfLogManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfManagementContinuityOfUserAccounts</IRI>
+        <Literal>ManagementContinuityOfUserAccounts isPartOfManagementContinuityOfUserAccounts NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfManagingDataInfrastructureRequirementsInNewHospitals</IRI>
+        <Literal>ManagingDataInfrastructureRequirementsInNewHospitals isPartOfManagingDataInfrastructureRequirementsInNewHospitals NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfManagingDatabasePerformance</IRI>
+        <Literal>ManagingDatabasePerformance isPartOfManagingDatabasePerformance NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfManagingHealthInformationNetworkInDisasterTime</IRI>
+        <Literal>ManagingHealthInformationNetworkInDisasterTime isPartOfManagingHealthInformationNetworkInDisasterTime NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfManagingIntegrationWithOtherStakeholders</IRI>
+        <Literal>ManagingIntegrationWithOtherStakeholders isPartOfManagingIntegrationWithOtherStakeholders NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMedDeviceRegistry</IRI>
+        <Literal>MedDeviceRegistryElectronicEnvironments isPartOfMedDeviceRegistry eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMessageAndDataTransferStandardsManagement</IRI>
+        <Literal>MessageAndDataTransferStandardsManagement isPartOfMessageAndDataTransferStandardsManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMobileHealthDataManagement</IRI>
+        <Literal>MobileHealthDataManagement isPartOfMobileHealthDataManagement HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfNationalAuthenticationService</IRI>
+        <Literal>NationalAuthenticationService isPartOfNationalAuthenticationService eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfNationalProductCatalogue</IRI>
+        <Literal>NationalProductCatalogue isPartOfNationalProductCatalogue MedDeviceRegistryElectronicEnvironments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfNetworkIssueTrackingAndResolution</IRI>
+        <Literal>NetworkIssueTrackingAndResolution isPartOfNetworkIssueTrackingAndResolution eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfNetworkParticipantManagement</IRI>
+        <Literal>NetworkParticipantManagement isPartOfNetworkParticipantManagement eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPlanBasedOnResearchInInfrastructure</IRI>
+        <Literal>ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork isPartOfPlanBasedOnResearchInInfrastructure HealthInformationResearch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfProductCatalogue</IRI>
+        <Literal>NationalProductCatalogue isPartOfProductCatalogue eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfProgramsPlanInInfrastructure</IRI>
+        <Literal>ProgramsPlanInInfrastructureOfe-HealthInformationNetwork isPartOfProgramsPlanInInfrastructure HealthInformationResearch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfProtectCyberSecurity</IRI>
+        <Literal>ProtectCyberSecurity isPartOfProtectCyberSecurity NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfProviderAndServicesDirectories</IRI>
+        <Literal>ProviderAndServicesDirectories isPartOfProviderAndServicesDirectories eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPublicInstitutionDataExchangeManagement</IRI>
+        <Literal>PublicInstitutionDataExchangeManagement isPartOfPublicInstitutionDataExchangeManagement HealthInformationManagementInInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPublicSectorDataIntegrationManagement</IRI>
+        <Literal>PublicSectorDataIntegrationManagement isPartOfPublicSectorDataIntegrationManagement HealthInformationManagementInInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfRemoteHealthDataManagement</IRI>
+        <Literal>RemoteHealthDataManagement isPartOfRemoteHealthDataManagement HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfRiskAnalysisAndManagement</IRI>
+        <Literal>RiskAnalysisAndManagement isPartOfRiskAnalysisAndManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfRoleBasedAccessControlManagement</IRI>
+        <Literal>Role-BasedAccessControlManagement isPartOfRoleBasedAccessControlManagement eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfSmartHealthDeviceDataIntegration</IRI>
+        <Literal>SmartHealthDeviceDataIntegration isPartOfSmartHealthDeviceDataIntegration HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfSoftwareLicenceManagement</IRI>
+        <Literal>SoftwareLicenceManagement isPartOfSoftwareLicenceManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfSofwareProductCatalogue</IRI>
+        <Literal>NationalSofwareProductCatalogue isPartOfSofwareProductCatalogue eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfSupervisionOfHealthDataExchange</IRI>
+        <Literal>SupervisionOfHealthDataExchange isPartOfSupervisionOfHealthDataExchange HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfSurveillanceAndAtRiskIdentification</IRI>
+        <Literal>SurveillanceAndAtRiskIdentification isPartOfSurveillanceAndAtRiskIdentification NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfUniversalHealthIdentifierService</IRI>
+        <Literal>UniversalHealthIdentifierService isPartOfUniversalHealthIdentifierService eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfWearableAndSensorHealthDataManagement</IRI>
+        <Literal>WearableAndSensorHealthDataManagement isPartOfWearableAndSensorHealthDataManagement HealthInformationSystemsManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeHealthInfrastructure</IRI>
+        <Literal>eHealthServicesInfrastructure isPartOfeHealthInfrastructure eHealthInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeHealthInfrastructureInvestmentManagement</IRI>
+        <Literal>eHealthInfrastructureInvestmentManagement isPartOfeHealthInfrastructureInvestmentManagement NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfeHealthIntegrationManagementWithOtherOrganizations</IRI>
+        <Literal>eHealthIntegrationManagementWithOtherOrganizations isPartOfeHealthIntegrationManagementWithOtherOrganizations NationalHealthcareNetworkManagement</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
