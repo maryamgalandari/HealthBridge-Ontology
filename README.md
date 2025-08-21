@@ -11,4 +11,13 @@ The HealthBridge Ontology is designed within a three-layered ontology architectu
 2. The Core Ontology functions as an intermediary layer, linking the top-level concepts with specific applications. It emphasizes three key domain connections: eHealth functions, citizen healthcare functions, and eHealth network requirements.
 3. The Domain-Specific Ontology extends the framework to practical applications, with each of the three domains addressed in dedicated studies.
 
+figure of three layer ontology
+figure of core
 
+links
+
+Core owl
+Core and GFO owl
+eHealth Function owl
+Citizen Healthcare Function owl
+eHealth network requirements owl
