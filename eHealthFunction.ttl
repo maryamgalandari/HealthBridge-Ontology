@@ -1,0 +1,641 @@
+@prefix : <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction> rdf:type owl:Ontology ;
+                                                                        rdfs:comment "This is domain ontology for National health information system and eHealth services." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfAccountingManagement
+:isPartOfAccountingManagement rdf:type owl:ObjectProperty ;
+                              rdfs:domain :AccountingManagement ;
+                              rdfs:range :InternalServices ;
+                              rdfs:comment "AccountingManagement isPartOfAccountingManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfAlertsMonitoringAndManagement
+:isPartOfAlertsMonitoringAndManagement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :AlertsMonitoringAndManagement ;
+                                       rdfs:range :ServicesForCitizens ;
+                                       rdfs:comment "AlertsMonitoringAndManagement isPartOfAlertsMonitoringAndManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfAnnouncementAndNewsManagement
+:isPartOfAnnouncementAndNewsManagement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :AnnouncementAndNewsManagement ;
+                                       rdfs:range :HealthcareEducation ;
+                                       rdfs:comment "AnnouncementAndNewsManagement isPartOfAnnouncementAndNewsManagement HealthcareEducation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfAppointmentBookingAndManagement
+:isPartOfAppointmentBookingAndManagement rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :AppointmentBookingAndManagement ;
+                                         rdfs:range :ServicesForCitizens ;
+                                         rdfs:comment "AppointmentBookingAndManagement isPartOfAppointmentBookingAndManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfCarePlanManagement
+:isPartOfCarePlanManagement rdf:type owl:ObjectProperty ;
+                            rdfs:domain :CarePlanManagement ;
+                            rdfs:range :ServicesForCitizens ;
+                            rdfs:comment "CarePlanManagement isPartOfCarePlanManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfCareProviderHealthLearningPortal
+:isPartOfCareProviderHealthLearningPortal rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :CareProviderHealthLearningPortal ;
+                                          rdfs:range :HealthcareEducation ;
+                                          rdfs:comment "CareProviderHealthLearningPortal isPartOfCareProviderHealthLearningPortal HealthcareEducation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfChronicDiseaseManagement
+:isPartOfChronicDiseaseManagement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ChronicDiseaseManagement ;
+                                  rdfs:range :ServicesForCitizens ;
+                                  rdfs:comment "ChronicDiseaseManagement isPartOfChronicDiseaseManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfClinicalDecisionSupport
+:isPartOfClinicalDecisionSupport rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ClinicalDecisionSupport ;
+                                 rdfs:range :ServicesForProvidersAndHealthcareProfessionals ;
+                                 rdfs:comment "ClinicalDecisionSupport isPartOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfCommunicationManagement
+:isPartOfCommunicationManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :CommunicationManagement ;
+                                 rdfs:range :ServicesForCitizens ;
+                                 rdfs:comment "CommunicationManagement isPartOfCommunicationManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfConsumerHealthLearningPortal
+:isPartOfConsumerHealthLearningPortal rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :ConsumerHealthLearningPortal ;
+                                      rdfs:range :HealthcareEducation ;
+                                      rdfs:comment "ConsumerHealthLearningPortal isPartOfConsumerHealthLearningPortal HealthcareEducation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfCoronaPreventionManagement
+:isPartOfCoronaPreventionManagement rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :CoronaPreventionManagement ;
+                                    rdfs:range :Covid-19Pandemic ;
+                                    rdfs:comment "CoronaPreventionManagement isPartOfCoronaPreventionManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfCovid-19Pandemic
+:isPartOfCovid-19Pandemic rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Covid-19Pandemic ;
+                          rdfs:range :ConditionBasedServices ;
+                          rdfs:comment "Covid-19Pandemic isPartOfCovid-19Pandemic ConditionBasedServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDecisionSupportForMedicationsPrescribing
+:isPartOfDecisionSupportForMedicationsPrescribing rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :DecisionSupportForMedicationsPrescribing ;
+                                                  rdfs:range :ServicesForProvidersAndHealthcareProfessionals ;
+                                                  rdfs:comment "DecisionSupportForMedicationsPrescribing isPartOfDecisionSupportForMedicationsPrescribing ServicesForProvidersAndHealthcareProfessionals" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDecisionSupportSystemForHealthcareStaff
+:isPartOfDecisionSupportSystemForHealthcareStaff rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :DecisionSupportSystemForHealthcareStaff ;
+                                                 rdfs:range :InternalServices ;
+                                                 rdfs:comment "DecisionSupportSystemForHealthcareStaff isPartOfDecisionSupportSystemForHealthcareStaff InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDecisionSupportSystemForManager
+:isPartOfDecisionSupportSystemForManager rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :DecisionSupportSystemForManager ;
+                                         rdfs:range :Covid-19Pandemic ;
+                                         rdfs:comment "DecisionSupportSystemForManager isPartOfDecisionSupportSystemForManager Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDecisionSupportSystemForManagers
+:isPartOfDecisionSupportSystemForManagers rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :DecisionSupportSystemForManagers ;
+                                          rdfs:range :ServicesForProvidersAndHealthcareProfessionals ;
+                                          rdfs:comment "DecisionSupportSystemForManagers isPartOfDecisionSupportSystemForManagers ServicesForProvidersAndHealthcareProfessionals" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDentalCareManagement
+:isPartOfDentalCareManagement rdf:type owl:ObjectProperty ;
+                              rdfs:domain :DentalCareManagement ;
+                              rdfs:range :ServicesForCitizens ;
+                              rdfs:comment "DentalCareManagement isPartOfDentalCareManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDigitalRegistrations
+:isPartOfDigitalRegistrations rdf:type owl:ObjectProperty ;
+                              rdfs:domain :DigitalRegistrations ;
+                              rdfs:range :InternalServices ;
+                              rdfs:comment "DigitalRegistrations isPartOfDigitalRegistrations InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDisabilityCitizenServices
+:isPartOfDisabilityCitizenServices rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :DisabilityCitizenServices ;
+                                   rdfs:range :ServicesForCitizens ;
+                                   rdfs:comment "DisabilityCitizenServices isPartOfDisabilityCitizenServices ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfDiseaseManagement
+:isPartOfDiseaseManagement rdf:type owl:ObjectProperty ;
+                           rdfs:domain :DiseaseManagement ;
+                           rdfs:range :ServicesForCitizens ;
+                           rdfs:comment "DiseaseManagement isPartOfDiseaseManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfEAmbulance
+:isPartOfEAmbulance rdf:type owl:ObjectProperty ;
+                    rdfs:domain :EAmbulance ;
+                    rdfs:range :ServicesForCitizens ;
+                    rdfs:comment "EAmbulance isPartOfEAmbulance ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfElectronicConsultations
+:isPartOfElectronicConsultations rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ElectronicConsultations ;
+                                 rdfs:range :ServicesForCitizens ;
+                                 rdfs:comment "ElectronicConsultations isPartOfElectronicConsultations ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfElectronicDocumentManagement
+:isPartOfElectronicDocumentManagement rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :ElectronicDocumentManagement ;
+                                      rdfs:range :InternalServices ;
+                                      rdfs:comment "ElectronicDocumentManagement isPartOfElectronicDocumentManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfElectronicIdentifiers
+:isPartOfElectronicIdentifiers rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ElectronicIdentifiers ;
+                               rdfs:range :ServicesForCitizens ;
+                               rdfs:comment "ElectronicIdentifiers isPartOfElectronicIdentifiers ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfEmergencyAutomationManagement
+:isPartOfEmergencyAutomationManagement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :EmergencyAutomationManagement ;
+                                       rdfs:range :InternalServices ;
+                                       rdfs:comment "EmergencyAutomationManagement isPartOfEmergencyAutomationManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfEquipmentTrackingManagement
+:isPartOfEquipmentTrackingManagement rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :EquipmentTrackingManagement ;
+                                     rdfs:range :InternalServices ;
+                                     rdfs:comment "EquipmentTrackingManagement isPartOfEquipmentTrackingManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfHealthcareStaffLearningPortal
+:isPartOfHealthcareStaffLearningPortal rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :HealthcareStaffLearningPortal ;
+                                       rdfs:range :HealthcareEducation ;
+                                       rdfs:comment "HealthcareStaffLearningPortal isPartOfHealthcareStaffLearningPortal HealthcareEducation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfHumanResourceManagementSystem
+:isPartOfHumanResourceManagementSystem rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :HumanResourceManagementSystem ;
+                                       rdfs:range :InternalServices ;
+                                       rdfs:comment "HumanResourceManagementSystem isPartOfHumanResourceManagementSystem InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfMedicationsManagement
+:isPartOfMedicationsManagement rdf:type owl:ObjectProperty ;
+                               rdfs:domain :MedicationsManagement ;
+                               rdfs:range :ServicesForCitizens ;
+                               rdfs:comment "MedicationsManagement isPartOfMedicationsManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfMedicationsPrescription
+:isPartOfMedicationsPrescription rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :MedicationsPrescription ;
+                                 rdfs:range :ServicesForCitizens ;
+                                 rdfs:comment "MedicationsPrescription isPartOfMedicationsPrescription ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfPatientPortal
+:isPartOfPatientPortal rdf:type owl:ObjectProperty ;
+                       rdfs:domain :PatientPortal ;
+                       rdfs:range :ServicesForCitizens ;
+                       rdfs:comment "PatientPortal isPartOfPatientPortal ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfPrescriptionsManagement
+:isPartOfPrescriptionsManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :PrescriptionsManagement ;
+                                 rdfs:range :ServicesForCitizens ;
+                                 rdfs:comment "PrescriptionsManagement isPartOfPrescriptionsManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfPsychologicalConsultationForPatients
+:isPartOfPsychologicalConsultationForPatients rdf:type owl:ObjectProperty ;
+                                              rdfs:domain :PsychologicalConsultationForPatients ;
+                                              rdfs:range :Covid-19Pandemic ;
+                                              rdfs:comment "PsychologicalConsultationForPatients isPartOfPsychologicalConsultationForPatients Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfPsychologicalConsultationForStaff
+:isPartOfPsychologicalConsultationForStaff rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :PsychologicalConsultationForStaff ;
+                                           rdfs:range :Covid-19Pandemic ;
+                                           rdfs:comment "PsychologicalConsultationForStaff isPartOfPsychologicalConsultationForStaff Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfPublicHealthInfotmationManagement
+:isPartOfPublicHealthInfotmationManagement rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :PublicHealthInfotmationManagement ;
+                                           rdfs:range :InternalServices ;
+                                           rdfs:comment "PublicHealthInfotmationManagement isPartOfPublicHealthInfotmationManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfReferralManagement
+:isPartOfReferralManagement rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ReferralManagement ;
+                            rdfs:range :ServicesForCitizens ;
+                            rdfs:comment "ReferralManagement isPartOfReferralManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfReportManagement
+:isPartOfReportManagement rdf:type owl:ObjectProperty ;
+                          rdfs:domain :ReportManagement ;
+                          rdfs:range :ServicesForCitizens ;
+                          rdfs:comment "ReportManagement isPartOfReportManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfResourceManagement
+:isPartOfResourceManagement rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ResourceManagement ;
+                            rdfs:range :InternalServices ;
+                            rdfs:comment "ResourceManagement isPartOfResourceManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfScreeningManagement
+:isPartOfScreeningManagement rdf:type owl:ObjectProperty ;
+                             rdfs:domain :ScreeningManagement ;
+                             rdfs:range :InternalServices ;
+                             rdfs:comment "ScreeningManagement isPartOfScreeningManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfTelemedicine
+:isPartOfTelemedicine rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Telemedicine ;
+                      rdfs:range :ServicesForCitizens ;
+                      rdfs:comment "Telemedicine isPartOfTelemedicine ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfTestResultsAndAnalysisManagement
+:isPartOfTestResultsAndAnalysisManagement rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :TestResultsAndAnalysisManagement ;
+                                          rdfs:range :ServicesForCitizens ;
+                                          rdfs:comment "TestResultsAndAnalysisManagement isPartOfTestResultsAndAnalysisManagement ServicesForCitizens" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfTrackingCitizenManagement
+:isPartOfTrackingCitizenManagement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :TrackingCitizenManagement ;
+                                   rdfs:range :Covid-19Pandemic ;
+                                   rdfs:comment "TrackingCitizenManagement isPartOfTrackingCitizenManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfTrackingStaffManagement
+:isPartOfTrackingStaffManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :TrackingStaffManagement ;
+                                 rdfs:range :Covid-19Pandemic ;
+                                 rdfs:comment "TrackingStaffManagement isPartOfTrackingStaffManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfTreatmentTrackingSystem
+:isPartOfTreatmentTrackingSystem rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :TreatmentTrackingSystem ;
+                                 rdfs:range :Covid-19Pandemic ;
+                                 rdfs:comment "TreatmentTrackingSystem isPartOfTreatmentTrackingSystem Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfVaccinationManagement
+:isPartOfVaccinationManagement rdf:type owl:ObjectProperty ;
+                               rdfs:domain :VaccinationManagement ;
+                               rdfs:range :Covid-19Pandemic ;
+                               rdfs:comment "VaccinationManagement isPartOfVaccinationManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfeLearningForPatients
+:isPartOfeLearningForPatients rdf:type owl:ObjectProperty ;
+                              rdfs:domain :eLearningForPatients ;
+                              rdfs:range :Covid-19Pandemic ;
+                              rdfs:comment "eLearningForPatients isPartOfeLearningForPatients Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfeLearningForStaff
+:isPartOfeLearningForStaff rdf:type owl:ObjectProperty ;
+                           rdfs:domain :eLearningForStaff ;
+                           rdfs:range :Covid-19Pandemic ;
+                           rdfs:comment "eLearningForStaff isPartOfeLearningForStaff Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#isPartOfeSignature
+:isPartOfeSignature rdf:type owl:ObjectProperty ;
+                    rdfs:domain :eSignature ;
+                    rdfs:range :InternalServices ;
+                    rdfs:comment "eSignature isPartOfeSignature InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfAppointmentBookingAndManagement
+:partOfAppointmentBookingAndManagement rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :AppointmentBookingAndManagement ;
+                                       rdfs:range :Covid-19Pandemic ;
+                                       rdfs:comment "AppointmentBookingAndManagement partOfAppointmentBookingAndManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfClinicalDecisionSupport
+:partOfClinicalDecisionSupport rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ClinicalDecisionSupport ;
+                               rdfs:range :ServicesForProvidersAndHealthcareProfessionals ;
+                               rdfs:comment "ClinicalDecisionSupport partOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfDiseaseManagement
+:partOfDiseaseManagement rdf:type owl:ObjectProperty ;
+                         rdfs:domain :DiseaseManagement ;
+                         rdfs:range :Covid-19Pandemic ;
+                         rdfs:comment "DiseaseManagement partOfDiseaseManagement Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfElectronicConsultations
+:partOfElectronicConsultations rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ElectronicConsultations ;
+                               rdfs:range :Covid-19Pandemic ;
+                               rdfs:comment "ElectronicConsultations partOfElectronicConsultations Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfElectronicIdentifiers
+:partOfElectronicIdentifiers rdf:type owl:ObjectProperty ;
+                             rdfs:domain :ElectronicIdentifiers ;
+                             rdfs:range :InternalServices ;
+                             rdfs:comment "ElectronicIdentifiers partOfElectronicIdentifiers InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfReportManagement
+:partOfReportManagement rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ReportManagement ;
+                        rdfs:range :InternalServices ;
+                        rdfs:comment "ReportManagement partOfReportManagement InternalServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfTelemedicine
+:partOfTelemedicine rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Telemedicine ;
+                    rdfs:range :Covid-19Pandemic ;
+                    rdfs:comment "Telemedicine partOfTelemedicine Covid-19Pandemic" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfeLearningForPatients
+:partOfeLearningForPatients rdf:type owl:ObjectProperty ;
+                            rdfs:domain :eLearningForPatients ;
+                            rdfs:range :HealthcareEducation ;
+                            rdfs:comment "eLearningForPatients partOfeLearningForPatients HealthcareEducation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#partOfeLearningForStaff
+:partOfeLearningForStaff rdf:type owl:ObjectProperty ;
+                         rdfs:domain :eLearningForStaff ;
+                         rdfs:range :HealthcareEducation ;
+                         rdfs:comment "eLearningForStaff  partOfeLearningForStaff HealthcareEducation" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#AccountingManagement
+:AccountingManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#AlertsMonitoringAndManagement
+:AlertsMonitoringAndManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#AnnouncementAndNewsManagement
+:AnnouncementAndNewsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#AppointmentBookingAndManagement
+:AppointmentBookingAndManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#CarePlanManagement
+:CarePlanManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#CareProviderHealthLearningPortal
+:CareProviderHealthLearningPortal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ChronicDiseaseManagement
+:ChronicDiseaseManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#CommunicationManagement
+:CommunicationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ConditionBasedServices
+:ConditionBasedServices rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ConsumerHealthLearningPortal
+:ConsumerHealthLearningPortal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#CoronaPreventionManagement
+:CoronaPreventionManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#Covid-19Pandemic
+:Covid-19Pandemic rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DecisionSupportSystemForHealthcareStaff
+:DecisionSupportSystemForHealthcareStaff rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DecisionSupportSystemForManager
+:DecisionSupportSystemForManager rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DentalCareManagement
+:DentalCareManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DigitalRegistrations
+:DigitalRegistrations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DisabilityCitizenServices
+:DisabilityCitizenServices rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#DiseaseManagement
+:DiseaseManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#EAmbulance
+:EAmbulance rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ElectronicConsultations
+:ElectronicConsultations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ElectronicDocumentManagement
+:ElectronicDocumentManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ElectronicIdentifiers
+:ElectronicIdentifiers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#EmergencyAutomationManagement
+:EmergencyAutomationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#EquipmentTrackingManagement
+:EquipmentTrackingManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#HealthcareEducation
+:HealthcareEducation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#HealthcareStaffLearningPortal
+:HealthcareStaffLearningPortal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#HumanResourceManagementSystem
+:HumanResourceManagementSystem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#InternalServices
+:InternalServices rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#MedicationsManagement
+:MedicationsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#MedicationsPrescription
+:MedicationsPrescription rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#PatientPortal
+:PatientPortal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#PrescriptionsManagement
+:PrescriptionsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#PsychologicalConsultationForPatients
+:PsychologicalConsultationForPatients rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#PsychologicalConsultationForStaff
+:PsychologicalConsultationForStaff rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#PublicHealthInfotmationManagement
+:PublicHealthInfotmationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ReferralManagement
+:ReferralManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ReportManagement
+:ReportManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ResourceManagement
+:ResourceManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#ScreeningManagement
+:ScreeningManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#Telemedicine
+:Telemedicine rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#TestResultsAndAnalysisManagement
+:TestResultsAndAnalysisManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#TrackingCitizenManagement
+:TrackingCitizenManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#TrackingStaffManagement
+:TrackingStaffManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#TreatmentTrackingSystem
+:TreatmentTrackingSystem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#VaccinationManagement
+:VaccinationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#eLearningForPatients
+:eLearningForPatients rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#eLearningForStaff
+:eLearningForStaff rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction#eSignature
+:eSignature rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises
+:CitizenOrientedeHealthServises rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ClinicalDecisionSupport
+:ClinicalDecisionSupport rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportForMedicationsPrescribing
+:DecisionSupportForMedicationsPrescribing rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportForTestOrdering
+:DecisionSupportForTestOrdering rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForManagers
+:DecisionSupportSystemForManagers rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens
+:ServicesForCitizens rdf:type owl:Class ;
+                     rdfs:subClassOf :CitizenOrientedeHealthServises .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals
+:ServicesForProvidersAndHealthcareProfessionals rdf:type owl:Class ;
+                                                rdfs:subClassOf :CitizenOrientedeHealthServises .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,999 @@
+@prefix : <http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology> rdf:type owl:Ontology ;
+                                                                     owl:imports <https://w3id.org/gfo-light/release/2025-04-07> ;
+                                                                     rdfs:comment "This is core ontology for National health information system and personalhealth information system." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#FacilitatesSoftwareProduct
+:FacilitatesSoftwareProduct rdf:type owl:ObjectProperty ;
+                            rdfs:domain :PatientPortal ;
+                            rdfs:range :SoftwareProduct ;
+                            rdfs:comment "PatientPortal FacilitatesSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#PartOfConditionBasedFunction
+:PartOfConditionBasedFunction rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ConditionBasedFunction ;
+                              rdfs:range :CitizenHealthcareFunction ;
+                              rdfs:comment "ConditionBasedFunction PartOfConditionBasedFunction CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#PartOfEnterpriseOrganization
+:PartOfEnterpriseOrganization rdf:type owl:ObjectProperty ;
+                              rdfs:domain :EnterpriseOrganization ;
+                              rdfs:range :PrivateOrganization ;
+                              rdfs:comment "EnterpriseOrganization PartOfEnterpriseOrganization PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#PartOfStatusOfCitizen
+:PartOfStatusOfCitizen rdf:type owl:ObjectProperty ;
+                       rdfs:domain :StatusOfCitizen ;
+                       rdfs:range :CitizenHealthcareFunction ;
+                       rdfs:comment "StatusOfCitizen PartOfStatusOfCitizen CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#accessesHealthcareService
+:accessesHealthcareService rdf:type owl:ObjectProperty ;
+                           rdfs:domain :UserGroup ;
+                           rdfs:range :HealthcareServices ;
+                           rdfs:comment "UserGroup accessesHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#accessesUserGroup
+:accessesUserGroup rdf:type owl:ObjectProperty ;
+                   rdfs:domain :HealthcareServices ;
+                   rdfs:range :UserGroup ;
+                   rdfs:comment "HealthcareService accessesUserGroup UserGroup" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#accesseseHealthService
+:accesseseHealthService rdf:type owl:ObjectProperty ;
+                        rdfs:domain :UserGroup ;
+                        rdfs:range :eHealthServices ;
+                        rdfs:comment "UserGroup accesseseHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#collaboratesWitheHealthService
+:collaboratesWitheHealthService rdf:type owl:ObjectProperty ;
+                                rdfs:domain :ElectronicHealthRecord ;
+                                rdfs:range :eHealthServices ;
+                                rdfs:comment "ElectronicHealthRecord collaboratesWitheHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#cooperatesWithHealthInformationManager
+:cooperatesWithHealthInformationManager rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :HealthInformationManager ;
+                                        rdfs:range :MinistryOfHealth ;
+                                        rdfs:comment "HealthInformationManager cooperatesWithHealthInformationManager MinistryOfHealth" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#cooperatesWithHealthcareSystemManager
+:cooperatesWithHealthcareSystemManager rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :HealthcareSystemManager ;
+                                       rdfs:range :MinistryOfHealth ;
+                                       rdfs:comment "HealthcareSystemManager cooperatesWithHealthcareSystemManager MinistryOfHealth" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#createBasedOneHealthNetworkRequirement
+:createBasedOneHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :eHealthNetworkManagement ;
+                                        rdfs:range :eHealthNetworkRequirement ;
+                                        rdfs:comment "eHealthNetworkManagement createBasedOneHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#createsHealthcareService
+:createsHealthcareService rdf:type owl:ObjectProperty ;
+                          rdfs:domain :OrganizationalUnit ;
+                          rdfs:range :HealthcareServices ;
+                          rdfs:comment "OrganizationalUnit createsHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#createseHealthFunction
+:createseHealthFunction rdf:type owl:ObjectProperty ;
+                        rdfs:domain :MinistryOfHealth ;
+                        rdfs:range :eHealthFunction ;
+                        rdfs:comment "MinistryOfHealth createseHealthFunction eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#createseHealthNetworkManagement
+:createseHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :MinistryOfHealth ;
+                                 rdfs:range :eHealthNetworkManagement ;
+                                 rdfs:comment "MinistryOfHealth createseHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#createseHealthNetworkRequirement
+:createseHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :MinistryOfHealth ;
+                                  rdfs:range :eHealthNetworkRequirement ;
+                                  rdfs:comment "MinistryOfHealth createseHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#dependOnElectronicHealthRecord
+:dependOnElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                                rdfs:domain :HealthcareServices ;
+                                rdfs:range :ElectronicHealthRecord ;
+                                rdfs:comment "HealthcareService dependOnElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#designsSoftwareProduct
+:designsSoftwareProduct rdf:type owl:ObjectProperty ;
+                        rdfs:domain :EnterpriseOrganization ;
+                        rdfs:range :SoftwareProduct ;
+                        rdfs:comment "EnterpriseOrganization designsSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#designseHealthService
+:designseHealthService rdf:type owl:ObjectProperty ;
+                       rdfs:domain :HealthInformationManager ;
+                       rdfs:range :eHealthServices ;
+                       rdfs:comment "HealthInformationManager designseHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#enablesCitizenHealthcareFunction
+:enablesCitizenHealthcareFunction rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :CitizenHealthcareFunction ;
+                                  rdfs:range :ElectronicHealthRecord ;
+                                  rdfs:comment "CitizenHealthcareFunction enablesCitizenHealthcareFunction ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#enablesElectronicHealthRecord
+:enablesElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                               rdfs:domain :eHealthServices ;
+                               rdfs:range :ElectronicHealthRecord ;
+                               rdfs:comment "eHealthService enablesElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#facilitateHealthcareService
+:facilitateHealthcareService rdf:type owl:ObjectProperty ;
+                             rdfs:domain :ElectronicHealthRecord ;
+                             rdfs:range :HealthcareServices ;
+                             rdfs:comment "ElectronicHealthRecord facilitateHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#facilitates
+:facilitates rdf:type owl:ObjectProperty ;
+             rdfs:domain :ElectronicHealthRecord ;
+             rdfs:range :UserGroup ;
+             rdfs:comment "ElectronicHealthRecord facilitates UserGroup" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :Citizen ;
+             rdfs:range :CitizenHealthcareFunction ;
+             rdfs:comment "Citizen hasFunction CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#hasMinistryOfHealth
+:hasMinistryOfHealth rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MinistryOfHealth ;
+                     rdfs:range :PrivateOrganization ;
+                     rdfs:comment "MinistryOfHealth hasMinistryOfHealth PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#implementsSoftwareProduct
+:implementsSoftwareProduct rdf:type owl:ObjectProperty ;
+                           rdfs:domain :EnterpriseOrganization ;
+                           rdfs:range :SoftwareProduct ;
+                           rdfs:comment "EnterpriseOrganization implementsSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#implementseHealthService
+:implementseHealthService rdf:type owl:ObjectProperty ;
+                          rdfs:domain :HealthInformationManager ;
+                          rdfs:range :eHealthServices ;
+                          rdfs:comment "HealthInformationManager implementseHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#integratedIntoHealthcareService
+:integratedIntoHealthcareService rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ElectronicHealthRecord ;
+                                 rdfs:range :HealthcareServices ;
+                                 rdfs:comment "ElectronicHealthRecord integratedIntoHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#integratedWith
+:integratedWith rdf:type owl:ObjectProperty ;
+                rdfs:domain :OrganizationalUnit ;
+                rdfs:range :ElectronicHealthRecord ;
+                rdfs:comment "OrganizationalUnit integratedWith ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#interoperatesWith
+:interoperatesWith rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ElectronicHealthRecord ;
+                   rdfs:range :eHealthNetworkManagement ;
+                   rdfs:comment "ElectronicHealthRecord interoperatesWith eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#interoperatesWitheHealthService
+:interoperatesWitheHealthService rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :ElectronicHealthRecord ;
+                                 rdfs:range :eHealthServices ;
+                                 rdfs:comment "ElectronicHealthRecord interoperatesWitheHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isAssociatedWith
+:isAssociatedWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :eHealthFunction ;
+                  rdfs:range :eHealthServices ;
+                  rdfs:comment "eHealthFunction isAssociatedWith eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isAssociatedWithCitizen
+:isAssociatedWithCitizen rdf:type owl:ObjectProperty ;
+                         rdfs:domain :CitizenHealthcareFunction ;
+                         rdfs:range :Citizen ;
+                         rdfs:comment "CitizenHealthcareFunction isAssociatedWithCitizen Citizen" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isAssociatedWitheHealthNetworkManagement
+:isAssociatedWitheHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :eHealthNetworkRequirement ;
+                                          rdfs:range :eHealthNetworkManagement ;
+                                          rdfs:comment "eHealthNetworkRequirement isAssociatedWitheHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isCreateBasedOneHealthFunction
+:isCreateBasedOneHealthFunction rdf:type owl:ObjectProperty ;
+                                rdfs:domain :eHealthServices ;
+                                rdfs:range :eHealthFunction ;
+                                rdfs:comment "eHealthService isCreateBasedOneHealthFunction eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isCreatedBasedOnHealthcareService
+:isCreatedBasedOnHealthcareService rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :HealthcareServices ;
+                                   rdfs:range :CitizenHealthcareFunction ;
+                                   rdfs:comment "HealthcareService isCreatedBasedOnHealthcareService CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isCreatedBasedOnSoftwareProduct
+:isCreatedBasedOnSoftwareProduct rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :SoftwareProduct ;
+                                 rdfs:range :CitizenHealthcareFunction ;
+                                 rdfs:comment "SoftwareProduct isCreatedBasedOnSoftwareProduct CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isDefindedBasedOnNeedsOfCitizen
+:isDefindedBasedOnNeedsOfCitizen rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :eHealthFunction ;
+                                 rdfs:range :Citizen ;
+                                 rdfs:comment "CitizenHealthcareFunction isDefindedBasedOnNeedsOfCitizen Citizen" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isDesignedBasedOnHealthcareService
+:isDesignedBasedOnHealthcareService rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :HealthcareServices ;
+                                    rdfs:range :CitizenHealthcareFunction ;
+                                    rdfs:comment "HealthcareService isDesignedBasedOnHealthcareService CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isDesignedBasedOnSoftwareProduct
+:isDesignedBasedOnSoftwareProduct rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :SoftwareProduct ;
+                                  rdfs:range :CitizenHealthcareFunction ;
+                                  rdfs:comment "SoftwareProduct isDesignedBasedOnSoftwareProduct CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfCitizenHealthcareFunction
+:isPartOfCitizenHealthcareFunction rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :Citizen ;
+                                   rdfs:range :CitizenHealthcareFunction ;
+                                   rdfs:comment "Citizen isPartOfCitizenHealthcareFunction CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfClinics
+:isPartOfClinics rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Clinics ;
+                 rdfs:range :GovernmentOrganization ;
+                 rdfs:comment "Clinics isPartOfClinics GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfConditionBasedFunction
+:isPartOfConditionBasedFunction rdf:type owl:ObjectProperty ;
+                                rdfs:domain :Covid-19Pandemic ;
+                                rdfs:range :ConditionBasedFunction ;
+                                rdfs:comment "Covid-19Pandemic isPartOfConditionBasedFunction ConditionBasedFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfConditionBasedService
+:isPartOfConditionBasedService rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Covid-19Pandemic ;
+                               rdfs:range :ConditionBasedFunction ;
+                               rdfs:comment "Covid-19Pandemic isPartOfConditionBasedService ConditionBasedService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfCountryName
+:isPartOfCountryName rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CountryName ;
+                     rdfs:range :HealthcareServices ;
+                     rdfs:comment "CountryName isPartOfCountryName HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfGPHause
+:isPartOfGPHause rdf:type owl:ObjectProperty ;
+                 rdfs:domain :GPHauseGeneralPractitioner ;
+                 rdfs:range :GovernmentOrganization ;
+                 rdfs:comment "GPHause isPartOfGPHause GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfHospital
+:isPartOfHospital rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Hospitals ;
+                  rdfs:range :GovernmentOrganization ;
+                  rdfs:comment "Hospital isPartOfHospital  GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfInsuranceCompany
+:isPartOfInsuranceCompany rdf:type owl:ObjectProperty ;
+                          rdfs:domain :InsuranceCompany ;
+                          rdfs:range :GovernmentOrganization ;
+                          rdfs:comment "InsuranceCompany isPartOfInsuranceCompany GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfLanguage
+:isPartOfLanguage rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Language ;
+                  rdfs:range :HealthcareServices ;
+                  rdfs:comment "Language isPartOfLanguage HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfMinistryOfHealth
+:isPartOfMinistryOfHealth rdf:type owl:ObjectProperty ;
+                          rdfs:domain :MinistryOfHealth ;
+                          rdfs:range :GovernmentOrganization ;
+                          rdfs:comment "MinistryOfHealth isPartOfMinistryOfHealth GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfOrganizationName
+:isPartOfOrganizationName rdf:type owl:ObjectProperty ;
+                          rdfs:domain :OrganizationName ;
+                          rdfs:range :HealthcareServices ;
+                          rdfs:comment "OrganizationName isPartOfOrganizationName HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#isPartOfPharmacy
+:isPartOfPharmacy rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Pharmacy ;
+                  rdfs:range :GovernmentOrganization ;
+                  rdfs:comment "Pharmacy isPartOfPharmacy GovernmentOrganziation" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#madeElectronicHealthRecord
+:madeElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Manager ;
+                            rdfs:range :ElectronicHealthRecord ;
+                            rdfs:comment "Manager madeElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#manageElectronicHealthRecord
+:manageElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Manager ;
+                              rdfs:range :ElectronicHealthRecord ;
+                              rdfs:comment "Manager manageElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#manageGovernmentOrganziation
+:manageGovernmentOrganziation rdf:type owl:ObjectProperty ;
+                              rdfs:domain :GovernmentOrganization ;
+                              rdfs:range :ElectronicHealthRecord ;
+                              rdfs:comment "GovernmentOrganziation manageGovernmentOrganziation ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#manageeHealthNetworkRequirement
+:manageeHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :HealthcareSystemManager ;
+                                 rdfs:range :eHealthNetworkRequirement ;
+                                 rdfs:comment "HealthInformationManager manageeHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#manageeHealthService
+:manageeHealthService rdf:type owl:ObjectProperty ;
+                      rdfs:domain :eHealthNetworkManagement ;
+                      rdfs:range :eHealthServices ;
+                      rdfs:comment "eHealthNetworkManagement manageeHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfClinics
+:partOfClinics rdf:type owl:ObjectProperty ;
+               rdfs:domain :Clinics ;
+               rdfs:range :PrivateOrganization ;
+               rdfs:comment "Clinics partOfClinics PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfCountryName
+:partOfCountryName rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CountryName ;
+                   rdfs:range :SoftwareProduct ;
+                   rdfs:comment "CountryName partOfCountryName SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfEnterpriseName
+:partOfEnterpriseName rdf:type owl:ObjectProperty ;
+                      rdfs:domain :EnterpriseName ;
+                      rdfs:range :SoftwareProduct ;
+                      rdfs:comment "EnterpriseName partOfEnterpriseName SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfGPHause
+:partOfGPHause rdf:type owl:ObjectProperty ;
+               rdfs:domain :GPHauseGeneralPractitioner ;
+               rdfs:range :PrivateOrganization ;
+               rdfs:comment "GPHause partOfGPHause PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfHospital
+:partOfHospital rdf:type owl:ObjectProperty ;
+                rdfs:domain :Hospitals ;
+                rdfs:range :PrivateOrganization ;
+                rdfs:comment "Hospital partOfHospital PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfInsuranceCompany
+:partOfInsuranceCompany rdf:type owl:ObjectProperty ;
+                        rdfs:domain :InsuranceCompany ;
+                        rdfs:range :PrivateOrganization ;
+                        rdfs:comment "InsuranceCompany partOfInsuranceCompany PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfLanguage
+:partOfLanguage rdf:type owl:ObjectProperty ;
+                rdfs:domain :Language ;
+                rdfs:range :SoftwareProduct ;
+                rdfs:comment "Language partOfLanguage SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfOrganizationName
+:partOfOrganizationName rdf:type owl:ObjectProperty ;
+                        rdfs:domain :OrganizationName ;
+                        rdfs:range :SoftwareProduct ;
+                        rdfs:comment "OrganizationName partOfOrganizationName SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#partOfPharmacy
+:partOfPharmacy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Pharmacy ;
+                rdfs:range :PrivateOrganization ;
+                rdfs:comment "Pharmacy partOfPharmacy PrivateOrganization" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#protectElectronicHealthRecord
+:protectElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Manager ;
+                               rdfs:range :ElectronicHealthRecord ;
+                               rdfs:comment "Manager protectElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supporteHealthNetworkManagement
+:supporteHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :eHealthNetworkRequirement ;
+                                 rdfs:range :eHealthNetworkManagement ;
+                                 rdfs:comment "eHealthNetworkRequirement supporteHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supporteHealthNetworkRequirement
+:supporteHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :eHealthNetworkManagement ;
+                                  rdfs:range :eHealthNetworkRequirement ;
+                                  rdfs:comment "eHealthNetworkManagement supporteHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsCitizenHealthcareFunction
+:supportsCitizenHealthcareFunction rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :ElectronicHealthRecord ;
+                                   rdfs:range :CitizenHealthcareFunction ;
+                                   rdfs:comment "ElectronicHealthRecord supportsCitizenHealthcareFunction CitizenHealthcareFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsCitizeneHealthService
+:supportsCitizeneHealthService rdf:type owl:ObjectProperty ;
+                               rdfs:domain :CitizenOrientedeHealthServices ;
+                               rdfs:range :eHealthServices ;
+                               rdfs:comment "CitizenOrientedeHealthService supportsCitizeneHealthService eHealthServices" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsElectronicHealthRecord
+:supportsElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                                rdfs:domain :eHealthNetworkManagement ;
+                                rdfs:range :ElectronicHealthRecord ;
+                                rdfs:comment "eHealthNetworkManagement supportsElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsHealthcareService
+:supportsHealthcareService rdf:type owl:ObjectProperty ;
+                           rdfs:domain :OrganizationalUnit ;
+                           rdfs:range :HealthcareServices ;
+                           rdfs:comment "OrganizationalUnit supportsHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsIdentificaton
+:supportsIdentificaton rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Identificaton ;
+                       rdfs:range :PatientPortal ;
+                       rdfs:comment "Identificaton supportsIdentificaton PatientPortal" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsOrganizationalUnit
+:supportsOrganizationalUnit rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ElectronicHealthRecord ;
+                            rdfs:range :OrganizationalUnit ;
+                            rdfs:comment "ElectronicHealthRecord supportsOrganizationalUnit OrganizationalUnit" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsSoftwareProduct
+:supportsSoftwareProduct rdf:type owl:ObjectProperty ;
+                         rdfs:domain :ElectronicHealthRecord ;
+                         rdfs:range :SoftwareProduct ;
+                         rdfs:comment "ElectronicHealthRecord supportsSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsTelemedicine
+:supportsTelemedicine rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Telemedicine ;
+                      rdfs:range :PatientPortal ;
+                      rdfs:comment "Telemedicine supportsTelemedicine PatientPortal" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseHealthFunction
+:supportseHealthFunction rdf:type owl:ObjectProperty ;
+                         rdfs:domain :eHealthServices ;
+                         rdfs:range :eHealthFunction ;
+                         rdfs:comment "eHealthService supportseHealthFunction eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseHealthNetworkManagement
+:supportseHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :MinistryOfHealth ;
+                                  rdfs:range :eHealthNetworkManagement ;
+                                  rdfs:comment "MinistryOfHealth supportseHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseHealthNetworkRequirement
+:supportseHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :MinistryOfHealth ;
+                                   rdfs:range :eHealthNetworkRequirement ;
+                                   rdfs:comment "MinistryOfHealth supportseHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseHealthService
+:supportseHealthService rdf:type owl:ObjectProperty ;
+                        rdfs:domain :OrganizationalUnit ;
+                        rdfs:range :eHealthServices ;
+                        rdfs:comment "OrganizationalUnit supportseHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseMinistryOfHealth
+:supportseMinistryOfHealth rdf:type owl:ObjectProperty ;
+                           rdfs:domain :MinistryOfHealth ;
+                           rdfs:range :eHealthFunction ;
+                           rdfs:comment "MinistryOfHealth supportseMinistryOfHealth eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportsePrescription
+:supportsePrescription rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ePrescription ;
+                       rdfs:range :PatientPortal ;
+                       rdfs:comment "ePrescription supportsePrescription PatientPortal" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#supportseReferral
+:supportseReferral rdf:type owl:ObjectProperty ;
+                   rdfs:domain :eReferral ;
+                   rdfs:range :PatientPortal ;
+                   rdfs:comment "eReferral supportseReferral PatientPortal" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateElectronicHealthRecord
+:updateElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                              rdfs:domain :UserGroup ;
+                              rdfs:range :ElectronicHealthRecord ;
+                              rdfs:comment "UserGroup updateElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatePatientPortal
+:updatePatientPortal rdf:type owl:ObjectProperty ;
+                     rdfs:domain :ElectronicHealthRecord ;
+                     rdfs:range :PatientPortal ;
+                     rdfs:comment "ElectronicHealthRecord updatePatientPortal PatientPortal" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateeHealthNetworkRequirement
+:updateeHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :eHealthNetworkManagement ;
+                                 rdfs:range :eHealthNetworkRequirement ;
+                                 rdfs:comment "eHealthNetworkManagement updateeHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesElectronicHealthRecord
+:updatesElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Manager ;
+                               rdfs:range :ElectronicHealthRecord ;
+                               rdfs:comment "Manager updatesElectronicHealthRecord  ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesGovernmentOrganziation
+:updatesGovernmentOrganziation rdf:type owl:ObjectProperty ;
+                               rdfs:domain :GovernmentOrganization ;
+                               rdfs:range :ElectronicHealthRecord ;
+                               rdfs:comment "GovernmentOrganziation updatesGovernmentOrganziation ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesHealthInformationManager
+:updatesHealthInformationManager rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :HealthInformationManager ;
+                                 rdfs:range :eHealthServices ;
+                                 rdfs:comment "HealthInformationManager updatesHealthInformationManager eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesHealthcareService
+:updatesHealthcareService rdf:type owl:ObjectProperty ;
+                          rdfs:domain :OrganizationalUnit ;
+                          rdfs:range :HealthcareServices ;
+                          rdfs:comment "OrganizationalUnit updatesHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesMinistryOfHealth
+:updatesMinistryOfHealth rdf:type owl:ObjectProperty ;
+                         rdfs:domain :MinistryOfHealth ;
+                         rdfs:range :eHealthFunction ;
+                         rdfs:comment "MinistryOfHealth updatesMinistryOfHealth eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesSoftwareProduct
+:updatesSoftwareProduct rdf:type owl:ObjectProperty ;
+                        rdfs:domain :EnterpriseOrganization ;
+                        rdfs:range :SoftwareProduct ;
+                        rdfs:comment "EnterpriseOrganization updatesSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updatesUserGroup
+:updatesUserGroup rdf:type owl:ObjectProperty ;
+                  rdfs:domain :HealthcareServices ;
+                  rdfs:range :UserGroup ;
+                  rdfs:comment "HealthcareService updatesUserGroup UserGroup" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateseHealthFunction
+:updateseHealthFunction rdf:type owl:ObjectProperty ;
+                        rdfs:domain :eHealthServices ;
+                        rdfs:range :eHealthFunction ;
+                        rdfs:comment "eHealthService updateseHealthFunction eHealthFunction" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateseHealthNetworkManagement
+:updateseHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :MinistryOfHealth ;
+                                 rdfs:range :eHealthNetworkManagement ;
+                                 rdfs:comment "MinistryOfHealth updateseHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateseHealthNetworkRequirement
+:updateseHealthNetworkRequirement rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :MinistryOfHealth ;
+                                  rdfs:range :eHealthNetworkRequirement ;
+                                  rdfs:comment "MinistryOfHealth updateseHealthNetworkRequirement eHealthNetworkRequirement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#updateseHealthService
+:updateseHealthService rdf:type owl:ObjectProperty ;
+                       rdfs:domain :eHealthServices ;
+                       rdfs:range :ElectronicHealthRecord ;
+                       rdfs:comment "eHealthService updateseHealthService ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#usesElectronicHealthRecord
+:usesElectronicHealthRecord rdf:type owl:ObjectProperty ;
+                            rdfs:domain :UserGroup ;
+                            rdfs:range :ElectronicHealthRecord ;
+                            rdfs:comment "UserGroup usesElectronicHealthRecord ElectronicHealthRecord" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#usesHealthcareService
+:usesHealthcareService rdf:type owl:ObjectProperty ;
+                       rdfs:domain :UserGroup ;
+                       rdfs:range :HealthcareServices ;
+                       rdfs:comment "UserGroup usesHealthcareService HealthcareService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#usesSoftwareProduct
+:usesSoftwareProduct rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Citizen ;
+                     rdfs:range :SoftwareProduct ;
+                     rdfs:comment "Citizen usesSoftwareProduct SoftwareProduct" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#usesUserGroup
+:usesUserGroup rdf:type owl:ObjectProperty ;
+               rdfs:domain :UserGroup ;
+               rdfs:range :eHealthServices ;
+               rdfs:comment "UserGroup usesUserGroup eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#useseHealthNetworkManagement
+:useseHealthNetworkManagement rdf:type owl:ObjectProperty ;
+                              rdfs:domain :eHealthServices ;
+                              rdfs:range :eHealthNetworkManagement ;
+                              rdfs:comment "eHealthService useseHealthNetworkManagement eHealthNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#useseHealthService
+:useseHealthService rdf:type owl:ObjectProperty ;
+                    rdfs:domain :OrganizationalUnit ;
+                    rdfs:range :eHealthServices ;
+                    rdfs:comment "OrganizationalUnit useseHealthService eHealthService" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#utilizesUserGroup
+:utilizesUserGroup rdf:type owl:ObjectProperty ;
+                   rdfs:domain :HealthcareServices ;
+                   rdfs:range :UserGroup ;
+                   rdfs:comment "HealthcareService utilizesUserGroup UserGroup" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology#ElectronicHealthRecord
+:ElectronicHealthRecord rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CarePlanGrouping
+:CarePlanGrouping rdf:type owl:Class ;
+                  rdfs:subClassOf :CitizenHealthcareFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Citizen
+:Citizen rdf:type owl:Class ;
+         rdfs:subClassOf :UserGroup .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction
+:CitizenHealthcareFunction rdf:type owl:Class ;
+                           rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenOrientedeHealthServices
+:CitizenOrientedeHealthServices rdf:type owl:Class ;
+                                rdfs:subClassOf :eHealthFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Clinics
+:Clinics rdf:type owl:Class ;
+         rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedFunction
+:ConditionBasedFunction rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedServices
+:ConditionBasedServices rdf:type owl:Class ;
+                        rdfs:subClassOf :eHealthFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CountryName
+:CountryName rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Covid-19Pandemic
+:Covid-19Pandemic rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/DiseaseManagementGrouping
+:DiseaseManagementGrouping rdf:type owl:Class ;
+                           rdfs:subClassOf :CitizenHealthcareFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseName
+:EnterpriseName rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseOrganization
+:EnterpriseOrganization rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GPHauseGeneralPractitioner
+:GPHauseGeneralPractitioner rdf:type owl:Class ;
+                            rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GovernmentOrganization
+:GovernmentOrganization rdf:type owl:Class ;
+                        rdfs:subClassOf :OrganizationalUnit .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthInformationManager
+:HealthInformationManager rdf:type owl:Class ;
+                          rdfs:subClassOf :Manager .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareEducation
+:HealthcareEducation rdf:type owl:Class ;
+                     rdfs:subClassOf :eHealthFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareProfessional
+:HealthcareProfessional rdf:type owl:Class ;
+                        rdfs:subClassOf :UserGroup .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareServices
+:HealthcareServices rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareSystemManager
+:HealthcareSystemManager rdf:type owl:Class ;
+                         rdfs:subClassOf :Manager .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Hospitals
+:Hospitals rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Identificaton
+:Identificaton rdf:type owl:Class ;
+               rdfs:subClassOf :eHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InsuranceCompany
+:InsuranceCompany rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InternalServices
+:InternalServices rdf:type owl:Class ;
+                  rdfs:subClassOf :eHealthFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Language
+:Language rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/LegalGroup
+:LegalGroup rdf:type owl:Class ;
+            rdfs:subClassOf :CitizenHealthcareFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Manager
+:Manager rdf:type owl:Class ;
+         rdfs:subClassOf :UserGroup .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/MinistryOfHealth
+:MinistryOfHealth rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/NationalHealthcareNetworkManagement
+:NationalHealthcareNetworkManagement rdf:type owl:Class ;
+                                     rdfs:subClassOf :eHealthNetworkRequirement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationName
+:OrganizationName rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationalUnit
+:OrganizationalUnit rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PatientPortal
+:PatientPortal rdf:type owl:Class ;
+               rdfs:subClassOf :eHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Pharmacy
+:Pharmacy rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/gfo-light/ObjectAggregate> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Privacy
+:Privacy rdf:type owl:Class ;
+         rdfs:subClassOf :eHealthNetworkRequirement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PrivateOrganization
+:PrivateOrganization rdf:type owl:Class ;
+                     rdfs:subClassOf :OrganizationalUnit .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForCitizens
+:ServicesForCitizens rdf:type owl:Class ;
+                     rdfs:subClassOf :CitizenOrientedeHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForProvidersAndHealthcareProfessionals
+:ServicesForProvidersAndHealthcareProfessionals rdf:type owl:Class ;
+                                                rdfs:subClassOf :CitizenOrientedeHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/SoftwareProduct
+:SoftwareProduct rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Standards
+:Standards rdf:type owl:Class ;
+           rdfs:subClassOf :eHealthNetworkRequirement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/StatusOfCitizen
+:StatusOfCitizen rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/gfo-light/Role> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Telemedicine
+:Telemedicine rdf:type owl:Class ;
+              rdfs:subClassOf :eHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/TreatmentGrouping
+:TreatmentGrouping rdf:type owl:Class ;
+                   rdfs:subClassOf :CitizenHealthcareFunction .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup
+:UserGroup rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/gfo-light/Object> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction
+:eHealthFunction rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/gfo-light/InformationObject> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthInfrastructure
+:eHealthInfrastructure rdf:type owl:Class ;
+                       rdfs:subClassOf :eHealthNetworkRequirement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkManagement
+:eHealthNetworkManagement rdf:type owl:Class ;
+                          rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement
+:eHealthNetworkRequirement rdf:type owl:Class ;
+                           rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices
+:eHealthServices rdf:type owl:Class ;
+                 rdfs:subClassOf :HealthcareServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ePrescription
+:ePrescription rdf:type owl:Class ;
+               rdfs:subClassOf :eHealthServices .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eReferral
+:eReferral rdf:type owl:Class ;
+           rdfs:subClassOf :eHealthServices .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

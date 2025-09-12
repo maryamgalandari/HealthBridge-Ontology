@@ -1,0 +1,992 @@
+@prefix : <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3> rdf:type owl:Ontology ;
+                                                                           rdfs:comment "This is domain ontology for National health information system and Health information network." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOf
+:isPartOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :HealthNetworkDevelopmentAndManagement ;
+          rdfs:range :eHealthInfrastructure ;
+          rdfs:comment "HealthNetworkDevelopmentAndManagement isPartOf eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfAccessAndAuthorizationCoordinationManagement
+:isPartOfAccessAndAuthorizationCoordinationManagement rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain :AccessAndAuthorizationCoordinationManagement ;
+                                                      rdfs:range :NationalHealthcareNetworkManagement ;
+                                                      rdfs:comment "AccessAndAuthorizationCoordinationManagement isPartOfAccessAndAuthorizationCoordinationManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfAdverseEventMonitoring
+:isPartOfAdverseEventMonitoring rdf:type owl:ObjectProperty ;
+                                rdfs:domain :AdverseEventMonitoring ;
+                                rdfs:range :NationalHealthcareNetworkManagement ;
+                                rdfs:comment "AdverseEventMonitoring isPartOfAdverseEventMonitoring NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfBroadBandConnectivity
+:isPartOfBroadBandConnectivity rdf:type owl:ObjectProperty ;
+                               rdfs:domain :BroadBandConnectivity ;
+                               rdfs:range :eHealthInfrastructure ;
+                               rdfs:comment "BroadBandConnectivity isPartOfBroadBandConnectivity eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfCitizenAndHealthcareStaffComplianceMonitoring
+:isPartOfCitizenAndHealthcareStaffComplianceMonitoring rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain :CitizenAndHealthcareStaffComplianceMonitoring ;
+                                                       rdfs:range :NationalHealthcareNetworkManagement ;
+                                                       rdfs:comment "CitizenAndHealthcareStaffComplianceMonitoring isPartOfCitizenAndHealthcareStaffComplianceMonitoring NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfClinicalManagementSystems
+:isPartOfClinicalManagementSystems rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :PracticeOrPatientAndClinicalManagementSystems ;
+                                   rdfs:range :eHealthInfrastructure ;
+                                   rdfs:comment "PracticeOrPatientAndClinicalManagementSystems isPartOfClinicalManagementSystems eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfConnectivityStandardsManagement
+:isPartOfConnectivityStandardsManagement rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :ConnectivityStandardsManagement ;
+                                         rdfs:range :eHealthInfrastructure ;
+                                         rdfs:comment "ConnectivityStandardsManagement isPartOfConnectivityStandardsManagement eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfContentManagement
+:isPartOfContentManagement rdf:type owl:ObjectProperty ;
+                           rdfs:domain :ContentManagement ;
+                           rdfs:range :NationalHealthcareNetworkManagement ;
+                           rdfs:comment "ContentManagement isPartOfContentManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDataCenterAndDatabaseManagement
+:isPartOfDataCenterAndDatabaseManagement rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :DataCenterAndDatabaseManagement ;
+                                         rdfs:range :HealthInformationSystemsManagement ;
+                                         rdfs:comment "DataCenterAndDatabaseManagement isPartOfDataCenterAndDatabaseManagement HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDataSecurityManagement
+:isPartOfDataSecurityManagement rdf:type owl:ObjectProperty ;
+                                rdfs:domain :DataSecurityManagement ;
+                                rdfs:range :NationalHealthcareNetworkManagement ;
+                                rdfs:comment "DataSecurityManagement isPartOfDataSecurityManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDatabasesAndMiddlewareManagement
+:isPartOfDatabasesAndMiddlewareManagement rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :DatabasesAndMiddlewareManagement ;
+                                          rdfs:range :NationalHealthcareNetworkManagement ;
+                                          rdfs:comment "DatabasesAndMiddlewareManagement isPartOfDatabasesAndMiddlewareManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring
+:isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain :DevelopAndManageInfrastructureForAdverseEventMonitoring ;
+                                                                 rdfs:range :eHealthServicesInfrastructure ;
+                                                                 rdfs:comment "DevelopAndManageInfrastructureForAdverseEventMonitoring isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForEConsultation
+:isPartOfDevelopAndManageInfrastructureForEConsultation rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :DevelopAndManageInfrastructureForEConsultation ;
+                                                        rdfs:range :eHealthServicesInfrastructure ;
+                                                        rdfs:comment "DevelopAndManageInfrastructureForEConsultation isPartOfDevelopAndManageInfrastructureForEConsultation eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForEPrescription
+:isPartOfDevelopAndManageInfrastructureForEPrescription rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :DevelopAndManageInfrastructureForEPrescription ;
+                                                        rdfs:range :eHealthServicesInfrastructure ;
+                                                        rdfs:comment "DevelopAndManageInfrastructureForEPrescription isPartOfDevelopAndManageInfrastructureForEPrescription eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForEReport
+:isPartOfDevelopAndManageInfrastructureForEReport rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :DevelopAndManageInfrastructureForEReport ;
+                                                  rdfs:range :eHealthServicesInfrastructure ;
+                                                  rdfs:comment "DevelopAndManageInfrastructureForEReport isPartOfDevelopAndManageInfrastructureForEReport eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForHomecare
+:isPartOfDevelopAndManageInfrastructureForHomecare rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :DevelopAndManageInfrastructureForHomecare ;
+                                                   rdfs:range :eHealthServicesInfrastructure ;
+                                                   rdfs:comment "DevelopAndManageInfrastructureForHomecare isPartOfDevelopAndManageInfrastructureForHomecare eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForReferrals
+:isPartOfDevelopAndManageInfrastructureForReferrals rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain :DevelopAndManageInfrastructureForReferrals ;
+                                                    rdfs:range :eHealthServicesInfrastructure ;
+                                                    rdfs:comment "DevelopAndManageInfrastructureForReferrals isPartOfDevelopAndManageInfrastructureForReferrals eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForTelemedicine
+:isPartOfDevelopAndManageInfrastructureForTelemedicine rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain :DevelopAndManageInfrastructureForTelemedicine ;
+                                                       rdfs:range :eHealthServicesInfrastructure ;
+                                                       rdfs:comment "DevelopAndManageInfrastructureForTelemedicine isPartOfDevelopAndManageInfrastructureForTelemedicine eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopAndManageInfrastructureForTelemonotoring
+:isPartOfDevelopAndManageInfrastructureForTelemonotoring rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain :DevelopAndManageInfrastructureForTelemonotoring ;
+                                                         rdfs:range :eHealthServicesInfrastructure ;
+                                                         rdfs:comment "DevelopAndManageInfrastructureForTelemonotoring isPartOfDevelopAndManageInfrastructureForTelemonotoring eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfDevelopInfrustructureForeHealthServices
+:isPartOfDevelopInfrustructureForeHealthServices rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :DevelopInfrustructureForeHealthServices ;
+                                                 rdfs:range :eHealthServicesInfrastructure ;
+                                                 rdfs:comment "DevelopInfrustructureForeHealthServices isPartOfDevelopInfrustructureForeHealthServices eHealthServicesInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfGovernmentDataExchangeManagement
+:isPartOfGovernmentDataExchangeManagement rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :GovernmentDataExchangeManagement ;
+                                          rdfs:range :HealthInformationManagementInInstitution ;
+                                          rdfs:comment "GovernmentDataExchangeManagement isPartOfGovernmentDataExchangeManagement HealthInformationManagementInInstitution" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthDataCatalogue
+:isPartOfHealthDataCatalogue rdf:type owl:ObjectProperty ;
+                             rdfs:domain :NationalHealthDataCatalogue ;
+                             rdfs:range :eHealthInfrastructure ;
+                             rdfs:comment "NationalHealthDataCatalogue isPartOfHealthDataCatalogue eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthDataTrafficMonitoringAndManagement
+:isPartOfHealthDataTrafficMonitoringAndManagement rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :HealthDataTrafficMonitoringAndManagement ;
+                                                  rdfs:range :eHealthInfrastructure ;
+                                                  rdfs:comment "HealthDataTrafficMonitoringAndManagement isPartOfHealthDataTrafficMonitoringAndManagement eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthITComplianceMonitoring
+:isPartOfHealthITComplianceMonitoring rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :HealthITComplianceMonitoring ;
+                                      rdfs:range :HealthInformationSystemsManagement ;
+                                      rdfs:comment "HealthITComplianceMonitoring isPartOfHealthITComplianceMonitoring HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthITRequirementsandAccreditation
+:isPartOfHealthITRequirementsandAccreditation rdf:type owl:ObjectProperty ;
+                                              rdfs:domain :HealthITRequirementsandAccreditation ;
+                                              rdfs:range :HealthInformationSystemsManagement ;
+                                              rdfs:comment "HealthITRequirementsandAccreditation isPartOfHealthITRequirementsandAccreditation HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInformationManagementInInstitution
+:isPartOfHealthInformationManagementInInstitution rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :HealthInformationManagementInInstitution ;
+                                                  rdfs:range :HealthInformationSystemsManagement ;
+                                                  rdfs:comment "HealthInformationManagementInInstitution isPartOfHealthInformationManagementInInstitution HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInformationNetworkManagementInstitutions
+:isPartOfHealthInformationNetworkManagementInstitutions rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :HealthInformationNetworkManagementInstitutions ;
+                                                        rdfs:range :HealthInformationSystemsManagement ;
+                                                        rdfs:comment "HealthInformationNetworkManagementInstitutions isPartOfHealthInformationNetworkManagementInstitutions HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInformationOperationsManagement
+:isPartOfHealthInformationOperationsManagement rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :HealthInformationOperationsManagement ;
+                                               rdfs:range :NationalHealthcareNetworkManagement ;
+                                               rdfs:comment "HealthInformationOperationsManagement isPartOfHealthInformationOperationsManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInformationResearch
+:isPartOfHealthInformationResearch rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :HealthInformationResearch ;
+                                   rdfs:range :NationalHealthcareNetworkManagement ;
+                                   rdfs:comment "HealthInformationResearch isPartOfHealthInformationResearch NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInformationSystemsManagement
+:isPartOfHealthInformationSystemsManagement rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :HealthInformationSystemsManagement ;
+                                            rdfs:range :NationalHealthcareNetworkManagement ;
+                                            rdfs:comment "HealthInformationSystemsManagement isPartOfHealthInformationSystemsManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthInsuranceDataExchangeManagement
+:isPartOfHealthInsuranceDataExchangeManagement rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :HealthInsuranceDataExchangeManagement ;
+                                               rdfs:range :HealthInformationManagementInInstitution ;
+                                               rdfs:comment "HealthInsuranceDataExchangeManagement isPartOfHealthInsuranceDataExchangeManagement HealthInformationManagementInInstitution" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthProgramDesignAndOptimization
+:isPartOfHealthProgramDesignAndOptimization rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :HealthProgramDesignAndOptimization ;
+                                            rdfs:range :NationalHealthcareNetworkManagement ;
+                                            rdfs:comment "HealthProgramDesignAndOptimization isPartOfHealthProgramDesignAndOptimization NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthSoftwareVendorAccreditation
+:isPartOfHealthSoftwareVendorAccreditation rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :HealthSoftwareVendorAccreditation ;
+                                           rdfs:range :HealthInformationSystemsManagement ;
+                                           rdfs:comment "HealthSoftwareVendorAccreditation isPartOfHealthSoftwareVendorAccreditation HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfHealthcarePolicyDevelopment
+:isPartOfHealthcarePolicyDevelopment rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :HealthcarePolicyDevelopment ;
+                                     rdfs:range :NationalHealthcareNetworkManagement ;
+                                     rdfs:comment "HealthcarePolicyDevelopment isPartOfHealthcarePolicyDevelopment NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfInterOrganizationalDataExchangetCoordination
+:isPartOfInterOrganizationalDataExchangetCoordination rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain :InterOrganizationalDataExchangetCoordination ;
+                                                      rdfs:range :HealthInformationManagementInInstitution ;
+                                                      rdfs:comment "InterOrganizationalDataExchangetCoordination isPartOfInterOrganizationalDataExchangetCoordination HealthInformationManagementInInstitution" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfIoTHealthDataManagement
+:isPartOfIoTHealthDataManagement rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :IoTHealthDataManagement ;
+                                 rdfs:range :HealthInformationSystemsManagement ;
+                                 rdfs:comment "IoTHealthDataManagement isPartOfIoTHealthDataManagement HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfLicenseManagement
+:isPartOfLicenseManagement rdf:type owl:ObjectProperty ;
+                           rdfs:domain :LicenseManagement ;
+                           rdfs:range :NationalHealthcareNetworkManagement ;
+                           rdfs:comment "LicenseManagement isPartOfLicenseManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfLogManagement
+:isPartOfLogManagement rdf:type owl:ObjectProperty ;
+                       rdfs:domain :LogManagement ;
+                       rdfs:range :NationalHealthcareNetworkManagement ;
+                       rdfs:comment "LogManagement isPartOfLogManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfManagementContinuityOfUserAccounts
+:isPartOfManagementContinuityOfUserAccounts rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :ManagementContinuityOfUserAccounts ;
+                                            rdfs:range :NationalHealthcareNetworkManagement ;
+                                            rdfs:comment "ManagementContinuityOfUserAccounts isPartOfManagementContinuityOfUserAccounts NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfManagingDataInfrastructureRequirementsInNewHospitals
+:isPartOfManagingDataInfrastructureRequirementsInNewHospitals rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain :ManagingDataInfrastructureRequirementsInNewHospitals ;
+                                                              rdfs:range :NationalHealthcareNetworkManagement ;
+                                                              rdfs:comment "ManagingDataInfrastructureRequirementsInNewHospitals isPartOfManagingDataInfrastructureRequirementsInNewHospitals NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfManagingDatabasePerformance
+:isPartOfManagingDatabasePerformance rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :ManagingDatabasePerformance ;
+                                     rdfs:range :NationalHealthcareNetworkManagement ;
+                                     rdfs:comment "ManagingDatabasePerformance isPartOfManagingDatabasePerformance NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfManagingHealthInformationNetworkInDisasterTime
+:isPartOfManagingHealthInformationNetworkInDisasterTime rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain :ManagingHealthInformationNetworkInDisasterTime ;
+                                                        rdfs:range :NationalHealthcareNetworkManagement ;
+                                                        rdfs:comment "ManagingHealthInformationNetworkInDisasterTime isPartOfManagingHealthInformationNetworkInDisasterTime NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfManagingIntegrationWithOtherStakeholders
+:isPartOfManagingIntegrationWithOtherStakeholders rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :ManagingIntegrationWithOtherStakeholders ;
+                                                  rdfs:range :NationalHealthcareNetworkManagement ;
+                                                  rdfs:comment "ManagingIntegrationWithOtherStakeholders isPartOfManagingIntegrationWithOtherStakeholders NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfMedDeviceRegistry
+:isPartOfMedDeviceRegistry rdf:type owl:ObjectProperty ;
+                           rdfs:domain :MedDeviceRegistryElectronicEnvironments ;
+                           rdfs:range :eHealthInfrastructure ;
+                           rdfs:comment "MedDeviceRegistryElectronicEnvironments isPartOfMedDeviceRegistry eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfMessageAndDataTransferStandardsManagement
+:isPartOfMessageAndDataTransferStandardsManagement rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :MessageAndDataTransferStandardsManagement ;
+                                                   rdfs:range :NationalHealthcareNetworkManagement ;
+                                                   rdfs:comment "MessageAndDataTransferStandardsManagement isPartOfMessageAndDataTransferStandardsManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfMobileHealthDataManagement
+:isPartOfMobileHealthDataManagement rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :MobileHealthDataManagement ;
+                                    rdfs:range :HealthInformationSystemsManagement ;
+                                    rdfs:comment "MobileHealthDataManagement isPartOfMobileHealthDataManagement HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfNationalAuthenticationService
+:isPartOfNationalAuthenticationService rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :NationalAuthenticationService ;
+                                       rdfs:range :eHealthInfrastructure ;
+                                       rdfs:comment "NationalAuthenticationService isPartOfNationalAuthenticationService eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfNationalProductCatalogue
+:isPartOfNationalProductCatalogue rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :NationalProductCatalogue ;
+                                  rdfs:range :MedDeviceRegistryElectronicEnvironments ;
+                                  rdfs:comment "NationalProductCatalogue isPartOfNationalProductCatalogue MedDeviceRegistryElectronicEnvironments" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfNetworkIssueTrackingAndResolution
+:isPartOfNetworkIssueTrackingAndResolution rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :NetworkIssueTrackingAndResolution ;
+                                           rdfs:range :eHealthInfrastructure ;
+                                           rdfs:comment "NetworkIssueTrackingAndResolution isPartOfNetworkIssueTrackingAndResolution eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfNetworkParticipantManagement
+:isPartOfNetworkParticipantManagement rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :NetworkParticipantManagement ;
+                                      rdfs:range :eHealthInfrastructure ;
+                                      rdfs:comment "NetworkParticipantManagement isPartOfNetworkParticipantManagement eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfPlanBasedOnResearchInInfrastructure
+:isPartOfPlanBasedOnResearchInInfrastructure rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork ;
+                                             rdfs:range :HealthInformationResearch ;
+                                             rdfs:comment "ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork isPartOfPlanBasedOnResearchInInfrastructure HealthInformationResearch" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfProductCatalogue
+:isPartOfProductCatalogue rdf:type owl:ObjectProperty ;
+                          rdfs:domain :NationalProductCatalogue ;
+                          rdfs:range :eHealthInfrastructure ;
+                          rdfs:comment "NationalProductCatalogue isPartOfProductCatalogue eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfProgramsPlanInInfrastructure
+:isPartOfProgramsPlanInInfrastructure rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :ProgramsPlanInInfrastructureOfe-HealthInformationNetwork ;
+                                      rdfs:range :HealthInformationResearch ;
+                                      rdfs:comment "ProgramsPlanInInfrastructureOfe-HealthInformationNetwork isPartOfProgramsPlanInInfrastructure HealthInformationResearch" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfProtectCyberSecurity
+:isPartOfProtectCyberSecurity rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ProtectCyberSecurity ;
+                              rdfs:range :NationalHealthcareNetworkManagement ;
+                              rdfs:comment "ProtectCyberSecurity isPartOfProtectCyberSecurity NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfProviderAndServicesDirectories
+:isPartOfProviderAndServicesDirectories rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :ProviderAndServicesDirectories ;
+                                        rdfs:range :eHealthInfrastructure ;
+                                        rdfs:comment "ProviderAndServicesDirectories isPartOfProviderAndServicesDirectories eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfPublicInstitutionDataExchangeManagement
+:isPartOfPublicInstitutionDataExchangeManagement rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :PublicInstitutionDataExchangeManagement ;
+                                                 rdfs:range :HealthInformationManagementInInstitution ;
+                                                 rdfs:comment "PublicInstitutionDataExchangeManagement isPartOfPublicInstitutionDataExchangeManagement HealthInformationManagementInInstitution" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfPublicSectorDataIntegrationManagement
+:isPartOfPublicSectorDataIntegrationManagement rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :PublicSectorDataIntegrationManagement ;
+                                               rdfs:range :HealthInformationManagementInInstitution ;
+                                               rdfs:comment "PublicSectorDataIntegrationManagement isPartOfPublicSectorDataIntegrationManagement HealthInformationManagementInInstitution" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfRemoteHealthDataManagement
+:isPartOfRemoteHealthDataManagement rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :RemoteHealthDataManagement ;
+                                    rdfs:range :HealthInformationSystemsManagement ;
+                                    rdfs:comment "RemoteHealthDataManagement isPartOfRemoteHealthDataManagement HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfRiskAnalysisAndManagement
+:isPartOfRiskAnalysisAndManagement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :RiskAnalysisAndManagement ;
+                                   rdfs:range :NationalHealthcareNetworkManagement ;
+                                   rdfs:comment "RiskAnalysisAndManagement isPartOfRiskAnalysisAndManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfRoleBasedAccessControlManagement
+:isPartOfRoleBasedAccessControlManagement rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :Role-BasedAccessControlManagement ;
+                                          rdfs:range :eHealthInfrastructure ;
+                                          rdfs:comment "Role-BasedAccessControlManagement isPartOfRoleBasedAccessControlManagement eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfSmartHealthDeviceDataIntegration
+:isPartOfSmartHealthDeviceDataIntegration rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :SmartHealthDeviceDataIntegration ;
+                                          rdfs:range :HealthInformationSystemsManagement ;
+                                          rdfs:comment "SmartHealthDeviceDataIntegration isPartOfSmartHealthDeviceDataIntegration HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfSoftwareLicenceManagement
+:isPartOfSoftwareLicenceManagement rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :SoftwareLicenceManagement ;
+                                   rdfs:range :NationalHealthcareNetworkManagement ;
+                                   rdfs:comment "SoftwareLicenceManagement isPartOfSoftwareLicenceManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfSofwareProductCatalogue
+:isPartOfSofwareProductCatalogue rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :NationalSofwareProductCatalogue ;
+                                 rdfs:range :eHealthInfrastructure ;
+                                 rdfs:comment "NationalSofwareProductCatalogue isPartOfSofwareProductCatalogue eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfSupervisionOfHealthDataExchange
+:isPartOfSupervisionOfHealthDataExchange rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :SupervisionOfHealthDataExchange ;
+                                         rdfs:range :HealthInformationSystemsManagement ;
+                                         rdfs:comment "SupervisionOfHealthDataExchange isPartOfSupervisionOfHealthDataExchange HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfSurveillanceAndAtRiskIdentification
+:isPartOfSurveillanceAndAtRiskIdentification rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :SurveillanceAndAtRiskIdentification ;
+                                             rdfs:range :NationalHealthcareNetworkManagement ;
+                                             rdfs:comment "SurveillanceAndAtRiskIdentification isPartOfSurveillanceAndAtRiskIdentification NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfUniversalHealthIdentifierService
+:isPartOfUniversalHealthIdentifierService rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :UniversalHealthIdentifierService ;
+                                          rdfs:range :eHealthInfrastructure ;
+                                          rdfs:comment "UniversalHealthIdentifierService isPartOfUniversalHealthIdentifierService eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfWearableAndSensorHealthDataManagement
+:isPartOfWearableAndSensorHealthDataManagement rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :WearableAndSensorHealthDataManagement ;
+                                               rdfs:range :HealthInformationSystemsManagement ;
+                                               rdfs:comment "WearableAndSensorHealthDataManagement isPartOfWearableAndSensorHealthDataManagement HealthInformationSystemsManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfeHealthInfrastructure
+:isPartOfeHealthInfrastructure rdf:type owl:ObjectProperty ;
+                               rdfs:domain :eHealthServicesInfrastructure ;
+                               rdfs:range :eHealthInfrastructure ;
+                               rdfs:comment "eHealthServicesInfrastructure isPartOfeHealthInfrastructure eHealthInfrastructure" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfeHealthInfrastructureInvestmentManagement
+:isPartOfeHealthInfrastructureInvestmentManagement rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :eHealthInfrastructureInvestmentManagement ;
+                                                   rdfs:range :NationalHealthcareNetworkManagement ;
+                                                   rdfs:comment "eHealthInfrastructureInvestmentManagement isPartOfeHealthInfrastructureInvestmentManagement NationalHealthcareNetworkManagement" .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#isPartOfeHealthIntegrationManagementWithOtherOrganizations
+:isPartOfeHealthIntegrationManagementWithOtherOrganizations rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain :eHealthIntegrationManagementWithOtherOrganizations ;
+                                                            rdfs:range :NationalHealthcareNetworkManagement ;
+                                                            rdfs:comment "eHealthIntegrationManagementWithOtherOrganizations isPartOfeHealthIntegrationManagementWithOtherOrganizations NationalHealthcareNetworkManagement" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#AccessAndAuthorizationCoordinationManagement
+:AccessAndAuthorizationCoordinationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#AdverseEventMonitoring
+:AdverseEventMonitoring rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#BroadBandConnectivity
+:BroadBandConnectivity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#CitizenAndHealthcareStaffComplianceMonitoring
+:CitizenAndHealthcareStaffComplianceMonitoring rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ClinicalCodingStandardsManagement
+:ClinicalCodingStandardsManagement rdf:type owl:Class ;
+                                   rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ConnectivityStandardsManagement
+:ConnectivityStandardsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ConsentManagementPolicy
+:ConsentManagementPolicy rdf:type owl:Class ;
+                         rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ContentManagement
+:ContentManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataBreachMonitoringAndManagement
+:DataBreachMonitoringAndManagement rdf:type owl:Class ;
+                                   rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataCenterAndDatabaseManagement
+:DataCenterAndDatabaseManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataPresentationStandardsManagement
+:DataPresentationStandardsManagement rdf:type owl:Class ;
+                                     rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataSecurityManagement
+:DataSecurityManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForAppointments
+:DataStructureForAppointments rdf:type owl:Class ;
+                              rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForCarePlans
+:DataStructureForCarePlans rdf:type owl:Class ;
+                           rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForEConcultation
+:DataStructureForEConcultation rdf:type owl:Class ;
+                               rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForEventSummaries
+:DataStructureForEventSummaries rdf:type owl:Class ;
+                                rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForHomecare
+:DataStructureForHomecare rdf:type owl:Class ;
+                          rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForNotifications
+:DataStructureForNotifications rdf:type owl:Class ;
+                               rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForOrderAndTestResults
+:DataStructureForOrderAndTestResults rdf:type owl:Class ;
+                                     rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForPrescriptions
+:DataStructureForPrescriptions rdf:type owl:Class ;
+                               rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForReal-timeClinicalData
+:DataStructureForReal-timeClinicalData rdf:type owl:Class ;
+                                       rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForReferrals
+:DataStructureForReferrals rdf:type owl:Class ;
+                           rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForTelemedicine
+:DataStructureForTelemedicine rdf:type owl:Class ;
+                              rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureForTelemonitoring
+:DataStructureForTelemonitoring rdf:type owl:Class ;
+                                rdfs:subClassOf :DataStructureStandardsManagementAndUpdate .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DataStructureStandardsManagementAndUpdate
+:DataStructureStandardsManagementAndUpdate rdf:type owl:Class ;
+                                           rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DatabasesAndMiddlewareManagement
+:DatabasesAndMiddlewareManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DentistInformationSystemGuide
+:DentistInformationSystemGuide rdf:type owl:Class ;
+                               rdfs:subClassOf :HealthInformationManagementSystemGuideCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForAdverseEventMonitoring
+:DevelopAndManageInfrastructureForAdverseEventMonitoring rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForEConsultation
+:DevelopAndManageInfrastructureForEConsultation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForEPrescription
+:DevelopAndManageInfrastructureForEPrescription rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForEReport
+:DevelopAndManageInfrastructureForEReport rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForHomecare
+:DevelopAndManageInfrastructureForHomecare rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForReferrals
+:DevelopAndManageInfrastructureForReferrals rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForTelemedicine
+:DevelopAndManageInfrastructureForTelemedicine rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopAndManageInfrastructureForTelemonotoring
+:DevelopAndManageInfrastructureForTelemonotoring rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopInfrustructureForeHealthServices
+:DevelopInfrustructureForeHealthServices rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#DevelopingAndUpdatingLegalFrameworkForHealthData
+:DevelopingAndUpdatingLegalFrameworkForHealthData rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#EducationProgramsForStaffForDataSecurity
+:EducationProgramsForStaffForDataSecurity rdf:type owl:Class ;
+                                          rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#GPReferalSystemGuide
+:GPReferalSystemGuide rdf:type owl:Class ;
+                      rdfs:subClassOf :HealthInformationManagementSystemGuideCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#GovernmentDataExchangeManagement
+:GovernmentDataExchangeManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthDataPrivacyAndSecurityManagement
+:HealthDataPrivacyAndSecurityManagement rdf:type owl:Class ;
+                                        rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthDataProtectionAndBackup
+:HealthDataProtectionAndBackup rdf:type owl:Class ;
+                               rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthDataTrafficMonitoringAndManagement
+:HealthDataTrafficMonitoringAndManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthITComplianceMonitoring
+:HealthITComplianceMonitoring rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthITRequirementsandAccreditation
+:HealthITRequirementsandAccreditation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationManagementInInstitution
+:HealthInformationManagementInInstitution rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationManagementSystemGuideCatalogue
+:HealthInformationManagementSystemGuideCatalogue rdf:type owl:Class ;
+                                                 rdfs:subClassOf :NationalHealthDataCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationNetworkManagementInstitutions
+:HealthInformationNetworkManagementInstitutions rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationOperationsManagement
+:HealthInformationOperationsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationResearch
+:HealthInformationResearch rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInformationSystemsManagement
+:HealthInformationSystemsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthInsuranceDataExchangeManagement
+:HealthInsuranceDataExchangeManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthNetworkDevelopmentAndManagement
+:HealthNetworkDevelopmentAndManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthProgramDesignAndOptimization
+:HealthProgramDesignAndOptimization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthSoftwareVendorAccreditation
+:HealthSoftwareVendorAccreditation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HealthcarePolicyDevelopment
+:HealthcarePolicyDevelopment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#HospitalInformationSystemGuide
+:HospitalInformationSystemGuide rdf:type owl:Class ;
+                                rdfs:subClassOf :HealthInformationManagementSystemGuideCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#IntegrationStandardsManagement
+:IntegrationStandardsManagement rdf:type owl:Class ;
+                                rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#InterOrganizationalDataExchangetCoordination
+:InterOrganizationalDataExchangetCoordination rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#IoTHealthDataManagement
+:IoTHealthDataManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#LicenseManagement
+:LicenseManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#LogManagement
+:LogManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagementContinuityOfUserAccounts
+:ManagementContinuityOfUserAccounts rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagingDataInfrastructureRequirementsInNewHospitals
+:ManagingDataInfrastructureRequirementsInNewHospitals rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagingDataSecurityStandards
+:ManagingDataSecurityStandards rdf:type owl:Class ;
+                               rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagingDatabasePerformance
+:ManagingDatabasePerformance rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagingHealthInformationNetworkInDisasterTime
+:ManagingHealthInformationNetworkInDisasterTime rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ManagingIntegrationWithOtherStakeholders
+:ManagingIntegrationWithOtherStakeholders rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MedDeviceRegistryElectronicEnvironments
+:MedDeviceRegistryElectronicEnvironments rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MedicalTerminologyStandardsManagement
+:MedicalTerminologyStandardsManagement rdf:type owl:Class ;
+                                       rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MessageAndDataTransferStandardsManagement
+:MessageAndDataTransferStandardsManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MessagingStandardsManagement
+:MessagingStandardsManagement rdf:type owl:Class ;
+                              rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MinimumDataModelInHealthInformaticsCatalogue
+:MinimumDataModelInHealthInformaticsCatalogue rdf:type owl:Class ;
+                                              rdfs:subClassOf :NationalHealthDataCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MinimumDataSetCatalogue
+:MinimumDataSetCatalogue rdf:type owl:Class ;
+                         rdfs:subClassOf :NationalHealthDataCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MinimumLoggingStandardsManagement
+:MinimumLoggingStandardsManagement rdf:type owl:Class ;
+                                   rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#MobileHealthDataManagement
+:MobileHealthDataManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalAuthenticationService
+:NationalAuthenticationService rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalHealthDataCatalogue
+:NationalHealthDataCatalogue rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalHealthDataDictionaryCatalogue
+:NationalHealthDataDictionaryCatalogue rdf:type owl:Class ;
+                                       rdfs:subClassOf :NationalHealthDataCatalogue .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalHealthcareNetworkManagement
+:NationalHealthcareNetworkManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalProductCatalogue
+:NationalProductCatalogue rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NationalSofwareProductCatalogue
+:NationalSofwareProductCatalogue rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NetworkIssueTrackingAndResolution
+:NetworkIssueTrackingAndResolution rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#NetworkParticipantManagement
+:NetworkParticipantManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#PhysicalNetwork
+:PhysicalNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :HealthNetworkDevelopmentAndManagement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#PracticeOrPatientAndClinicalManagementSystems
+:PracticeOrPatientAndClinicalManagementSystems rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#Privacy
+:Privacy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#PrivacyRegulationsManagement
+:PrivacyRegulationsManagement rdf:type owl:Class ;
+                              rdfs:subClassOf :Privacy .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork
+:ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ProgramsPlanInInfrastructureOfe-HealthInformationNetwork
+:ProgramsPlanInInfrastructureOfe-HealthInformationNetwork rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ProtectCyberSecurity
+:ProtectCyberSecurity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#ProviderAndServicesDirectories
+:ProviderAndServicesDirectories rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#PublicInstitutionDataExchangeManagement
+:PublicInstitutionDataExchangeManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#PublicSectorDataIntegrationManagement
+:PublicSectorDataIntegrationManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#RemoteHealthDataManagement
+:RemoteHealthDataManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#RiskAnalysisAndManagement
+:RiskAnalysisAndManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#Role-BasedAccessControlManagement
+:Role-BasedAccessControlManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SecurityStandardsManagement
+:SecurityStandardsManagement rdf:type owl:Class ;
+                             rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SmartHealthDeviceDataIntegration
+:SmartHealthDeviceDataIntegration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SoftwareAccreditationStandardsManagement
+:SoftwareAccreditationStandardsManagement rdf:type owl:Class ;
+                                          rdfs:subClassOf :Standards .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SoftwareLicenceManagement
+:SoftwareLicenceManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#Standards
+:Standards rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SupervisionOfHealthDataExchange
+:SupervisionOfHealthDataExchange rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#SurveillanceAndAtRiskIdentification
+:SurveillanceAndAtRiskIdentification rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#UniversalHealthIdentifierService
+:UniversalHealthIdentifierService rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#VirtualNetwork
+:VirtualNetwork rdf:type owl:Class ;
+                rdfs:subClassOf :HealthNetworkDevelopmentAndManagement .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#WearableAndSensorHealthDataManagement
+:WearableAndSensorHealthDataManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#eHealthInfrastructure
+:eHealthInfrastructure rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#eHealthInfrastructureInvestmentManagement
+:eHealthInfrastructureInvestmentManagement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#eHealthIntegrationManagementWithOtherOrganizations
+:eHealthIntegrationManagementWithOtherOrganizations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3#eHealthServicesInfrastructure
+:eHealthServicesInfrastructure rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
