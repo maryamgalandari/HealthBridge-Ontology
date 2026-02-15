@@ -1,0 +1,1946 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is core ontology for National health information system and personalhealth information system.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CarePlanGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CitizenOrientedeHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Clinics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ConditionBasedFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ConditionBasedServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CountryName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Covid-19Pandemic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DiseaseManagementGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EnterpriseName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EnterpriseOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GPHauseGeneralPractitioner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GovernmentOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HealthInformationManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HealthcareEducation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HealthcareProfessional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HealthcareServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HealthcareSystemManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hospitals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Identificaton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/InsuranceCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/InternalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LegalGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NationalHealthcareNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OrganizationName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OrganizationalUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PatientPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Privacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PrivateOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ServicesForCitizens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Standards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/StatusOfCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Telemedicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TreatmentGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/UserGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eHealthInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ePrescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/eReferral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FacilitatesSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartOfConditionBasedFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartOfEnterpriseOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PartOfStatusOfCitizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accessesHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accessesUserGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accesseseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collaboratesWitheHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooperatesWithHealthInformationManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooperatesWithHealthcareSystemManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createBasedOneHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createsHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createseHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createseHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createseHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependOnElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#designsSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#designseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enablesCitizenHealthcareFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enablesElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facilitateHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facilitates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#integratedIntoHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#integratedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interoperatesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interoperatesWitheHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociatedWithCitizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociatedWitheHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCreateBasedOneHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCreatedBasedOnHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCreatedBasedOnSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDefindedBasedOnNeedsOfCitizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesignedBasedOnHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDesignedBasedOnSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCitizenHealthcareFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfClinics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConditionBasedFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConditionBasedService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfCountryName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfGPHause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfHospital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfInsuranceCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfMinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfOrganizationName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfPharmacy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manageElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manageGovernmentOrganziation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manageeHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manageeHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfClinics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfCountryName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfEnterpriseName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfGPHause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfHospital"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfInsuranceCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfOrganizationName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfPharmacy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#protectElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supporteHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supporteHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsCitizenHealthcareFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsCitizeneHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsIdentificaton"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsOrganizationalUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseMinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsePrescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportseReferral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatePatientPortal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateeHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesGovernmentOrganziation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesHealthInformationManager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesMinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updatesUserGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateseHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateseHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateseHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updateseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesHealthcareService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesSoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesUserGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useseHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useseHealthService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#utilizesUserGroup"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/CarePlanGrouping"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Citizen"/>
+        <Class IRI="/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CitizenOrientedeHealthServices"/>
+        <Class IRI="/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ConditionBasedServices"/>
+        <Class IRI="/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DiseaseManagementGrouping"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GovernmentOrganization"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HealthInformationManager"/>
+        <Class IRI="/Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HealthcareEducation"/>
+        <Class IRI="/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HealthcareProfessional"/>
+        <Class IRI="/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HealthcareSystemManager"/>
+        <Class IRI="/Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Identificaton"/>
+        <Class IRI="/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/InternalServices"/>
+        <Class IRI="/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LegalGroup"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Manager"/>
+        <Class IRI="/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NationalHealthcareNetworkManagement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientPortal"/>
+        <Class IRI="/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Privacy"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PrivateOrganization"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ServicesForCitizens"/>
+        <Class IRI="/CitizenOrientedeHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ServicesForProvidersAndHealthcareProfessionals"/>
+        <Class IRI="/CitizenOrientedeHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Standards"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Telemedicine"/>
+        <Class IRI="/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TreatmentGrouping"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/eHealthInfrastructure"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/eHealthServices"/>
+        <Class IRI="/HealthcareServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ePrescription"/>
+        <Class IRI="/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/eReferral"/>
+        <Class IRI="/eHealthServices"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#FacilitatesSoftwareProduct"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartOfConditionBasedFunction"/>
+        <Class IRI="/ConditionBasedFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartOfEnterpriseOrganization"/>
+        <Class IRI="/EnterpriseOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PartOfStatusOfCitizen"/>
+        <Class IRI="/StatusOfCitizen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accessesHealthcareService"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accessesUserGroup"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accesseseHealthService"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collaboratesWitheHealthService"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooperatesWithHealthInformationManager"/>
+        <Class IRI="/HealthInformationManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooperatesWithHealthcareSystemManager"/>
+        <Class IRI="/HealthcareSystemManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createBasedOneHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createsHealthcareService"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createseHealthFunction"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createseHealthNetworkManagement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createseHealthNetworkRequirement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dependOnElectronicHealthRecord"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#designsSoftwareProduct"/>
+        <Class IRI="/EnterpriseOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#designseHealthService"/>
+        <Class IRI="/HealthInformationManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enablesCitizenHealthcareFunction"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enablesElectronicHealthRecord"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#facilitateHealthcareService"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#facilitates"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="/Citizen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMinistryOfHealth"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implementsSoftwareProduct"/>
+        <Class IRI="/EnterpriseOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implementseHealthService"/>
+        <Class IRI="/HealthInformationManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#integratedIntoHealthcareService"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#integratedWith"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interoperatesWith"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interoperatesWitheHealthService"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssociatedWithCitizen"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssociatedWitheHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCreateBasedOneHealthFunction"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCreatedBasedOnHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCreatedBasedOnSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDefindedBasedOnNeedsOfCitizen"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDesignedBasedOnHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDesignedBasedOnSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCitizenHealthcareFunction"/>
+        <Class IRI="/Citizen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfClinics"/>
+        <Class IRI="/Clinics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfConditionBasedFunction"/>
+        <Class IRI="/Covid-19Pandemic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfConditionBasedService"/>
+        <Class IRI="/Covid-19Pandemic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfCountryName"/>
+        <Class IRI="/CountryName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfGPHause"/>
+        <Class IRI="/GPHauseGeneralPractitioner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfHospital"/>
+        <Class IRI="/Hospitals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfInsuranceCompany"/>
+        <Class IRI="/InsuranceCompany"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfLanguage"/>
+        <Class IRI="/Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfMinistryOfHealth"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfOrganizationName"/>
+        <Class IRI="/OrganizationName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOfPharmacy"/>
+        <Class IRI="/Pharmacy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeElectronicHealthRecord"/>
+        <Class IRI="/Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manageElectronicHealthRecord"/>
+        <Class IRI="/Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manageGovernmentOrganziation"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manageeHealthNetworkRequirement"/>
+        <Class IRI="/HealthcareSystemManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manageeHealthService"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfClinics"/>
+        <Class IRI="/Clinics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfCountryName"/>
+        <Class IRI="/CountryName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfEnterpriseName"/>
+        <Class IRI="/EnterpriseName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfGPHause"/>
+        <Class IRI="/GPHauseGeneralPractitioner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfHospital"/>
+        <Class IRI="/Hospitals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfInsuranceCompany"/>
+        <Class IRI="/InsuranceCompany"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfLanguage"/>
+        <Class IRI="/Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfOrganizationName"/>
+        <Class IRI="/OrganizationName"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfPharmacy"/>
+        <Class IRI="/Pharmacy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#protectElectronicHealthRecord"/>
+        <Class IRI="/Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supporteHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supporteHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsCitizenHealthcareFunction"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsCitizeneHealthService"/>
+        <Class IRI="/CitizenOrientedeHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsElectronicHealthRecord"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsHealthcareService"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsIdentificaton"/>
+        <Class IRI="/Identificaton"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsOrganizationalUnit"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsSoftwareProduct"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsTelemedicine"/>
+        <Class IRI="/Telemedicine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseHealthFunction"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseHealthNetworkManagement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseHealthNetworkRequirement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseHealthService"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseMinistryOfHealth"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsePrescription"/>
+        <Class IRI="/ePrescription"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportseReferral"/>
+        <Class IRI="/eReferral"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateElectronicHealthRecord"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatePatientPortal"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateeHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesElectronicHealthRecord"/>
+        <Class IRI="/Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesGovernmentOrganziation"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesHealthInformationManager"/>
+        <Class IRI="/HealthInformationManager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesHealthcareService"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesMinistryOfHealth"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesSoftwareProduct"/>
+        <Class IRI="/EnterpriseOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updatesUserGroup"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateseHealthFunction"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateseHealthNetworkManagement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateseHealthNetworkRequirement"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updateseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesElectronicHealthRecord"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesHealthcareService"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesSoftwareProduct"/>
+        <Class IRI="/Citizen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesUserGroup"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useseHealthNetworkManagement"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useseHealthService"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#utilizesUserGroup"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#FacilitatesSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartOfConditionBasedFunction"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartOfEnterpriseOrganization"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PartOfStatusOfCitizen"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accessesHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accessesUserGroup"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accesseseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collaboratesWitheHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooperatesWithHealthInformationManager"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooperatesWithHealthcareSystemManager"/>
+        <Class IRI="/MinistryOfHealth"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createBasedOneHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createsHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createseHealthFunction"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createseHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createseHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dependOnElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#designsSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#designseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enablesCitizenHealthcareFunction"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enablesElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#facilitateHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#facilitates"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFunction"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMinistryOfHealth"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implementsSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implementseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#integratedIntoHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#integratedWith"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interoperatesWith"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interoperatesWitheHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssociatedWithCitizen"/>
+        <Class IRI="/Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssociatedWitheHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCreateBasedOneHealthFunction"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCreatedBasedOnHealthcareService"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCreatedBasedOnSoftwareProduct"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDefindedBasedOnNeedsOfCitizen"/>
+        <Class IRI="/Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDesignedBasedOnHealthcareService"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDesignedBasedOnSoftwareProduct"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCitizenHealthcareFunction"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfClinics"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfConditionBasedFunction"/>
+        <Class IRI="/ConditionBasedFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfConditionBasedService"/>
+        <Class IRI="/ConditionBasedFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfCountryName"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfGPHause"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfHospital"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfInsuranceCompany"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfLanguage"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfMinistryOfHealth"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfOrganizationName"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfPharmacy"/>
+        <Class IRI="/GovernmentOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manageElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manageGovernmentOrganziation"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manageeHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manageeHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfClinics"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfCountryName"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfEnterpriseName"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfGPHause"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfHospital"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfInsuranceCompany"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfLanguage"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfOrganizationName"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfPharmacy"/>
+        <Class IRI="/PrivateOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#protectElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supporteHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supporteHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsCitizenHealthcareFunction"/>
+        <Class IRI="/CitizenHealthcareFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsCitizeneHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsIdentificaton"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsOrganizationalUnit"/>
+        <Class IRI="/OrganizationalUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsTelemedicine"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseHealthFunction"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseMinistryOfHealth"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsePrescription"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportseReferral"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatePatientPortal"/>
+        <Class IRI="/PatientPortal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateeHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesGovernmentOrganziation"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesHealthInformationManager"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesMinistryOfHealth"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updatesUserGroup"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateseHealthFunction"/>
+        <Class IRI="/eHealthFunction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateseHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateseHealthNetworkRequirement"/>
+        <Class IRI="/eHealthNetworkRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updateseHealthService"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesElectronicHealthRecord"/>
+        <Class IRI="#ElectronicHealthRecord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesHealthcareService"/>
+        <Class IRI="/HealthcareServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesSoftwareProduct"/>
+        <Class IRI="/SoftwareProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesUserGroup"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#useseHealthNetworkManagement"/>
+        <Class IRI="/eHealthNetworkManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#useseHealthService"/>
+        <Class IRI="/eHealthServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#utilizesUserGroup"/>
+        <Class IRI="/UserGroup"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FacilitatesSoftwareProduct</IRI>
+        <Literal>PatientPortal FacilitatesSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PartOfConditionBasedFunction</IRI>
+        <Literal>ConditionBasedFunction PartOfConditionBasedFunction CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PartOfEnterpriseOrganization</IRI>
+        <Literal>EnterpriseOrganization PartOfEnterpriseOrganization PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PartOfStatusOfCitizen</IRI>
+        <Literal>StatusOfCitizen PartOfStatusOfCitizen CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accessesHealthcareService</IRI>
+        <Literal>UserGroup accessesHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accessesUserGroup</IRI>
+        <Literal>HealthcareService accessesUserGroup UserGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accesseseHealthService</IRI>
+        <Literal>UserGroup accesseseHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#collaboratesWitheHealthService</IRI>
+        <Literal>ElectronicHealthRecord collaboratesWitheHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cooperatesWithHealthInformationManager</IRI>
+        <Literal>HealthInformationManager cooperatesWithHealthInformationManager MinistryOfHealth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cooperatesWithHealthcareSystemManager</IRI>
+        <Literal>HealthcareSystemManager cooperatesWithHealthcareSystemManager MinistryOfHealth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createBasedOneHealthNetworkRequirement</IRI>
+        <Literal>eHealthNetworkManagement createBasedOneHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createsHealthcareService</IRI>
+        <Literal>OrganizationalUnit createsHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createseHealthFunction</IRI>
+        <Literal>MinistryOfHealth createseHealthFunction eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createseHealthNetworkManagement</IRI>
+        <Literal>MinistryOfHealth createseHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createseHealthNetworkRequirement</IRI>
+        <Literal>MinistryOfHealth createseHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dependOnElectronicHealthRecord</IRI>
+        <Literal>HealthcareService dependOnElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#designsSoftwareProduct</IRI>
+        <Literal>EnterpriseOrganization designsSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#designseHealthService</IRI>
+        <Literal>HealthInformationManager designseHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#enablesCitizenHealthcareFunction</IRI>
+        <Literal>CitizenHealthcareFunction enablesCitizenHealthcareFunction ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#enablesElectronicHealthRecord</IRI>
+        <Literal>eHealthService enablesElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#facilitateHealthcareService</IRI>
+        <Literal>ElectronicHealthRecord facilitateHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#facilitates</IRI>
+        <Literal>ElectronicHealthRecord facilitates UserGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFunction</IRI>
+        <Literal>Citizen hasFunction CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMinistryOfHealth</IRI>
+        <Literal>MinistryOfHealth hasMinistryOfHealth PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implementsSoftwareProduct</IRI>
+        <Literal>EnterpriseOrganization implementsSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implementseHealthService</IRI>
+        <Literal>HealthInformationManager implementseHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#integratedIntoHealthcareService</IRI>
+        <Literal>ElectronicHealthRecord integratedIntoHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#integratedWith</IRI>
+        <Literal>OrganizationalUnit integratedWith ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interoperatesWith</IRI>
+        <Literal>ElectronicHealthRecord interoperatesWith eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#interoperatesWitheHealthService</IRI>
+        <Literal>ElectronicHealthRecord interoperatesWitheHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAssociatedWith</IRI>
+        <Literal>eHealthFunction isAssociatedWith eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAssociatedWithCitizen</IRI>
+        <Literal>CitizenHealthcareFunction isAssociatedWithCitizen Citizen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAssociatedWitheHealthNetworkManagement</IRI>
+        <Literal>eHealthNetworkRequirement isAssociatedWitheHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCreateBasedOneHealthFunction</IRI>
+        <Literal>eHealthService isCreateBasedOneHealthFunction eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCreatedBasedOnHealthcareService</IRI>
+        <Literal>HealthcareService isCreatedBasedOnHealthcareService CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCreatedBasedOnSoftwareProduct</IRI>
+        <Literal>SoftwareProduct isCreatedBasedOnSoftwareProduct CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDefindedBasedOnNeedsOfCitizen</IRI>
+        <Literal>CitizenHealthcareFunction isDefindedBasedOnNeedsOfCitizen Citizen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDesignedBasedOnHealthcareService</IRI>
+        <Literal>HealthcareService isDesignedBasedOnHealthcareService CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDesignedBasedOnSoftwareProduct</IRI>
+        <Literal>SoftwareProduct isDesignedBasedOnSoftwareProduct CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCitizenHealthcareFunction</IRI>
+        <Literal>Citizen isPartOfCitizenHealthcareFunction CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfClinics</IRI>
+        <Literal>Clinics isPartOfClinics GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfConditionBasedFunction</IRI>
+        <Literal>Covid-19Pandemic isPartOfConditionBasedFunction ConditionBasedFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfConditionBasedService</IRI>
+        <Literal>Covid-19Pandemic isPartOfConditionBasedService ConditionBasedService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfCountryName</IRI>
+        <Literal>CountryName isPartOfCountryName HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfGPHause</IRI>
+        <Literal>GPHause isPartOfGPHause GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfHospital</IRI>
+        <Literal>Hospital isPartOfHospital  GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfInsuranceCompany</IRI>
+        <Literal>InsuranceCompany isPartOfInsuranceCompany GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfLanguage</IRI>
+        <Literal>Language isPartOfLanguage HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfMinistryOfHealth</IRI>
+        <Literal>MinistryOfHealth isPartOfMinistryOfHealth GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfOrganizationName</IRI>
+        <Literal>OrganizationName isPartOfOrganizationName HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartOfPharmacy</IRI>
+        <Literal>Pharmacy isPartOfPharmacy GovernmentOrganziation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#madeElectronicHealthRecord</IRI>
+        <Literal>Manager madeElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manageElectronicHealthRecord</IRI>
+        <Literal>Manager manageElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manageGovernmentOrganziation</IRI>
+        <Literal>GovernmentOrganziation manageGovernmentOrganziation ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manageeHealthNetworkRequirement</IRI>
+        <Literal>HealthInformationManager manageeHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manageeHealthService</IRI>
+        <Literal>eHealthNetworkManagement manageeHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfClinics</IRI>
+        <Literal>Clinics partOfClinics PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfCountryName</IRI>
+        <Literal>CountryName partOfCountryName SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfEnterpriseName</IRI>
+        <Literal>EnterpriseName partOfEnterpriseName SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfGPHause</IRI>
+        <Literal>GPHause partOfGPHause PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfHospital</IRI>
+        <Literal>Hospital partOfHospital PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfInsuranceCompany</IRI>
+        <Literal>InsuranceCompany partOfInsuranceCompany PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfLanguage</IRI>
+        <Literal>Language partOfLanguage SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfOrganizationName</IRI>
+        <Literal>OrganizationName partOfOrganizationName SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfPharmacy</IRI>
+        <Literal>Pharmacy partOfPharmacy PrivateOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#protectElectronicHealthRecord</IRI>
+        <Literal>Manager protectElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supporteHealthNetworkManagement</IRI>
+        <Literal>eHealthNetworkRequirement supporteHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supporteHealthNetworkRequirement</IRI>
+        <Literal>eHealthNetworkManagement supporteHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsCitizenHealthcareFunction</IRI>
+        <Literal>ElectronicHealthRecord supportsCitizenHealthcareFunction CitizenHealthcareFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsCitizeneHealthService</IRI>
+        <Literal>CitizenOrientedeHealthService supportsCitizeneHealthService eHealthServices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsElectronicHealthRecord</IRI>
+        <Literal>eHealthNetworkManagement supportsElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsHealthcareService</IRI>
+        <Literal>OrganizationalUnit supportsHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsIdentificaton</IRI>
+        <Literal>Identificaton supportsIdentificaton PatientPortal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsOrganizationalUnit</IRI>
+        <Literal>ElectronicHealthRecord supportsOrganizationalUnit OrganizationalUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsSoftwareProduct</IRI>
+        <Literal>ElectronicHealthRecord supportsSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsTelemedicine</IRI>
+        <Literal>Telemedicine supportsTelemedicine PatientPortal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseHealthFunction</IRI>
+        <Literal>eHealthService supportseHealthFunction eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseHealthNetworkManagement</IRI>
+        <Literal>MinistryOfHealth supportseHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseHealthNetworkRequirement</IRI>
+        <Literal>MinistryOfHealth supportseHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseHealthService</IRI>
+        <Literal>OrganizationalUnit supportseHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseMinistryOfHealth</IRI>
+        <Literal>MinistryOfHealth supportseMinistryOfHealth eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportsePrescription</IRI>
+        <Literal>ePrescription supportsePrescription PatientPortal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supportseReferral</IRI>
+        <Literal>eReferral supportseReferral PatientPortal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateElectronicHealthRecord</IRI>
+        <Literal>UserGroup updateElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatePatientPortal</IRI>
+        <Literal>ElectronicHealthRecord updatePatientPortal PatientPortal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateeHealthNetworkRequirement</IRI>
+        <Literal>eHealthNetworkManagement updateeHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesElectronicHealthRecord</IRI>
+        <Literal>Manager updatesElectronicHealthRecord  ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesGovernmentOrganziation</IRI>
+        <Literal>GovernmentOrganziation updatesGovernmentOrganziation ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesHealthInformationManager</IRI>
+        <Literal>HealthInformationManager updatesHealthInformationManager eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesHealthcareService</IRI>
+        <Literal>OrganizationalUnit updatesHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesMinistryOfHealth</IRI>
+        <Literal>MinistryOfHealth updatesMinistryOfHealth eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesSoftwareProduct</IRI>
+        <Literal>EnterpriseOrganization updatesSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updatesUserGroup</IRI>
+        <Literal>HealthcareService updatesUserGroup UserGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateseHealthFunction</IRI>
+        <Literal>eHealthService updateseHealthFunction eHealthFunction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateseHealthNetworkManagement</IRI>
+        <Literal>MinistryOfHealth updateseHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateseHealthNetworkRequirement</IRI>
+        <Literal>MinistryOfHealth updateseHealthNetworkRequirement eHealthNetworkRequirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#updateseHealthService</IRI>
+        <Literal>eHealthService updateseHealthService ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesElectronicHealthRecord</IRI>
+        <Literal>UserGroup usesElectronicHealthRecord ElectronicHealthRecord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesHealthcareService</IRI>
+        <Literal>UserGroup usesHealthcareService HealthcareService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesSoftwareProduct</IRI>
+        <Literal>Citizen usesSoftwareProduct SoftwareProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesUserGroup</IRI>
+        <Literal>UserGroup usesUserGroup eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useseHealthNetworkManagement</IRI>
+        <Literal>eHealthService useseHealthNetworkManagement eHealthNetworkManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useseHealthService</IRI>
+        <Literal>OrganizationalUnit useseHealthService eHealthService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#utilizesUserGroup</IRI>
+        <Literal>HealthcareService utilizesUserGroup UserGroup</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
