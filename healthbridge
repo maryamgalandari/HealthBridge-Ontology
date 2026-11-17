@@ -1,0 +1,1497 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/maryam/ontologies/2026/10/healthbridge"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/maryam/ontologies/2026/10/healthbridge">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForCitizens"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/beforeDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PhysicalNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMeets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/OwnershipHealthData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/processPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ChildrenCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/EducationProgramsForStaffForDataSecurity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/hasTemporalPartDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/MinistryOfHealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/ObjectPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataModelInHealthInformaticsCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/TreatmentGrouping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/situationPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/dateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/StatusOfCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasProcessPart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/startedByDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEConcultation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMetBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DisabilityCare"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SecurityStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDataSecurityStandards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SoftwareAccreditationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedicalTerminologyStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Standards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ForeignPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/resultsFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/TimeEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ePrescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataBreachMonitoringAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareSystemManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MessagingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyEqual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStarts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEventSummaries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Privacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopingAndUpdatingLegalFrameworkForHealthData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/leadsTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForAppointments"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/before"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyStartsOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PrivacyRegulationsManagement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/afterDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/DiseaseManagementGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataDictionaryCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Hospitals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/PregnantWomenCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PatientPortal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ConsentManagementPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasInnerBoundary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyPassesThrough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PrivateOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataPrivacyAndSecurityManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Chronoid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareEducation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/TreatmentGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForPrescriptions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/CohesiveSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/SituationAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ManagePersonalHealthData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InternalServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareProfessional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasNaturalBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumLoggingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/LegalGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GovernmentOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relatedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataPresentationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InsuranceCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/TimeBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/ProcessAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Ordering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataProtectionAndBackup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ElectronicConsultation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Educate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenOrientedeHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Covid-19Pandemic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasSituationPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForProvidersAndHealthcareProfessionals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/NationalHealthcareNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemedicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForCarePlans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/GPReferalSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/during"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/innerBoundaryOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ChronicDiseaseManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Telemedicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ElectronicHealthRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlaps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/plays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlappedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthInformationManager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Attributive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Entity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/finishedByDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ElderlyPeopleCare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DentistInformationSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eReferral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/partOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/IntegrationStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/MedicationManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Clinics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemonitoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GPHauseGeneralPractitioner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/ObjectBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Identificaton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyEndsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReal-timeClinicalData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Point"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/after"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DiseaseManagementGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/VirtualNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/qualityOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CarePlanGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Surface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/SoftwareProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/FindPlaceForTestAndPharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Nutrition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataSetCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HospitalInformationSystemGuide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/CohesiveProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/gfo-core/containsDateTimeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/TestResultReceiptAndAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/FindADoctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-core/Individual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationalUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForNotifications"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStartedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForHomecare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/AppointmentBookingAndManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/LegalGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/playedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReferrals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ClinicalCodingStandardsManagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForOrderAndTestResults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Manager"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/naturalBoundaryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyContains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Identification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CountryName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/boundaryOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Prevention"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CarePlanGrouping"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Citizen"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenOrientedeHealthServices"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Clinics"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedFunction"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ConditionBasedServices"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CountryName"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Covid-19Pandemic"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/DiseaseManagementGrouping"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ElectronicHealthRecord"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseName"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/EnterpriseOrganization"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GPHauseGeneralPractitioner"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/GovernmentOrganization"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthInformationManager"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareEducation"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareProfessional"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareServices"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareSystemManager"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Hospitals"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Identificaton"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InsuranceCompany"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/InternalServices"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Language"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/LegalGroup"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Manager"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/MinistryOfHealth"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/NationalHealthcareNetworkManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationName"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationalUnit"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PatientPortal"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Pharmacy"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Privacy"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/PrivateOrganization"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/OrganizationalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForCitizens"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenOrientedeHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ServicesForProvidersAndHealthcareProfessionals"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenOrientedeHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/SoftwareProduct"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Standards"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/StatusOfCitizen"/>
+        <Class IRI="https://w3id.org/gfo-light/Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/Telemedicine"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/TreatmentGrouping"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/CitizenHealthcareFunction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/UserGroup"/>
+        <Class IRI="https://w3id.org/gfo-light/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthFunction"/>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthInfrastructure"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkManagement"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthNetworkRequirement"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/HealthcareServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/ePrescription"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eReferral"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/eHealthServices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ClinicalCodingStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ConsentManagementPolicy"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataBreachMonitoringAndManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataPresentationStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForAppointments"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForCarePlans"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEConcultation"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEventSummaries"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForHomecare"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForNotifications"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForOrderAndTestResults"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForPrescriptions"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReal-timeClinicalData"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReferrals"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemedicine"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemonitoring"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DentistInformationSystemGuide"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopingAndUpdatingLegalFrameworkForHealthData"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/EducationProgramsForStaffForDataSecurity"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/GPReferalSystemGuide"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataPrivacyAndSecurityManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataProtectionAndBackup"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HospitalInformationSystemGuide"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/IntegrationStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDataSecurityStandards"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedicalTerminologyStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MessagingStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataModelInHealthInformaticsCatalogue"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataSetCatalogue"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumLoggingStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataDictionaryCatalogue"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PhysicalNetwork"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PrivacyRegulationsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SecurityStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SoftwareAccreditationStandardsManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/VirtualNetwork"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/AppointmentBookingAndManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ChildrenCare"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ChronicDiseaseManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DiseaseManagementGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DisabilityCare"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DiseaseManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/DiseaseManagementGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Educate"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ElderlyPeopleCare"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ElectronicConsultation"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/FindADoctor"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/FindPlaceForTestAndPharmacy"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ForeignPerson"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Identification"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/LegalGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/ManagePersonalHealthData"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/LegalGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/MedicationManagement"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Nutrition"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Ordering"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/OwnershipHealthData"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/LegalGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/PregnantWomenCare"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/StatusOfCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Prevention"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/TestResultReceiptAndAnalysis"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/CarePlanGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/Treatment"/>
+        <Class IRI="http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/TreatmentGrouping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Attributive"/>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Category"/>
+        <Class IRI="https://w3id.org/gfo-core/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Chronoid"/>
+        <Class IRI="https://w3id.org/gfo-core/TimeEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+        <Class IRI="https://w3id.org/gfo-core/Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Individual"/>
+        <Class IRI="https://w3id.org/gfo-core/Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/Situation"/>
+        <Class IRI="https://w3id.org/gfo-core/ConcreteIndividual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/TimeBoundary"/>
+        <Class IRI="https://w3id.org/gfo-core/TimeEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-core/TimeEntity"/>
+        <Class IRI="https://w3id.org/gfo-core/Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/CohesiveProcess"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/CohesiveSituation"/>
+        <Class IRI="https://w3id.org/gfo-core/Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/InformationObject"/>
+        <Class IRI="https://w3id.org/gfo-light/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Line"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectBoundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Object"/>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/ObjectAggregate"/>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/ObjectBoundary"/>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/ObjectPart"/>
+        <Class IRI="https://w3id.org/gfo-core/Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Point"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectBoundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/ProcessAggregate"/>
+        <Class IRI="https://w3id.org/gfo-core/Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Quality"/>
+        <Class IRI="https://w3id.org/gfo-core/Attributive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Relator"/>
+        <Class IRI="https://w3id.org/gfo-core/Attributive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Role"/>
+        <Class IRI="https://w3id.org/gfo-core/Attributive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/SituationAggregate"/>
+        <Class IRI="https://w3id.org/gfo-core/Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/gfo-light/Surface"/>
+        <Class IRI="https://w3id.org/gfo-light/ObjectBoundary"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/after"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/after"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/before"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/before"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/resultsFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/leadsTo"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causes"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/leadsTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/causes"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/resultsFrom"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/during"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/during"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasProcessPart"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasProcessPart"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/partOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasSituationPart"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasSituationPart"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/partOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/processPartOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/partOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/processPartOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasPart"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/situationPartOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/partOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/situationPartOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasPart"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyContains"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyContains"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyEqual"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishes"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyFinishes"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMeets"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMeets"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMetBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyMetBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlappedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlappedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlaps"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyOverlaps"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyRelatedWith"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStartedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStartedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStarts"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporalPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/temporallyStarts"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasTemporalPart"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasInnerBoundary"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasBoundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasInnerBoundary"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-light/boundaryOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasNaturalBoundary"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasBoundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasNaturalBoundary"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-light/boundaryOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasQuality"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/hasQuality"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/innerBoundaryOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/boundaryOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/innerBoundaryOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-light/hasBoundary"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/naturalBoundaryOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/boundaryOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/naturalBoundaryOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-light/hasBoundary"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/playedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/playedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/plays"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/plays"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/qualityOf"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/qualityOf"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relatedBy"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relatedBy"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relates"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-core/attributiveOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/relates"/>
+        <ObjectInverseOf>
+            <ObjectProperty IRI="https://w3id.org/gfo-core/hasAttributive"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyEndsOn"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyPassesThrough"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyStartsOn"/>
+        <ObjectProperty IRI="https://w3id.org/gfo-light/spatiallyPassesThrough"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/afterDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/dateTimeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/beforeDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/dateTimeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/containsDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/hasTemporalPartDateTimeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/finishedByDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/hasTemporalPartDateTimeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/hasTemporalPartDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/dateTimeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/gfo-core/startedByDateTimeValue"/>
+        <DataProperty IRI="https://w3id.org/gfo-core/hasTemporalPartDateTimeValue"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

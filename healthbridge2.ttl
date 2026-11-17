@@ -1,0 +1,3405 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hb-core: <http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology/> .
+@prefix gfo-light: <https://w3id.org/gfo-light/> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/Coreontology>
+    a owl:Ontology ;
+    rdfs:comment "This is core ontology for National health information system and personalhealth information system." ;
+    owl:imports <https://w3id.org/gfo-light/release/2025-04-07> .
+
+hb-core:CarePlanGrouping
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenHealthcareFunction .
+
+hb-core:Citizen
+    a owl:Class ;
+    rdfs:subClassOf hb-core:UserGroup .
+
+hb-core:CitizenHealthcareFunction
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:CitizenOrientedeHealthServices
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthFunction .
+
+hb-core:Clinics
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:ConditionBasedFunction
+    a owl:Class ;
+    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+hb-core:ConditionBasedServices
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthFunction .
+
+hb-core:CountryName
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:Covid-19Pandemic
+    a owl:Class ;
+    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+hb-core:DiseaseManagementGrouping
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenHealthcareFunction .
+
+hb-core:ElectronicHealthRecord
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:EnterpriseName
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:EnterpriseOrganization
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:FacilitatesSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "PatientPortal FacilitatesSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:PatientPortal ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:GPHauseGeneralPractitioner
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:GovernmentOrganization
+    a owl:Class ;
+    rdfs:subClassOf hb-core:OrganizationalUnit .
+
+hb-core:HealthInformationManager
+    a owl:Class ;
+    rdfs:subClassOf hb-core:Manager .
+
+hb-core:HealthcareEducation
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthFunction .
+
+hb-core:HealthcareProfessional
+    a owl:Class ;
+    rdfs:subClassOf hb-core:UserGroup .
+
+hb-core:HealthcareServices
+    a owl:Class ;
+    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+hb-core:HealthcareSystemManager
+    a owl:Class ;
+    rdfs:subClassOf hb-core:Manager .
+
+hb-core:Hospitals
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:Identificaton
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthServices .
+
+hb-core:InsuranceCompany
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:InternalServices
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthFunction .
+
+hb-core:Language
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:LegalGroup
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenHealthcareFunction .
+
+hb-core:Manager
+    a owl:Class ;
+    rdfs:subClassOf hb-core:UserGroup .
+
+hb-core:MinistryOfHealth
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:NationalHealthcareNetworkManagement
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthNetworkRequirement .
+
+hb-core:OrganizationName
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:OrganizationalUnit
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:PartOfConditionBasedFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "ConditionBasedFunction PartOfConditionBasedFunction CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:ConditionBasedFunction ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:PartOfEnterpriseOrganization
+    a owl:ObjectProperty ;
+    rdfs:comment "EnterpriseOrganization PartOfEnterpriseOrganization PrivateOrganization" ;
+    rdfs:domain hb-core:EnterpriseOrganization ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:PartOfStatusOfCitizen
+    a owl:ObjectProperty ;
+    rdfs:comment "StatusOfCitizen PartOfStatusOfCitizen CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:StatusOfCitizen ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:PatientPortal
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthServices .
+
+hb-core:Pharmacy
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:ObjectAggregate .
+
+hb-core:Privacy
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthNetworkRequirement .
+
+hb-core:PrivateOrganization
+    a owl:Class ;
+    rdfs:subClassOf hb-core:OrganizationalUnit .
+
+hb-core:ServicesForCitizens
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenOrientedeHealthServices .
+
+hb-core:ServicesForProvidersAndHealthcareProfessionals
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenOrientedeHealthServices .
+
+hb-core:SoftwareProduct
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:Standards
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthNetworkRequirement .
+
+hb-core:StatusOfCitizen
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:Role .
+
+hb-core:Telemedicine
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthServices .
+
+hb-core:TreatmentGrouping
+    a owl:Class ;
+    rdfs:subClassOf hb-core:CitizenHealthcareFunction .
+
+hb-core:UserGroup
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:Object .
+
+hb-core:accessesHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup accessesHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:accessesUserGroup
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService accessesUserGroup UserGroup" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:UserGroup .
+
+hb-core:accesseseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup accesseseHealthService eHealthService" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:collaboratesWitheHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord collaboratesWitheHealthService eHealthService" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:cooperatesWithHealthInformationManager
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManager cooperatesWithHealthInformationManager MinistryOfHealth" ;
+    rdfs:domain hb-core:HealthInformationManager ;
+    rdfs:range hb-core:MinistryOfHealth .
+
+hb-core:cooperatesWithHealthcareSystemManager
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareSystemManager cooperatesWithHealthcareSystemManager MinistryOfHealth" ;
+    rdfs:domain hb-core:HealthcareSystemManager ;
+    rdfs:range hb-core:MinistryOfHealth .
+
+hb-core:createBasedOneHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkManagement createBasedOneHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:eHealthNetworkManagement ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:createsHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit createsHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:createseHealthFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth createseHealthFunction eHealthFunction" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:createseHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth createseHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:createseHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth createseHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:dependOnElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService dependOnElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:designsSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "EnterpriseOrganization designsSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:EnterpriseOrganization ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:designseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManager designseHealthService eHealthService" ;
+    rdfs:domain hb-core:HealthInformationManager ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:eHealthFunction
+    a owl:Class ;
+    rdfs:subClassOf gfo-light:InformationObject .
+
+hb-core:eHealthInfrastructure
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthNetworkRequirement .
+
+hb-core:eHealthNetworkManagement
+    a owl:Class ;
+    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+hb-core:eHealthNetworkRequirement
+    a owl:Class ;
+    rdfs:subClassOf <https://w3id.org/gfo-core/Process> .
+
+hb-core:eHealthServices
+    a owl:Class ;
+    rdfs:subClassOf hb-core:HealthcareServices .
+
+hb-core:ePrescription
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthServices .
+
+hb-core:eReferral
+    a owl:Class ;
+    rdfs:subClassOf hb-core:eHealthServices .
+
+hb-core:enablesCitizenHealthcareFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "CitizenHealthcareFunction enablesCitizenHealthcareFunction ElectronicHealthRecord" ;
+    rdfs:domain hb-core:CitizenHealthcareFunction ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:enablesElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService enablesElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:facilitateHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord facilitateHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:facilitates
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord facilitates UserGroup" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:UserGroup .
+
+hb-core:hasFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "Citizen hasFunction CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:Citizen ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:hasMinistryOfHealth
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth hasMinistryOfHealth PrivateOrganization" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:implementsSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "EnterpriseOrganization implementsSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:EnterpriseOrganization ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:implementseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManager implementseHealthService eHealthService" ;
+    rdfs:domain hb-core:HealthInformationManager ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:integratedIntoHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord integratedIntoHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:integratedWith
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit integratedWith ElectronicHealthRecord" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:interoperatesWith
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord interoperatesWith eHealthNetworkManagement" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:interoperatesWitheHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord interoperatesWitheHealthService eHealthService" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:isAssociatedWith
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthFunction isAssociatedWith eHealthService" ;
+    rdfs:domain hb-core:eHealthFunction ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:isAssociatedWithCitizen
+    a owl:ObjectProperty ;
+    rdfs:comment "CitizenHealthcareFunction isAssociatedWithCitizen Citizen" ;
+    rdfs:domain hb-core:CitizenHealthcareFunction ;
+    rdfs:range hb-core:Citizen .
+
+hb-core:isAssociatedWitheHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkRequirement isAssociatedWitheHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:eHealthNetworkRequirement ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:isCreateBasedOneHealthFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService isCreateBasedOneHealthFunction eHealthFunction" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:isCreatedBasedOnHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService isCreatedBasedOnHealthcareService CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:isCreatedBasedOnSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "SoftwareProduct isCreatedBasedOnSoftwareProduct CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:SoftwareProduct ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:isDefindedBasedOnNeedsOfCitizen
+    a owl:ObjectProperty ;
+    rdfs:comment "CitizenHealthcareFunction isDefindedBasedOnNeedsOfCitizen Citizen" ;
+    rdfs:domain hb-core:eHealthFunction ;
+    rdfs:range hb-core:Citizen .
+
+hb-core:isDesignedBasedOnHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService isDesignedBasedOnHealthcareService CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:isDesignedBasedOnSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "SoftwareProduct isDesignedBasedOnSoftwareProduct CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:SoftwareProduct ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:isPartOfCitizenHealthcareFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "Citizen isPartOfCitizenHealthcareFunction CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:Citizen ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:isPartOfClinics
+    a owl:ObjectProperty ;
+    rdfs:comment "Clinics isPartOfClinics GovernmentOrganziation" ;
+    rdfs:domain hb-core:Clinics ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:isPartOfConditionBasedFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "Covid-19Pandemic isPartOfConditionBasedFunction ConditionBasedFunction" ;
+    rdfs:domain hb-core:Covid-19Pandemic ;
+    rdfs:range hb-core:ConditionBasedFunction .
+
+hb-core:isPartOfConditionBasedService
+    a owl:ObjectProperty ;
+    rdfs:comment "Covid-19Pandemic isPartOfConditionBasedService ConditionBasedService" ;
+    rdfs:domain hb-core:Covid-19Pandemic ;
+    rdfs:range hb-core:ConditionBasedFunction .
+
+hb-core:isPartOfCountryName
+    a owl:ObjectProperty ;
+    rdfs:comment "CountryName isPartOfCountryName HealthcareService" ;
+    rdfs:domain hb-core:CountryName ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:isPartOfGPHause
+    a owl:ObjectProperty ;
+    rdfs:comment "GPHause isPartOfGPHause GovernmentOrganziation" ;
+    rdfs:domain hb-core:GPHauseGeneralPractitioner ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:isPartOfHospital
+    a owl:ObjectProperty ;
+    rdfs:comment "Hospital isPartOfHospital  GovernmentOrganziation" ;
+    rdfs:domain hb-core:Hospitals ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:isPartOfInsuranceCompany
+    a owl:ObjectProperty ;
+    rdfs:comment "InsuranceCompany isPartOfInsuranceCompany GovernmentOrganziation" ;
+    rdfs:domain hb-core:InsuranceCompany ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:isPartOfLanguage
+    a owl:ObjectProperty ;
+    rdfs:comment "Language isPartOfLanguage HealthcareService" ;
+    rdfs:domain hb-core:Language ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:isPartOfMinistryOfHealth
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth isPartOfMinistryOfHealth GovernmentOrganziation" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:isPartOfOrganizationName
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationName isPartOfOrganizationName HealthcareService" ;
+    rdfs:domain hb-core:OrganizationName ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:isPartOfPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "Pharmacy isPartOfPharmacy GovernmentOrganziation" ;
+    rdfs:domain hb-core:Pharmacy ;
+    rdfs:range hb-core:GovernmentOrganization .
+
+hb-core:madeElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "Manager madeElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:Manager ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:manageElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "Manager manageElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:Manager ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:manageGovernmentOrganziation
+    a owl:ObjectProperty ;
+    rdfs:comment "GovernmentOrganziation manageGovernmentOrganziation ElectronicHealthRecord" ;
+    rdfs:domain hb-core:GovernmentOrganization ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:manageeHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManager manageeHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:HealthcareSystemManager ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:manageeHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkManagement manageeHealthService eHealthService" ;
+    rdfs:domain hb-core:eHealthNetworkManagement ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:partOfClinics
+    a owl:ObjectProperty ;
+    rdfs:comment "Clinics partOfClinics PrivateOrganization" ;
+    rdfs:domain hb-core:Clinics ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:partOfCountryName
+    a owl:ObjectProperty ;
+    rdfs:comment "CountryName partOfCountryName SoftwareProduct" ;
+    rdfs:domain hb-core:CountryName ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:partOfEnterpriseName
+    a owl:ObjectProperty ;
+    rdfs:comment "EnterpriseName partOfEnterpriseName SoftwareProduct" ;
+    rdfs:domain hb-core:EnterpriseName ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:partOfGPHause
+    a owl:ObjectProperty ;
+    rdfs:comment "GPHause partOfGPHause PrivateOrganization" ;
+    rdfs:domain hb-core:GPHauseGeneralPractitioner ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:partOfHospital
+    a owl:ObjectProperty ;
+    rdfs:comment "Hospital partOfHospital PrivateOrganization" ;
+    rdfs:domain hb-core:Hospitals ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:partOfInsuranceCompany
+    a owl:ObjectProperty ;
+    rdfs:comment "InsuranceCompany partOfInsuranceCompany PrivateOrganization" ;
+    rdfs:domain hb-core:InsuranceCompany ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:partOfLanguage
+    a owl:ObjectProperty ;
+    rdfs:comment "Language partOfLanguage SoftwareProduct" ;
+    rdfs:domain hb-core:Language ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:partOfOrganizationName
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationName partOfOrganizationName SoftwareProduct" ;
+    rdfs:domain hb-core:OrganizationName ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:partOfPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "Pharmacy partOfPharmacy PrivateOrganization" ;
+    rdfs:domain hb-core:Pharmacy ;
+    rdfs:range hb-core:PrivateOrganization .
+
+hb-core:protectElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "Manager protectElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:Manager ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:supporteHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkRequirement supporteHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:eHealthNetworkRequirement ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:supporteHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkManagement supporteHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:eHealthNetworkManagement ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:supportsCitizenHealthcareFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord supportsCitizenHealthcareFunction CitizenHealthcareFunction" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:CitizenHealthcareFunction .
+
+hb-core:supportsCitizeneHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "CitizenOrientedeHealthService supportsCitizeneHealthService eHealthServices" ;
+    rdfs:domain hb-core:CitizenOrientedeHealthServices ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:supportsElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkManagement supportsElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:eHealthNetworkManagement ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:supportsHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit supportsHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:supportsIdentificaton
+    a owl:ObjectProperty ;
+    rdfs:comment "Identificaton supportsIdentificaton PatientPortal" ;
+    rdfs:domain hb-core:Identificaton ;
+    rdfs:range hb-core:PatientPortal .
+
+hb-core:supportsOrganizationalUnit
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord supportsOrganizationalUnit OrganizationalUnit" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:OrganizationalUnit .
+
+hb-core:supportsSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord supportsSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:supportsTelemedicine
+    a owl:ObjectProperty ;
+    rdfs:comment "Telemedicine supportsTelemedicine PatientPortal" ;
+    rdfs:domain hb-core:Telemedicine ;
+    rdfs:range hb-core:PatientPortal .
+
+hb-core:supportseHealthFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService supportseHealthFunction eHealthFunction" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:supportseHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth supportseHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:supportseHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth supportseHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:supportseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit supportseHealthService eHealthService" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:supportseMinistryOfHealth
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth supportseMinistryOfHealth eHealthFunction" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:supportsePrescription
+    a owl:ObjectProperty ;
+    rdfs:comment "ePrescription supportsePrescription PatientPortal" ;
+    rdfs:domain hb-core:ePrescription ;
+    rdfs:range hb-core:PatientPortal .
+
+hb-core:supportseReferral
+    a owl:ObjectProperty ;
+    rdfs:comment "eReferral supportseReferral PatientPortal" ;
+    rdfs:domain hb-core:eReferral ;
+    rdfs:range hb-core:PatientPortal .
+
+hb-core:updateElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup updateElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:updatePatientPortal
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicHealthRecord updatePatientPortal PatientPortal" ;
+    rdfs:domain hb-core:ElectronicHealthRecord ;
+    rdfs:range hb-core:PatientPortal .
+
+hb-core:updateeHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthNetworkManagement updateeHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:eHealthNetworkManagement ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:updatesElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "Manager updatesElectronicHealthRecord  ElectronicHealthRecord" ;
+    rdfs:domain hb-core:Manager ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:updatesGovernmentOrganziation
+    a owl:ObjectProperty ;
+    rdfs:comment "GovernmentOrganziation updatesGovernmentOrganziation ElectronicHealthRecord" ;
+    rdfs:domain hb-core:GovernmentOrganization ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:updatesHealthInformationManager
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManager updatesHealthInformationManager eHealthService" ;
+    rdfs:domain hb-core:HealthInformationManager ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:updatesHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit updatesHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:updatesMinistryOfHealth
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth updatesMinistryOfHealth eHealthFunction" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:updatesSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "EnterpriseOrganization updatesSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:EnterpriseOrganization ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:updatesUserGroup
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService updatesUserGroup UserGroup" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:UserGroup .
+
+hb-core:updateseHealthFunction
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService updateseHealthFunction eHealthFunction" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:eHealthFunction .
+
+hb-core:updateseHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth updateseHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:updateseHealthNetworkRequirement
+    a owl:ObjectProperty ;
+    rdfs:comment "MinistryOfHealth updateseHealthNetworkRequirement eHealthNetworkRequirement" ;
+    rdfs:domain hb-core:MinistryOfHealth ;
+    rdfs:range hb-core:eHealthNetworkRequirement .
+
+hb-core:updateseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService updateseHealthService ElectronicHealthRecord" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:usesElectronicHealthRecord
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup usesElectronicHealthRecord ElectronicHealthRecord" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:ElectronicHealthRecord .
+
+hb-core:usesHealthcareService
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup usesHealthcareService HealthcareService" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:HealthcareServices .
+
+hb-core:usesSoftwareProduct
+    a owl:ObjectProperty ;
+    rdfs:comment "Citizen usesSoftwareProduct SoftwareProduct" ;
+    rdfs:domain hb-core:Citizen ;
+    rdfs:range hb-core:SoftwareProduct .
+
+hb-core:usesUserGroup
+    a owl:ObjectProperty ;
+    rdfs:comment "UserGroup usesUserGroup eHealthService" ;
+    rdfs:domain hb-core:UserGroup ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:useseHealthNetworkManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthService useseHealthNetworkManagement eHealthNetworkManagement" ;
+    rdfs:domain hb-core:eHealthServices ;
+    rdfs:range hb-core:eHealthNetworkManagement .
+
+hb-core:useseHealthService
+    a owl:ObjectProperty ;
+    rdfs:comment "OrganizationalUnit useseHealthService eHealthService" ;
+    rdfs:domain hb-core:OrganizationalUnit ;
+    rdfs:range hb-core:eHealthServices .
+
+hb-core:utilizesUserGroup
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareService utilizesUserGroup UserGroup" ;
+    rdfs:domain hb-core:HealthcareServices ;
+    rdfs:range hb-core:UserGroup .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction>
+    a owl:Ontology ;
+    rdfs:comment "This is domain ontology for National health information system and eHealth services." .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AccountingManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AlertsMonitoringAndManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AnnouncementAndNewsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AppointmentBookingAndManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CarePlanManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CareProviderHealthLearningPortal>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ChronicDiseaseManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ClinicalDecisionSupport>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CommunicationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ConditionBasedServices>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ConsumerHealthLearningPortal>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CoronaPreventionManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportForMedicationsPrescribing>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportForTestOrdering>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForHealthcareStaff>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForManager>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForManagers>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DentalCareManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DigitalRegistrations>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DisabilityCitizenServices>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DiseaseManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EAmbulance>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicConsultations>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicDocumentManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicIdentifiers>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EmergencyAutomationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EquipmentTrackingManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareStaffLearningPortal>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HumanResourceManagementSystem>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/MedicationsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/MedicationsPrescription>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PatientPortal>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PrescriptionsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PsychologicalConsultationForPatients>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PsychologicalConsultationForStaff>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PublicHealthInfotmationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ReferralManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ReportManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ResourceManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ScreeningManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CitizenOrientedeHealthServises> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Telemedicine>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TestResultsAndAnalysisManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TrackingCitizenManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TrackingStaffManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TreatmentTrackingSystem>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/VaccinationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForPatients>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForStaff>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eSignature>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfAccountingManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AccountingManagement isPartOfAccountingManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AccountingManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfAlertsMonitoringAndManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AlertsMonitoringAndManagement isPartOfAlertsMonitoringAndManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AlertsMonitoringAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfAnnouncementAndNewsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AnnouncementAndNewsManagement isPartOfAnnouncementAndNewsManagement HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AnnouncementAndNewsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfAppointmentBookingAndManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AppointmentBookingAndManagement isPartOfAppointmentBookingAndManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AppointmentBookingAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfCarePlanManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement isPartOfCarePlanManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CarePlanManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfCareProviderHealthLearningPortal>
+    a owl:ObjectProperty ;
+    rdfs:comment "CareProviderHealthLearningPortal isPartOfCareProviderHealthLearningPortal HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CareProviderHealthLearningPortal> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfChronicDiseaseManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ChronicDiseaseManagement isPartOfChronicDiseaseManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ChronicDiseaseManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfClinicalDecisionSupport>
+    a owl:ObjectProperty ;
+    rdfs:comment "ClinicalDecisionSupport isPartOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ClinicalDecisionSupport> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfCommunicationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "CommunicationManagement isPartOfCommunicationManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CommunicationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfConsumerHealthLearningPortal>
+    a owl:ObjectProperty ;
+    rdfs:comment "ConsumerHealthLearningPortal isPartOfConsumerHealthLearningPortal HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ConsumerHealthLearningPortal> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfCoronaPreventionManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "CoronaPreventionManagement isPartOfCoronaPreventionManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/CoronaPreventionManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfCovid-19Pandemic>
+    a owl:ObjectProperty ;
+    rdfs:comment "Covid-19Pandemic isPartOfCovid-19Pandemic ConditionBasedServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ConditionBasedServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDecisionSupportForMedicationsPrescribing>
+    a owl:ObjectProperty ;
+    rdfs:comment "DecisionSupportForMedicationsPrescribing isPartOfDecisionSupportForMedicationsPrescribing ServicesForProvidersAndHealthcareProfessionals" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportForMedicationsPrescribing> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDecisionSupportSystemForHealthcareStaff>
+    a owl:ObjectProperty ;
+    rdfs:comment "DecisionSupportSystemForHealthcareStaff isPartOfDecisionSupportSystemForHealthcareStaff InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForHealthcareStaff> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDecisionSupportSystemForManager>
+    a owl:ObjectProperty ;
+    rdfs:comment "DecisionSupportSystemForManager isPartOfDecisionSupportSystemForManager Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForManager> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDecisionSupportSystemForManagers>
+    a owl:ObjectProperty ;
+    rdfs:comment "DecisionSupportSystemForManagers isPartOfDecisionSupportSystemForManagers ServicesForProvidersAndHealthcareProfessionals" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DecisionSupportSystemForManagers> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDentalCareManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DentalCareManagement isPartOfDentalCareManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DentalCareManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDigitalRegistrations>
+    a owl:ObjectProperty ;
+    rdfs:comment "DigitalRegistrations isPartOfDigitalRegistrations InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DigitalRegistrations> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDisabilityCitizenServices>
+    a owl:ObjectProperty ;
+    rdfs:comment "DisabilityCitizenServices isPartOfDisabilityCitizenServices ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DisabilityCitizenServices> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfDiseaseManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DiseaseManagement isPartOfDiseaseManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DiseaseManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfEAmbulance>
+    a owl:ObjectProperty ;
+    rdfs:comment "EAmbulance isPartOfEAmbulance ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EAmbulance> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfElectronicConsultations>
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultations isPartOfElectronicConsultations ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicConsultations> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfElectronicDocumentManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicDocumentManagement isPartOfElectronicDocumentManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicDocumentManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfElectronicIdentifiers>
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicIdentifiers isPartOfElectronicIdentifiers ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicIdentifiers> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfEmergencyAutomationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "EmergencyAutomationManagement isPartOfEmergencyAutomationManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EmergencyAutomationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfEquipmentTrackingManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "EquipmentTrackingManagement isPartOfEquipmentTrackingManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/EquipmentTrackingManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfHealthcareStaffLearningPortal>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcareStaffLearningPortal isPartOfHealthcareStaffLearningPortal HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareStaffLearningPortal> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfHumanResourceManagementSystem>
+    a owl:ObjectProperty ;
+    rdfs:comment "HumanResourceManagementSystem isPartOfHumanResourceManagementSystem InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HumanResourceManagementSystem> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfMedicationsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationsManagement isPartOfMedicationsManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/MedicationsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfMedicationsPrescription>
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationsPrescription isPartOfMedicationsPrescription ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/MedicationsPrescription> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfPatientPortal>
+    a owl:ObjectProperty ;
+    rdfs:comment "PatientPortal isPartOfPatientPortal ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PatientPortal> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfPrescriptionsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "PrescriptionsManagement isPartOfPrescriptionsManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PrescriptionsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfPsychologicalConsultationForPatients>
+    a owl:ObjectProperty ;
+    rdfs:comment "PsychologicalConsultationForPatients isPartOfPsychologicalConsultationForPatients Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PsychologicalConsultationForPatients> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfPsychologicalConsultationForStaff>
+    a owl:ObjectProperty ;
+    rdfs:comment "PsychologicalConsultationForStaff isPartOfPsychologicalConsultationForStaff Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PsychologicalConsultationForStaff> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfPublicHealthInfotmationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "PublicHealthInfotmationManagement isPartOfPublicHealthInfotmationManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/PublicHealthInfotmationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfReferralManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ReferralManagement isPartOfReferralManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ReferralManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfReportManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ReportManagement isPartOfReportManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ReportManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfResourceManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ResourceManagement isPartOfResourceManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ResourceManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfScreeningManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ScreeningManagement isPartOfScreeningManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ScreeningManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfTelemedicine>
+    a owl:ObjectProperty ;
+    rdfs:comment "Telemedicine isPartOfTelemedicine ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Telemedicine> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfTestResultsAndAnalysisManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "TestResultsAndAnalysisManagement isPartOfTestResultsAndAnalysisManagement ServicesForCitizens" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TestResultsAndAnalysisManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForCitizens> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfTrackingCitizenManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "TrackingCitizenManagement isPartOfTrackingCitizenManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TrackingCitizenManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfTrackingStaffManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "TrackingStaffManagement isPartOfTrackingStaffManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TrackingStaffManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfTreatmentTrackingSystem>
+    a owl:ObjectProperty ;
+    rdfs:comment "TreatmentTrackingSystem isPartOfTreatmentTrackingSystem Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/TreatmentTrackingSystem> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfVaccinationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "VaccinationManagement isPartOfVaccinationManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/VaccinationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfeLearningForPatients>
+    a owl:ObjectProperty ;
+    rdfs:comment "eLearningForPatients isPartOfeLearningForPatients Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForPatients> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfeLearningForStaff>
+    a owl:ObjectProperty ;
+    rdfs:comment "eLearningForStaff isPartOfeLearningForStaff Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForStaff> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/isPartOfeSignature>
+    a owl:ObjectProperty ;
+    rdfs:comment "eSignature isPartOfeSignature InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eSignature> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfAppointmentBookingAndManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AppointmentBookingAndManagement partOfAppointmentBookingAndManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/AppointmentBookingAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfClinicalDecisionSupport>
+    a owl:ObjectProperty ;
+    rdfs:comment "ClinicalDecisionSupport partOfClinicalDecisionSupport ServicesForProvidersAndHealthcareProfessionals" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ClinicalDecisionSupport> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ServicesForProvidersAndHealthcareProfessionals> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfDiseaseManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DiseaseManagement partOfDiseaseManagement Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/DiseaseManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfElectronicConsultations>
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultations partOfElectronicConsultations Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicConsultations> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfElectronicIdentifiers>
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicIdentifiers partOfElectronicIdentifiers InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ElectronicIdentifiers> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfReportManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ReportManagement partOfReportManagement InternalServices" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/ReportManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/InternalServices> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfTelemedicine>
+    a owl:ObjectProperty ;
+    rdfs:comment "Telemedicine partOfTelemedicine Covid-19Pandemic" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Telemedicine> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/Covid-19Pandemic> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfeLearningForPatients>
+    a owl:ObjectProperty ;
+    rdfs:comment "eLearningForPatients partOfeLearningForPatients HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForPatients> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/partOfeLearningForStaff>
+    a owl:ObjectProperty ;
+    rdfs:comment "eLearningForStaff  partOfeLearningForStaff HealthcareEducation" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/eLearningForStaff> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2024/11/eHealthfunction/HealthcareEducation> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3>
+    a owl:Ontology ;
+    rdfs:comment "This is domain ontology for National health information system and Health information network." .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/AccessAndAuthorizationCoordinationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/AdverseEventMonitoring>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/BroadBandConnectivity>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/CitizenAndHealthcareStaffComplianceMonitoring>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ClinicalCodingStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ConnectivityStandardsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ConsentManagementPolicy>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ContentManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataBreachMonitoringAndManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataCenterAndDatabaseManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataPresentationStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataSecurityManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForAppointments>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForCarePlans>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEConcultation>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForEventSummaries>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForHomecare>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForNotifications>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForOrderAndTestResults>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForPrescriptions>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReal-timeClinicalData>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForReferrals>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemedicine>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureForTelemonitoring>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataStructureStandardsManagementAndUpdate>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DatabasesAndMiddlewareManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DentistInformationSystemGuide>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForAdverseEventMonitoring>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEConsultation>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEPrescription>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEReport>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForHomecare>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForReferrals>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForTelemedicine>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForTelemonotoring>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopInfrustructureForeHealthServices>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopingAndUpdatingLegalFrameworkForHealthData>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/EducationProgramsForStaffForDataSecurity>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/GPReferalSystemGuide>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/GovernmentDataExchangeManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataPrivacyAndSecurityManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataProtectionAndBackup>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataTrafficMonitoringAndManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthITComplianceMonitoring>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthITRequirementsandAccreditation>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationNetworkManagementInstitutions>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationOperationsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationResearch>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInsuranceDataExchangeManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthProgramDesignAndOptimization>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthSoftwareVendorAccreditation>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthcarePolicyDevelopment>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HospitalInformationSystemGuide>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementSystemGuideCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/IntegrationStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/InterOrganizationalDataExchangetCoordination>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/IoTHealthDataManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/LicenseManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/LogManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagementContinuityOfUserAccounts>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDataInfrastructureRequirementsInNewHospitals>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDataSecurityStandards>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDatabasePerformance>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingHealthInformationNetworkInDisasterTime>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingIntegrationWithOtherStakeholders>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedDeviceRegistryElectronicEnvironments>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedicalTerminologyStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MessageAndDataTransferStandardsManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MessagingStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataModelInHealthInformaticsCatalogue>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumDataSetCatalogue>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MinimumLoggingStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MobileHealthDataManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalAuthenticationService>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataDictionaryCatalogue>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalProductCatalogue>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalSofwareProductCatalogue>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NetworkIssueTrackingAndResolution>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NetworkParticipantManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PhysicalNetwork>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PracticeOrPatientAndClinicalManagementSystems>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PrivacyRegulationsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Privacy> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProgramsPlanInInfrastructureOfe-HealthInformationNetwork>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProtectCyberSecurity>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProviderAndServicesDirectories>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PublicInstitutionDataExchangeManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PublicSectorDataIntegrationManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/RemoteHealthDataManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/RiskAnalysisAndManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Role-BasedAccessControlManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SecurityStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SmartHealthDeviceDataIntegration>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SoftwareAccreditationStandardsManagement>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SoftwareLicenceManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Standards>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SupervisionOfHealthDataExchange>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SurveillanceAndAtRiskIdentification>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/UniversalHealthIdentifierService>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/VirtualNetwork>
+    a owl:Class ;
+    rdfs:subClassOf <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/WearableAndSensorHealthDataManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructureInvestmentManagement>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthIntegrationManagementWithOtherOrganizations>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure>
+    a owl:Class .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOf>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthNetworkDevelopmentAndManagement isPartOf eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthNetworkDevelopmentAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfAccessAndAuthorizationCoordinationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "AccessAndAuthorizationCoordinationManagement isPartOfAccessAndAuthorizationCoordinationManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/AccessAndAuthorizationCoordinationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfAdverseEventMonitoring>
+    a owl:ObjectProperty ;
+    rdfs:comment "AdverseEventMonitoring isPartOfAdverseEventMonitoring NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/AdverseEventMonitoring> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfBroadBandConnectivity>
+    a owl:ObjectProperty ;
+    rdfs:comment "BroadBandConnectivity isPartOfBroadBandConnectivity eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/BroadBandConnectivity> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfCitizenAndHealthcareStaffComplianceMonitoring>
+    a owl:ObjectProperty ;
+    rdfs:comment "CitizenAndHealthcareStaffComplianceMonitoring isPartOfCitizenAndHealthcareStaffComplianceMonitoring NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/CitizenAndHealthcareStaffComplianceMonitoring> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfClinicalManagementSystems>
+    a owl:ObjectProperty ;
+    rdfs:comment "PracticeOrPatientAndClinicalManagementSystems isPartOfClinicalManagementSystems eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PracticeOrPatientAndClinicalManagementSystems> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfConnectivityStandardsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ConnectivityStandardsManagement isPartOfConnectivityStandardsManagement eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ConnectivityStandardsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfContentManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "ContentManagement isPartOfContentManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ContentManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDataCenterAndDatabaseManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DataCenterAndDatabaseManagement isPartOfDataCenterAndDatabaseManagement HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataCenterAndDatabaseManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDataSecurityManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DataSecurityManagement isPartOfDataSecurityManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DataSecurityManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDatabasesAndMiddlewareManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "DatabasesAndMiddlewareManagement isPartOfDatabasesAndMiddlewareManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DatabasesAndMiddlewareManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForAdverseEventMonitoring isPartOfDevelopAndManageInfrastructureForAdverseEventMonitoring eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForAdverseEventMonitoring> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForEConsultation>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForEConsultation isPartOfDevelopAndManageInfrastructureForEConsultation eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEConsultation> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForEPrescription>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForEPrescription isPartOfDevelopAndManageInfrastructureForEPrescription eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEPrescription> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForEReport>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForEReport isPartOfDevelopAndManageInfrastructureForEReport eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForEReport> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForHomecare>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForHomecare isPartOfDevelopAndManageInfrastructureForHomecare eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForHomecare> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForReferrals>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForReferrals isPartOfDevelopAndManageInfrastructureForReferrals eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForReferrals> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForTelemedicine>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForTelemedicine isPartOfDevelopAndManageInfrastructureForTelemedicine eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForTelemedicine> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopAndManageInfrastructureForTelemonotoring>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopAndManageInfrastructureForTelemonotoring isPartOfDevelopAndManageInfrastructureForTelemonotoring eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopAndManageInfrastructureForTelemonotoring> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfDevelopInfrustructureForeHealthServices>
+    a owl:ObjectProperty ;
+    rdfs:comment "DevelopInfrustructureForeHealthServices isPartOfDevelopInfrustructureForeHealthServices eHealthServicesInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/DevelopInfrustructureForeHealthServices> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfGovernmentDataExchangeManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "GovernmentDataExchangeManagement isPartOfGovernmentDataExchangeManagement HealthInformationManagementInInstitution" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/GovernmentDataExchangeManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthDataCatalogue>
+    a owl:ObjectProperty ;
+    rdfs:comment "NationalHealthDataCatalogue isPartOfHealthDataCatalogue eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthDataCatalogue> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthDataTrafficMonitoringAndManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthDataTrafficMonitoringAndManagement isPartOfHealthDataTrafficMonitoringAndManagement eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthDataTrafficMonitoringAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthITComplianceMonitoring>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthITComplianceMonitoring isPartOfHealthITComplianceMonitoring HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthITComplianceMonitoring> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthITRequirementsandAccreditation>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthITRequirementsandAccreditation isPartOfHealthITRequirementsandAccreditation HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthITRequirementsandAccreditation> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInformationManagementInInstitution>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationManagementInInstitution isPartOfHealthInformationManagementInInstitution HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInformationNetworkManagementInstitutions>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationNetworkManagementInstitutions isPartOfHealthInformationNetworkManagementInstitutions HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationNetworkManagementInstitutions> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInformationOperationsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationOperationsManagement isPartOfHealthInformationOperationsManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationOperationsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInformationResearch>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationResearch isPartOfHealthInformationResearch NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationResearch> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInformationSystemsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInformationSystemsManagement isPartOfHealthInformationSystemsManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthInsuranceDataExchangeManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthInsuranceDataExchangeManagement isPartOfHealthInsuranceDataExchangeManagement HealthInformationManagementInInstitution" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInsuranceDataExchangeManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthProgramDesignAndOptimization>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthProgramDesignAndOptimization isPartOfHealthProgramDesignAndOptimization NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthProgramDesignAndOptimization> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthSoftwareVendorAccreditation>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthSoftwareVendorAccreditation isPartOfHealthSoftwareVendorAccreditation HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthSoftwareVendorAccreditation> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfHealthcarePolicyDevelopment>
+    a owl:ObjectProperty ;
+    rdfs:comment "HealthcarePolicyDevelopment isPartOfHealthcarePolicyDevelopment NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthcarePolicyDevelopment> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfInterOrganizationalDataExchangetCoordination>
+    a owl:ObjectProperty ;
+    rdfs:comment "InterOrganizationalDataExchangetCoordination isPartOfInterOrganizationalDataExchangetCoordination HealthInformationManagementInInstitution" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/InterOrganizationalDataExchangetCoordination> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfIoTHealthDataManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "IoTHealthDataManagement isPartOfIoTHealthDataManagement HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/IoTHealthDataManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfLicenseManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "LicenseManagement isPartOfLicenseManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/LicenseManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfLogManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "LogManagement isPartOfLogManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/LogManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfManagementContinuityOfUserAccounts>
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagementContinuityOfUserAccounts isPartOfManagementContinuityOfUserAccounts NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagementContinuityOfUserAccounts> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfManagingDataInfrastructureRequirementsInNewHospitals>
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagingDataInfrastructureRequirementsInNewHospitals isPartOfManagingDataInfrastructureRequirementsInNewHospitals NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDataInfrastructureRequirementsInNewHospitals> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfManagingDatabasePerformance>
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagingDatabasePerformance isPartOfManagingDatabasePerformance NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingDatabasePerformance> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfManagingHealthInformationNetworkInDisasterTime>
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagingHealthInformationNetworkInDisasterTime isPartOfManagingHealthInformationNetworkInDisasterTime NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingHealthInformationNetworkInDisasterTime> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfManagingIntegrationWithOtherStakeholders>
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagingIntegrationWithOtherStakeholders isPartOfManagingIntegrationWithOtherStakeholders NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ManagingIntegrationWithOtherStakeholders> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfMedDeviceRegistry>
+    a owl:ObjectProperty ;
+    rdfs:comment "MedDeviceRegistryElectronicEnvironments isPartOfMedDeviceRegistry eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedDeviceRegistryElectronicEnvironments> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfMessageAndDataTransferStandardsManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "MessageAndDataTransferStandardsManagement isPartOfMessageAndDataTransferStandardsManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MessageAndDataTransferStandardsManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfMobileHealthDataManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "MobileHealthDataManagement isPartOfMobileHealthDataManagement HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MobileHealthDataManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfNationalAuthenticationService>
+    a owl:ObjectProperty ;
+    rdfs:comment "NationalAuthenticationService isPartOfNationalAuthenticationService eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalAuthenticationService> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfNationalProductCatalogue>
+    a owl:ObjectProperty ;
+    rdfs:comment "NationalProductCatalogue isPartOfNationalProductCatalogue MedDeviceRegistryElectronicEnvironments" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalProductCatalogue> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/MedDeviceRegistryElectronicEnvironments> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfNetworkIssueTrackingAndResolution>
+    a owl:ObjectProperty ;
+    rdfs:comment "NetworkIssueTrackingAndResolution isPartOfNetworkIssueTrackingAndResolution eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NetworkIssueTrackingAndResolution> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfNetworkParticipantManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "NetworkParticipantManagement isPartOfNetworkParticipantManagement eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NetworkParticipantManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfPlanBasedOnResearchInInfrastructure>
+    a owl:ObjectProperty ;
+    rdfs:comment "ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork isPartOfPlanBasedOnResearchInInfrastructure HealthInformationResearch" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProgramAndPlanBasedOnResearchInInfrastructureOfe-HealthInformationNetwork> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationResearch> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfProductCatalogue>
+    a owl:ObjectProperty ;
+    rdfs:comment "NationalProductCatalogue isPartOfProductCatalogue eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalProductCatalogue> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfProgramsPlanInInfrastructure>
+    a owl:ObjectProperty ;
+    rdfs:comment "ProgramsPlanInInfrastructureOfe-HealthInformationNetwork isPartOfProgramsPlanInInfrastructure HealthInformationResearch" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProgramsPlanInInfrastructureOfe-HealthInformationNetwork> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationResearch> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfProtectCyberSecurity>
+    a owl:ObjectProperty ;
+    rdfs:comment "ProtectCyberSecurity isPartOfProtectCyberSecurity NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProtectCyberSecurity> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfProviderAndServicesDirectories>
+    a owl:ObjectProperty ;
+    rdfs:comment "ProviderAndServicesDirectories isPartOfProviderAndServicesDirectories eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/ProviderAndServicesDirectories> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfPublicInstitutionDataExchangeManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "PublicInstitutionDataExchangeManagement isPartOfPublicInstitutionDataExchangeManagement HealthInformationManagementInInstitution" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PublicInstitutionDataExchangeManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfPublicSectorDataIntegrationManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "PublicSectorDataIntegrationManagement isPartOfPublicSectorDataIntegrationManagement HealthInformationManagementInInstitution" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/PublicSectorDataIntegrationManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationManagementInInstitution> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfRemoteHealthDataManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "RemoteHealthDataManagement isPartOfRemoteHealthDataManagement HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/RemoteHealthDataManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfRiskAnalysisAndManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "RiskAnalysisAndManagement isPartOfRiskAnalysisAndManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/RiskAnalysisAndManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfRoleBasedAccessControlManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "Role-BasedAccessControlManagement isPartOfRoleBasedAccessControlManagement eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/Role-BasedAccessControlManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfSmartHealthDeviceDataIntegration>
+    a owl:ObjectProperty ;
+    rdfs:comment "SmartHealthDeviceDataIntegration isPartOfSmartHealthDeviceDataIntegration HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SmartHealthDeviceDataIntegration> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfSoftwareLicenceManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "SoftwareLicenceManagement isPartOfSoftwareLicenceManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SoftwareLicenceManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfSofwareProductCatalogue>
+    a owl:ObjectProperty ;
+    rdfs:comment "NationalSofwareProductCatalogue isPartOfSofwareProductCatalogue eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalSofwareProductCatalogue> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfSupervisionOfHealthDataExchange>
+    a owl:ObjectProperty ;
+    rdfs:comment "SupervisionOfHealthDataExchange isPartOfSupervisionOfHealthDataExchange HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SupervisionOfHealthDataExchange> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfSurveillanceAndAtRiskIdentification>
+    a owl:ObjectProperty ;
+    rdfs:comment "SurveillanceAndAtRiskIdentification isPartOfSurveillanceAndAtRiskIdentification NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/SurveillanceAndAtRiskIdentification> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfUniversalHealthIdentifierService>
+    a owl:ObjectProperty ;
+    rdfs:comment "UniversalHealthIdentifierService isPartOfUniversalHealthIdentifierService eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/UniversalHealthIdentifierService> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfWearableAndSensorHealthDataManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "WearableAndSensorHealthDataManagement isPartOfWearableAndSensorHealthDataManagement HealthInformationSystemsManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/WearableAndSensorHealthDataManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/HealthInformationSystemsManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfeHealthInfrastructure>
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthServicesInfrastructure isPartOfeHealthInfrastructure eHealthInfrastructure" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthServicesInfrastructure> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructure> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfeHealthInfrastructureInvestmentManagement>
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthInfrastructureInvestmentManagement isPartOfeHealthInfrastructureInvestmentManagement NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthInfrastructureInvestmentManagement> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/isPartOfeHealthIntegrationManagementWithOtherOrganizations>
+    a owl:ObjectProperty ;
+    rdfs:comment "eHealthIntegrationManagementWithOtherOrganizations isPartOfeHealthIntegrationManagementWithOtherOrganizations NationalHealthcareNetworkManagement" ;
+    rdfs:domain <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/eHealthIntegrationManagementWithOtherOrganizations> ;
+    rdfs:range <http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-3/NationalHealthcareNetworkManagement> .
+
+<http://www.semanticweb.org/maryam/ontologies/2025/3/untitled-ontology-4>
+    a owl:Ontology ;
+    rdfs:comment "This is core ontology for personalhealth information system and citizen healthcare function domain specific ontology." .
+
+:AccessToHealthData
+    a owl:Class .
+
+:AccessToYourPastHistory
+    a owl:Class .
+
+:AddAppointment
+    a owl:Class .
+
+:AddNewDocument
+    a owl:Class .
+
+:AddNewHealthData
+    a owl:Class .
+
+:Admission
+    a owl:Class .
+
+:AppointmentBookingAndManagement
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:BuyMedication
+    a owl:Class .
+
+:CancelAppointment
+    a owl:Class .
+
+:CarePlan
+    a owl:Class .
+
+:CarePlanForHomeMonitoring
+    a owl:Class .
+
+:CarePlanGrouping
+    a owl:Class .
+
+:CarePlanManagement
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:ChangeAppointment
+    a owl:Class .
+
+:ChildrenCare
+    a owl:Class ;
+    rdfs:subClassOf :StatusOfCitizen .
+
+:ChronicDiseaseManagement
+    a owl:Class ;
+    rdfs:subClassOf :DiseaseManagementGrouping .
+
+:Communicating
+    a owl:Class .
+
+:CommunicationWithYourDoctorOrNurse
+    a owl:Class .
+
+:ConditionBasedFunction
+    a owl:Class .
+
+:ConsecutiveTestsOrChecks
+    a owl:Class .
+
+:Controlling
+    a owl:Class .
+
+:ControllingAntenatalCareExamination
+    a owl:Class .
+
+:ControllingEarlyPregnancyCondition
+    a owl:Class .
+
+:ControllingOfImmunizationStatus
+    a owl:Class .
+
+:ControllingReminderOfMedication
+    a owl:Class .
+
+:ControllingSideEffects
+    a owl:Class .
+
+:CoordinationWithDoctorOrNurse
+    a owl:Class .
+
+:Covid-19Pandemic
+    a owl:Class .
+
+:DailyControlBloodPressure
+    a owl:Class .
+
+:DailyControlBloodSugar
+    a owl:Class .
+
+:DailyControlPulse
+    a owl:Class .
+
+:DecideReferralPlan
+    a owl:Class .
+
+:DecisionSupport
+    a owl:Class .
+
+:DeleteAppointment
+    a owl:Class .
+
+:DisabilityCare
+    a owl:Class ;
+    rdfs:subClassOf :StatusOfCitizen .
+
+:DiseaseManagement
+    a owl:Class ;
+    rdfs:subClassOf :DiseaseManagementGrouping .
+
+:DiseaseManagementGrouping
+    a owl:Class .
+
+:DocumentForVaccination
+    a owl:Class .
+
+:DocumentationAndSharing
+    a owl:Class .
+
+:DownloadHealthData
+    a owl:Class .
+
+:Educate
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:EducatingSideEffectOrEducateMedication
+    a owl:Class .
+
+:ElderlyPeopleCare
+    a owl:Class ;
+    rdfs:subClassOf :StatusOfCitizen .
+
+:ElectronicConsultation
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:EmergencyTimeNote
+    a owl:Class .
+
+:FindADoctor
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:FindAPlaceOfPharmacy
+    a owl:Class .
+
+:FindAPlaceOfTheLab
+    a owl:Class .
+
+:FindARadiology
+    a owl:Class .
+
+:FindPlaceForTestAndPharmacy
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:FindingHealthcareProfessionals
+    a owl:Class .
+
+:FindingPlace
+    a owl:Class .
+
+:FindingRoute
+    a owl:Class .
+
+:FindingTheVehicle
+    a owl:Class .
+
+:ForeignPerson
+    a owl:Class ;
+    rdfs:subClassOf :StatusOfCitizen .
+
+:GiveAppointmentForVaccination
+    a owl:Class .
+
+:GivingThePlanOfCare
+    a owl:Class .
+
+:Identification
+    a owl:Class ;
+    rdfs:subClassOf :LegalGroup .
+
+:LegalGroup
+    a owl:Class .
+
+:MaintainingMedicationList
+    a owl:Class .
+
+:MakeAnAppointment
+    a owl:Class .
+
+:ManagePersonalHealthData
+    a owl:Class ;
+    rdfs:subClassOf :LegalGroup .
+
+:ManagementAndCoordination
+    a owl:Class .
+
+:MedicationListCreation
+    a owl:Class .
+
+:MedicationManagement
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:MedicationRefills
+    a owl:Class .
+
+:MemberOfEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate MemberOfEducate ElderlyPeopleCare" ;
+    rdfs:domain :Educate ;
+    rdfs:range :ElderlyPeopleCare .
+
+:Nutrition
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:Ordering
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:OrderingAReport
+    a owl:Class .
+
+:OrderingATest
+    a owl:Class .
+
+:OrderingComplain
+    a owl:Class .
+
+:OrderingMedication
+    a owl:Class .
+
+:OrderingRePrescription
+    a owl:Class .
+
+:OwnershipHealthData
+    a owl:Class ;
+    rdfs:subClassOf :LegalGroup .
+
+:PregnantWomenCare
+    a owl:Class ;
+    rdfs:subClassOf :StatusOfCitizen .
+
+:Prevention
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:PriorityForTheAppointment
+    a owl:Class .
+
+:ProvidingAuthoritativeMedicationInformation
+    a owl:Class .
+
+:ReadExperienceOfOther
+    a owl:Class .
+
+:ReminderForControling
+    a owl:Class .
+
+:ReminderForMedication
+    a owl:Class .
+
+:ReminderForSecondVaccination
+    a owl:Class .
+
+:ReminderForTheTest
+    a owl:Class .
+
+:ReminderForVaccination
+    a owl:Class .
+
+:ReminderTherapyProcess
+    a owl:Class .
+
+:RemotelyControl
+    a owl:Class .
+
+:ReportYourComplains
+    a owl:Class .
+
+:ResceduleAppointment
+    a owl:Class .
+
+:SceduleAppointment
+    a owl:Class .
+
+:SchedulingOfTests
+    a owl:Class .
+
+:ScreeningNST
+    a owl:Class .
+
+:ScreeningOfHigh-riskPregnancy
+    a owl:Class .
+
+:ScreeningUltraSon
+    a owl:Class .
+
+:Sharing
+    a owl:Class .
+
+:StatusOfCitizen
+    a owl:Class .
+
+:TakeAReport
+    a owl:Class .
+
+:TestResultReceiptAndAnalysis
+    a owl:Class ;
+    rdfs:subClassOf :CarePlanGrouping .
+
+:Translate
+    a owl:Class .
+
+:Treatment
+    a owl:Class ;
+    rdfs:subClassOf :TreatmentGrouping .
+
+:TreatmentGrouping
+    a owl:Class .
+
+:UpdateHealthData
+    a owl:Class .
+
+:UpdatingPersonalMedication
+    a owl:Class .
+
+:UploadHealthData
+    a owl:Class .
+
+:UseSensorDataAttachment
+    a owl:Class .
+
+:WeightControl
+    a owl:Class .
+
+:belongsToCarePlanManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement belongsToCarePlanManagement PregnantWomenCare" ;
+    rdfs:domain :CarePlanManagement ;
+    rdfs:range :PregnantWomenCare .
+
+:belongsToEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate belongsToEducate Covid-19Pandemic" ;
+    rdfs:domain :Educate ;
+    rdfs:range :Covid-19Pandemic .
+
+:belongsToElectronicConsultation
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultation belongsToElectronicConsultation DisabilityCare" ;
+    rdfs:domain :ElectronicConsultation ;
+    rdfs:range :DisabilityCare .
+
+:belongsToFindADoctor
+    a owl:ObjectProperty ;
+    rdfs:comment "FindADoctor belongsToFindADoctor PregnantWomenCare" ;
+    rdfs:domain :FindADoctor ;
+    rdfs:range :PregnantWomenCare .
+
+:belongsToMedicationManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationManagement belongsToMedicationManagement ElderlyPeopleCare" ;
+    rdfs:domain :MedicationManagement ;
+    rdfs:range :ElderlyPeopleCare .
+
+:belongsToNutrition
+    a owl:ObjectProperty ;
+    rdfs:comment "Nutrition belongsToNutrition ElderlyPeopleCare" ;
+    rdfs:domain :Nutrition ;
+    rdfs:range :ElderlyPeopleCare .
+
+:containedInEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate containedInEducate PregnantWomenCare" ;
+    rdfs:domain :Educate ;
+    rdfs:range :PregnantWomenCare .
+
+:elementOfEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate elementOfEducate ForeignPerson" ;
+    rdfs:domain :Educate ;
+    rdfs:range :ForeignPerson .
+
+:hasCarePlan
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlan hasCarePlan PregnantWomenCare" ;
+    rdfs:domain :CarePlan ;
+    rdfs:range :PregnantWomenCare .
+
+:hasCarePlanManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement hasCarePlanManagement ElderlyPeopleCare" ;
+    rdfs:domain :CarePlanManagement ;
+    rdfs:range :ElderlyPeopleCare .
+
+:hasEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate hasEducate ChronicDiseaseManagement" ;
+    rdfs:domain :Educate ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:hasElectronicConsultation
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultation hasElectronicConsultation DiseaseManagement" ;
+    rdfs:domain :ElectronicConsultation ;
+    rdfs:range :DiseaseManagement .
+
+:hasFindADoctor
+    a owl:ObjectProperty ;
+    rdfs:comment "FindADoctor hasFindADoctor DiseaseManagement" ;
+    rdfs:domain :FindADoctor ;
+    rdfs:range :DiseaseManagement .
+
+:hasFindPlaceForTestAndPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "FindPlaceForTestAndPharmacy hasFindPlaceForTestAndPharmacy Covid-19Pandemic" ;
+    rdfs:domain :FindPlaceForTestAndPharmacy ;
+    rdfs:range :Covid-19Pandemic .
+
+:hasManagePersonalHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagePersonalHealthData hasManagePersonalHealthData ChildrenCare" ;
+    rdfs:domain :ManagePersonalHealthData ;
+    rdfs:range :ChildrenCare .
+
+:hasMedicationManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationManagement hasMedicationManagement DiseaseManagement" ;
+    rdfs:domain :MedicationManagement ;
+    rdfs:range :DiseaseManagement .
+
+:hasNutrition
+    a owl:ObjectProperty ;
+    rdfs:comment "Nutrition hasNutrition ChronicDiseaseManagement" ;
+    rdfs:domain :Nutrition ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:hasOrderingMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingMedication hasOrderingMedication DiseaseManagement" ;
+    rdfs:domain :OrderingMedication ;
+    rdfs:range :DiseaseManagement .
+
+:hasReminderTherapyProcess
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderTherapyProcess hasReminderTherapyProcess DiseaseManagement" ;
+    rdfs:domain :ReminderTherapyProcess ;
+    rdfs:range :DiseaseManagement .
+
+:hasTestResultReceiptAndAnalysis
+    a owl:ObjectProperty ;
+    rdfs:comment "TestResultReceiptAndAnalysis hasTestResultReceiptAndAnalysis PregnantWomenCare" ;
+    rdfs:domain :TestResultReceiptAndAnalysis ;
+    rdfs:range :PregnantWomenCare .
+
+:hasTreatment
+    a owl:ObjectProperty ;
+    rdfs:comment "Treatment hasTreatment ElderlyPeopleCare" ;
+    rdfs:domain :Treatment ;
+    rdfs:range :ElderlyPeopleCare .
+
+:includedInCarePlanManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement includedInCarePlanManagement DisabilityCare" ;
+    rdfs:domain :CarePlanManagement ;
+    rdfs:range :DisabilityCare .
+
+:includedInEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate includedInEducate DiseaseManagement" ;
+    rdfs:domain :Educate ;
+    rdfs:range :DiseaseManagement .
+
+:includedInElectronicConsultation
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultation includedInElectronicConsultation PregnantWomenCare" ;
+    rdfs:domain :ElectronicConsultation ;
+    rdfs:range :PregnantWomenCare .
+
+:includedInFindADoctor
+    a owl:ObjectProperty ;
+    rdfs:comment "FindADoctor includedInFindADoctor Covid-19Pandemic" ;
+    rdfs:domain :FindADoctor ;
+    rdfs:range :Covid-19Pandemic .
+
+:includedInFindPlaceForTestAndPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "FindPlaceForTestAndPharmacy(LabOrHospital) includedInFindPlaceForTestAndPharmacy PregnantWomenCare" ;
+    rdfs:domain :FindPlaceForTestAndPharmacy ;
+    rdfs:range :PregnantWomenCare .
+
+:includedInMedicationManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationManagement includedInMedicationManagement PregnantWomenCare" ;
+    rdfs:domain :MedicationManagement ;
+    rdfs:range :PregnantWomenCare .
+
+:includedInNutrition
+    a owl:ObjectProperty ;
+    rdfs:comment "Nutrition includedInNutrition PregnantWomenCare" ;
+    rdfs:domain :Nutrition ;
+    rdfs:range :PregnantWomenCare .
+
+:includedInTestResultReceiptAndAnalysis
+    a owl:ObjectProperty ;
+    rdfs:comment "TestResultReceiptAndAnalysis includedInTestResultReceiptAndAnalysis ElderlyPeopleCare" ;
+    rdfs:domain :TestResultReceiptAndAnalysis ;
+    rdfs:range :ElderlyPeopleCare .
+
+:includedInTreatment
+    a owl:ObjectProperty ;
+    rdfs:comment "Treatment includedInTreatment DisabilityCare" ;
+    rdfs:domain :Treatment ;
+    rdfs:range :DisabilityCare .
+
+:isContainedWithinEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate isContainedWithinEducate ChildrenCare" ;
+    rdfs:domain :Educate ;
+    rdfs:range :ChildrenCare .
+
+:isPartOfAReport
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingAReport isPartOfAReport Ordering" ;
+    rdfs:domain :OrderingAReport ;
+    rdfs:range :Ordering .
+
+:isPartOfATest
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingATest isPartOfATest Ordering" ;
+    rdfs:domain :OrderingATest ;
+    rdfs:range :Ordering .
+
+:isPartOfAccessToHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "AccessToHealthData isPartOfAccessToHealthData ManagePersonalHealthData" ;
+    rdfs:domain :AccessToHealthData ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfAccessToYourPastHistory
+    a owl:ObjectProperty ;
+    rdfs:comment "AccessToYourPastHistory isPartOfAccessToYourPastHistory TreatmentGrouping" ;
+    rdfs:domain :AccessToYourPastHistory ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfAddAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "AddAppointment isPartOfAddAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :AddAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfAddNewDocument
+    a owl:ObjectProperty ;
+    rdfs:comment "AddNewDocument isPartOfAddNewDocument ManagePersonalHealthData" ;
+    rdfs:domain :AddNewDocument ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfAddNewHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "AddNewHealthData isPartOfAddNewHealthData ManagePersonalHealthData" ;
+    rdfs:domain :AddNewHealthData ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfAdmission
+    a owl:ObjectProperty ;
+    rdfs:comment "Admission isPartOfAdmission TreatmentGrouping" ;
+    rdfs:domain :Admission ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfAppointmentBookingAndManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "AppointmentBookingAndManagement isPartOfAppointmentBookingAndManagement ChronicDiseaseManagement" ;
+    rdfs:domain :AppointmentBookingAndManagement ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfBuyMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "BuyMedication isPartOfBuyMedication TreatmentGrouping" ;
+    rdfs:domain :BuyMedication ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfCancelAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "CancelAppointment isPartOfCancelAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :CancelAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfCarePlan
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlan isPartOfCarePlan ChronicDiseaseManagement" ;
+    rdfs:domain :CarePlan ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfCarePlanForHomeMonitoring
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanForHomeMonitoring isPartOfCarePlanForHomeMonitoring ChronicDiseaseManagement" ;
+    rdfs:domain :CarePlanForHomeMonitoring ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfCarePlanManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement isPartOfCarePlanManagement DiseaseManagement" ;
+    rdfs:domain :CarePlanManagement ;
+    rdfs:range :DiseaseManagement .
+
+:isPartOfChangeAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "ChangeAppointment isPartOfChangeAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :ChangeAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfChronicDiseaseManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "ChronicDiseaseManagement isPartOfChronicDiseaseManagement ElderlyPeopleCare" ;
+    rdfs:domain :ChronicDiseaseManagement ;
+    rdfs:range :ElderlyPeopleCare .
+
+:isPartOfCommunicating
+    a owl:ObjectProperty ;
+    rdfs:comment "Communicating isPartOfCommunicating ElectronicConsultation" ;
+    rdfs:domain :Communicating ;
+    rdfs:range :ElectronicConsultation .
+
+:isPartOfCommunicationWithYourDoctorOrNurse
+    a owl:ObjectProperty ;
+    rdfs:comment "CommunicationWithYourDoctorOrNurse isPartOfCommunicationWithYourDoctorOrNurse TreatmentGrouping" ;
+    rdfs:domain :CommunicationWithYourDoctorOrNurse ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfComplain
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingComplain isPartOfComplain Ordering" ;
+    rdfs:domain :OrderingComplain ;
+    rdfs:range :Ordering .
+
+:isPartOfConsecutiveTestsOrChecks
+    a owl:ObjectProperty ;
+    rdfs:comment "ConsecutiveTestsOrChecks isPartOfConsecutiveTestsOrChecks CarePlanManagement" ;
+    rdfs:domain :ConsecutiveTestsOrChecks ;
+    rdfs:range :CarePlanManagement .
+
+:isPartOfControlling
+    a owl:ObjectProperty ;
+    rdfs:comment "Controlling isPartOfControlling TreatmentGrouping" ;
+    rdfs:domain :Controlling ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfControllingAntenatalCareExamination
+    a owl:ObjectProperty ;
+    rdfs:comment "ControllingAntenatalCareExamination isPartOfControllingAntenatalCareExamination PregnantWomenCare" ;
+    rdfs:domain :ControllingAntenatalCareExamination ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfControllingEarlyPregnancyCondition
+    a owl:ObjectProperty ;
+    rdfs:comment "ControllingEarlyPregnancyCondition isPartOfControllingEarlyPregnancyCondition PregnantWomenCare" ;
+    rdfs:domain :ControllingEarlyPregnancyCondition ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfControllingOfImmunizationStatus
+    a owl:ObjectProperty ;
+    rdfs:comment "ControllingOfImmunizationStatus isPartOfControllingOfImmunizationStatus PregnantWomenCare" ;
+    rdfs:domain :ControllingOfImmunizationStatus ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfControllingReminderOfMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "ControllingReminderOfMedication isPartOfControllingReminderOfMedication CarePlanManagement" ;
+    rdfs:domain :ControllingReminderOfMedication ;
+    rdfs:range :CarePlanManagement .
+
+:isPartOfControllingSideEffects
+    a owl:ObjectProperty ;
+    rdfs:comment "ControllingSideEffects isPartOfControllingSideEffects MedicationManagement" ;
+    rdfs:domain :ControllingSideEffects ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfCoordinationWithDoctorOrNurse
+    a owl:ObjectProperty ;
+    rdfs:comment "CoordinationWithDoctorOrNurse isPartOfCoordinationWithDoctorOrNurse CarePlanManagement" ;
+    rdfs:domain :CoordinationWithDoctorOrNurse ;
+    rdfs:range :CarePlanManagement .
+
+:isPartOfCovid-19Pandemic
+    a owl:ObjectProperty ;
+    rdfs:comment "Covid-19Pandemic isPartOfCovid-19Pandemic ConditionBasedFunction" ;
+    rdfs:domain :Covid-19Pandemic ;
+    rdfs:range :ConditionBasedFunction .
+
+:isPartOfDailyControlBloodPressure
+    a owl:ObjectProperty ;
+    rdfs:comment "DailyControlBloodPressure isPartOfDailyControlBloodPressure ChronicDiseaseManagement" ;
+    rdfs:domain :DailyControlBloodPressure ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfDailyControlBloodSugar
+    a owl:ObjectProperty ;
+    rdfs:comment "DailyControlBloodSugar isPartOfDailyControlBloodSugar ChronicDiseaseManagement" ;
+    rdfs:domain :DailyControlBloodSugar ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfDailyControlPulse
+    a owl:ObjectProperty ;
+    rdfs:comment "DailyControlPulse isPartOfDailyControlPulse ChronicDiseaseManagement" ;
+    rdfs:domain :DailyControlPulse ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfDecideReferralPlan
+    a owl:ObjectProperty ;
+    rdfs:comment "DecideReferralPlan isPartOfDecideReferralPlan PregnantWomenCare" ;
+    rdfs:domain :DecideReferralPlan ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfDecisionSupport
+    a owl:ObjectProperty ;
+    rdfs:comment "DecisionSupport isPartOfDecisionSupport TreatmentGrouping" ;
+    rdfs:domain :DecisionSupport ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfDeleteAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "DeleteAppointment isPartOfDeleteAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :DeleteAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfDiseaseManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "DiseaseManagement isPartOfDiseaseManagement ElderlyPeopleCare" ;
+    rdfs:domain :DiseaseManagement ;
+    rdfs:range :ElderlyPeopleCare .
+
+:isPartOfDocumentForVaccination
+    a owl:ObjectProperty ;
+    rdfs:comment "DocumentForVaccination isPartOfDocumentForVaccination Covid-19Pandemic" ;
+    rdfs:domain :DocumentForVaccination ;
+    rdfs:range :Covid-19Pandemic .
+
+:isPartOfDocumentationAndSharing
+    a owl:ObjectProperty ;
+    rdfs:comment "DocumentationAndSharing isPartOfDocumentationAndSharing ManagePersonalHealthData" ;
+    rdfs:domain :DocumentationAndSharing ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfDownloadHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "DownloadHealthData isPartOfDownloadHealthData ManagePersonalHealthData" ;
+    rdfs:domain :DownloadHealthData ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate isPartOfEducate TreatmentGrouping" ;
+    rdfs:domain :Educate ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfEducatingSideEffect
+    a owl:ObjectProperty ;
+    rdfs:comment "EducatingSideEffectOrEducateMedication isPartOfEducatingSideEffect MedicationManagement" ;
+    rdfs:domain :EducatingSideEffectOrEducateMedication ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfElectronicConsultation
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultation isPartOfElectronicConsultation TreatmentGrouping" ;
+    rdfs:domain :ElectronicConsultation ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfEmergencyTimeNote
+    a owl:ObjectProperty ;
+    rdfs:comment "EmergencyTimeNote isPartOfEmergencyTimeNote ManagePersonalHealthData" ;
+    rdfs:domain :EmergencyTimeNote ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfFindADoctor
+    a owl:ObjectProperty ;
+    rdfs:comment "FindADoctor isPartOfFindADoctor TreatmentGrouping" ;
+    rdfs:domain :FindADoctor ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfFindAPlaceOfPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "FindAPlaceOfPharmacy isPartOfFindAPlaceOfPharmacy TreatmentGrouping" ;
+    rdfs:domain :FindAPlaceOfPharmacy ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfFindAPlaceOfTheLab
+    a owl:ObjectProperty ;
+    rdfs:comment "FindAPlaceOfTheLab isPartOfFindAPlaceOfTheLab TreatmentGrouping" ;
+    rdfs:domain :FindAPlaceOfTheLab ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfFindARadiology
+    a owl:ObjectProperty ;
+    rdfs:comment "FindARadiology isPartOfFindARadiology TreatmentGrouping" ;
+    rdfs:domain :FindARadiology ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfFindPlaceForTest
+    a owl:ObjectProperty ;
+    rdfs:comment "FindPlaceForTestAndPharmacy isPartOfFindPlaceForTest ChronicDiseaseManagement" ;
+    rdfs:domain :FindPlaceForTestAndPharmacy ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfFindingHealthcareProfessionals
+    a owl:ObjectProperty ;
+    rdfs:comment "FindingHealthcareProfessionals isPartOfFindingHealthcareProfessionals DisabilityCare" ;
+    rdfs:domain :FindingHealthcareProfessionals ;
+    rdfs:range :DisabilityCare .
+
+:isPartOfFindingPlace
+    a owl:ObjectProperty ;
+    rdfs:comment "FindingPlace isPartOfFindingPlace DisabilityCare" ;
+    rdfs:domain :FindingPlace ;
+    rdfs:range :DisabilityCare .
+
+:isPartOfFindingRoute
+    a owl:ObjectProperty ;
+    rdfs:comment "FindingRoute isPartOfFindingRoute DisabilityCare" ;
+    rdfs:domain :FindingRoute ;
+    rdfs:range :DisabilityCare .
+
+:isPartOfFindingTheVehicle
+    a owl:ObjectProperty ;
+    rdfs:comment "FindingTheVehicle isPartOfFindingTheVehicle DisabilityCare" ;
+    rdfs:domain :FindingTheVehicle ;
+    rdfs:range :DisabilityCare .
+
+:isPartOfGiveAppointmentForVaccination
+    a owl:ObjectProperty ;
+    rdfs:comment "GiveAppointmentForVaccination isPartOfGiveAppointmentForVaccination Covid-19Pandemic" ;
+    rdfs:domain :GiveAppointmentForVaccination ;
+    rdfs:range :Covid-19Pandemic .
+
+:isPartOfGivingThePlanOfCare
+    a owl:ObjectProperty ;
+    rdfs:comment "GivingThePlanOfCare isPartOfGivingThePlanOfCare TreatmentGrouping" ;
+    rdfs:domain :GivingThePlanOfCare ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfIdentification
+    a owl:ObjectProperty ;
+    rdfs:comment "Identification isPartOfIdentification TreatmentGrouping" ;
+    rdfs:domain :Identification ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfMaintainingMedicationList
+    a owl:ObjectProperty ;
+    rdfs:comment "MaintainingMedicationList isPartOfMaintainingMedicationList MedicationManagement" ;
+    rdfs:domain :MaintainingMedicationList ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfMakeAnAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "MakeAnAppointment isPartOfMakeAnAppointment TreatmentGrouping" ;
+    rdfs:domain :MakeAnAppointment ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfManagePersonalHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagePersonalHealthData isPartOfManagePersonalHealthData Covid-19Pandemic" ;
+    rdfs:domain :ManagePersonalHealthData ;
+    rdfs:range :Covid-19Pandemic .
+
+:isPartOfManagementAndCoordination
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagementAndCoordination isPartOfManagementAndCoordination TreatmentGrouping" ;
+    rdfs:domain :ManagementAndCoordination ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingMedication isPartOfMedication Ordering" ;
+    rdfs:domain :OrderingMedication ;
+    rdfs:range :Ordering .
+
+:isPartOfMedicationListCreation
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationListCreation isPartOfMedicationListCreation MedicationManagement" ;
+    rdfs:domain :MedicationListCreation ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfMedicationManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationManagement isPartOfMedicationManagement TreatmentGrouping" ;
+    rdfs:domain :MedicationManagement ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfMedicationRefills
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationRefills isPartOfMedicationRefills MedicationManagement" ;
+    rdfs:domain :MedicationRefills ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfNutrition
+    a owl:ObjectProperty ;
+    rdfs:comment "Nutrition isPartOfNutrition TreatmentGrouping" ;
+    rdfs:domain :Nutrition ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfOrderingATest
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingATest isPartOfOrderingATest ChronicDiseaseManagement" ;
+    rdfs:domain :OrderingATest ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfOrderingMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingMedication isPartOfOrderingMedication MedicationManagement" ;
+    rdfs:domain :OrderingMedication ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfPrevention
+    a owl:ObjectProperty ;
+    rdfs:comment "Prevention isPartOfPrevention ChildrenCare" ;
+    rdfs:domain :Prevention ;
+    rdfs:range :ChildrenCare .
+
+:isPartOfPriorityForTheAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "PriorityForTheAppointment isPartOfPriorityForTheAppointment DisabilityCare" ;
+    rdfs:domain :PriorityForTheAppointment ;
+    rdfs:range :DisabilityCare .
+
+:isPartOfProvidingAuthoritativeMedicationInformation
+    a owl:ObjectProperty ;
+    rdfs:comment "ProvidingAuthoritativeMedicationInformation isPartOfProvidingAuthoritativeMedicationInformation MedicationManagement" ;
+    rdfs:domain :ProvidingAuthoritativeMedicationInformation ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfRePrescription
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingRePrescription isPartOfRePrescription Ordering" ;
+    rdfs:domain :OrderingRePrescription ;
+    rdfs:range :Ordering .
+
+:isPartOfReadExperienceOfOther
+    a owl:ObjectProperty ;
+    rdfs:comment "ReadExperienceOfOther isPartOfReadExperienceOfOther TreatmentGrouping" ;
+    rdfs:domain :ReadExperienceOfOther ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfReminderForControling
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForControling isPartOfReminderForControling Prevention" ;
+    rdfs:domain :ReminderForControling ;
+    rdfs:range :Prevention .
+
+:isPartOfReminderForControlling
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForControlling isPartOfReminderForControlling ChildrenCare" ;
+    rdfs:domain :ReminderForControling ;
+    rdfs:range :ChildrenCare .
+
+:isPartOfReminderForMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForMedication isPartOfReminderForMedication ChronicDiseaseManagement" ;
+    rdfs:domain :ReminderForMedication ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfReminderForSecondVaccination
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForSecondVaccination isPartOfReminderForSecondVaccination Covid-19Pandemic" ;
+    rdfs:domain :ReminderForSecondVaccination ;
+    rdfs:range :Covid-19Pandemic .
+
+:isPartOfReminderForTheTest
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForTheTest isPartOfReminderForTheTest Prevention" ;
+    rdfs:domain :ReminderForTheTest ;
+    rdfs:range :Prevention .
+
+:isPartOfReminderForVaccination
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForVaccination isPartOfReminderForVaccination ChildrenCare" ;
+    rdfs:domain :ReminderForVaccination ;
+    rdfs:range :ChildrenCare .
+
+:isPartOfReminderTherapyProcess
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderTherapyProcess isPartOfReminderTherapyProcess CarePlanManagement" ;
+    rdfs:domain :ReminderTherapyProcess ;
+    rdfs:range :CarePlanManagement .
+
+:isPartOfRemotelyControl
+    a owl:ObjectProperty ;
+    rdfs:comment "RemotelyControl isPartOfRemotelyControl Covid-19Pandemic" ;
+    rdfs:domain :RemotelyControl ;
+    rdfs:range :Covid-19Pandemic .
+
+:isPartOfReportYourComplains
+    a owl:ObjectProperty ;
+    rdfs:comment "ReportYourComplains isPartOfReportYourComplains TreatmentGrouping" ;
+    rdfs:domain :ReportYourComplains ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfResceduleAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "ResceduleAppointment isPartOfResceduleAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :ResceduleAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfSceduleAppointment
+    a owl:ObjectProperty ;
+    rdfs:comment "SceduleAppointment isPartOfSceduleAppointment AppointmentBookingAndManagement" ;
+    rdfs:domain :SceduleAppointment ;
+    rdfs:range :AppointmentBookingAndManagement .
+
+:isPartOfSchedulingOfTests
+    a owl:ObjectProperty ;
+    rdfs:comment "SchedulingOfTests isPartOfSchedulingOfTests CarePlanManagement" ;
+    rdfs:domain :SchedulingOfTests ;
+    rdfs:range :CarePlanManagement .
+
+:isPartOfScreeningNST
+    a owl:ObjectProperty ;
+    rdfs:comment "ScreeningNST isPartOfScreeningNST PregnantWomenCare" ;
+    rdfs:domain :ScreeningNST ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfScreeningOfHigh-riskPregnancy
+    a owl:ObjectProperty ;
+    rdfs:comment "ScreeningOfHigh-riskPregnancy isPartOfScreeningOfHigh-riskPregnancy PregnantWomenCare" ;
+    rdfs:domain :ScreeningOfHigh-riskPregnancy ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfScreeningUltraSon
+    a owl:ObjectProperty ;
+    rdfs:comment "ScreeningUltraSon isPartOfScreeningUltraSon PregnantWomenCare" ;
+    rdfs:domain :ScreeningUltraSon ;
+    rdfs:range :PregnantWomenCare .
+
+:isPartOfSharing
+    a owl:ObjectProperty ;
+    rdfs:comment "Sharing isPartOfSharing ElectronicConsultation" ;
+    rdfs:domain :Sharing ;
+    rdfs:range :ElectronicConsultation .
+
+:isPartOfTakeAReport
+    a owl:ObjectProperty ;
+    rdfs:comment "TakeAReport isPartOfTakeAReport TreatmentGrouping" ;
+    rdfs:domain :TakeAReport ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfTestResultReceiptAndAnalysis
+    a owl:ObjectProperty ;
+    rdfs:comment "TestResultReceiptAndAnalysis isPartOfTestResultReceiptAndAnalysis ChronicDiseaseManagement" ;
+    rdfs:domain :TestResultReceiptAndAnalysis ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:isPartOfTranslate
+    a owl:ObjectProperty ;
+    rdfs:comment "Translate isPartOfTranslate ForeignPerson" ;
+    rdfs:domain :Translate ;
+    rdfs:range :ForeignPerson .
+
+:isPartOfTreatment
+    a owl:ObjectProperty ;
+    rdfs:comment "Treatment isPartOfTreatment DiseaseManagement" ;
+    rdfs:domain :Treatment ;
+    rdfs:range :DiseaseManagement .
+
+:isPartOfUpdateHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "UpdateHealthData isPartOfUpdateHealthData ManagePersonalHealthData" ;
+    rdfs:domain :UpdateHealthData ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfUpdatingPersonalMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "UpdatingPersonalMedication isPartOfUpdatingPersonalMedication MedicationManagement" ;
+    rdfs:domain :UpdatingPersonalMedication ;
+    rdfs:range :MedicationManagement .
+
+:isPartOfUploadHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "UploadHealthData isPartOfUploadHealthData ManagePersonalHealthData" ;
+    rdfs:domain :UploadHealthData ;
+    rdfs:range :ManagePersonalHealthData .
+
+:isPartOfUseSensorDataAttachment
+    a owl:ObjectProperty ;
+    rdfs:comment "UseSensorDataAttachment isPartOfUseSensorDataAttachment TreatmentGrouping" ;
+    rdfs:domain :UseSensorDataAttachment ;
+    rdfs:range :TreatmentGrouping .
+
+:isPartOfWeightControl
+    a owl:ObjectProperty ;
+    rdfs:comment "WeightControl isPartOfWeightControl ChronicDiseaseManagement" ;
+    rdfs:domain :WeightControl ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfAppointmentBooking
+    a owl:ObjectProperty ;
+    rdfs:comment "AppointmentBookingAndManagement partOfAppointmentBooking DiseaseManagement" ;
+    rdfs:domain :AppointmentBookingAndManagement ;
+    rdfs:range :DiseaseManagement .
+
+:partOfBuyMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "BuyMedication partOfBuyMedication CarePlanManagement" ;
+    rdfs:domain :BuyMedication ;
+    rdfs:range :CarePlanManagement .
+
+:partOfCarePlan
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlan partOfCarePlan DisabilityCare" ;
+    rdfs:domain :CarePlan ;
+    rdfs:range :DisabilityCare .
+
+:partOfCarePlanManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "CarePlanManagement partOfCarePlanManagement Covid-19Pandemic" ;
+    rdfs:domain :CarePlanManagement ;
+    rdfs:range :Covid-19Pandemic .
+
+:partOfControlling
+    a owl:ObjectProperty ;
+    rdfs:comment "Controlling partOfControlling DisabilityCare" ;
+    rdfs:domain :Controlling ;
+    rdfs:range :DisabilityCare .
+
+:partOfDiseaseManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "DiseaseManagement partOfDiseaseManagement ChildrenCare" ;
+    rdfs:domain :DiseaseManagement ;
+    rdfs:range :ChildrenCare .
+
+:partOfEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate partOfEducate Prevention" ;
+    rdfs:domain :Educate ;
+    rdfs:range :Prevention .
+
+:partOfElectronicConsultation
+    a owl:ObjectProperty ;
+    rdfs:comment "ElectronicConsultation partOfElectronicConsultation ChronicDiseaseManagement" ;
+    rdfs:domain :ElectronicConsultation ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfFindADoctor
+    a owl:ObjectProperty ;
+    rdfs:comment "FindADoctor partOfFindADoctor ChronicDiseaseManagement" ;
+    rdfs:domain :FindADoctor ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfFindAPlaceOfPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "FindAPlaceOfPharmacy partOfFindAPlaceOfPharmacy CarePlanManagement" ;
+    rdfs:domain :FindAPlaceOfPharmacy ;
+    rdfs:range :CarePlanManagement .
+
+:partOfFindAPlaceOfTheLab
+    a owl:ObjectProperty ;
+    rdfs:comment "FindAPlaceOfTheLab partOfFindAPlaceOfTheLab CarePlanManagement" ;
+    rdfs:domain :FindAPlaceOfTheLab ;
+    rdfs:range :CarePlanManagement .
+
+:partOfFindPlaceForTestAndPharmacy
+    a owl:ObjectProperty ;
+    rdfs:comment "FindPlaceForTestAndPharmacy(LabOrHospital) partOfFindPlaceForTestAndPharmacy DiseaseManagement" ;
+    rdfs:domain :FindPlaceForTestAndPharmacy ;
+    rdfs:range :DiseaseManagement .
+
+:partOfGiveAppointmentForVaccination
+    a owl:ObjectProperty ;
+    rdfs:comment "GiveAppointmentForVaccination partOfGiveAppointmentForVaccination ChildrenCare" ;
+    rdfs:domain :GiveAppointmentForVaccination ;
+    rdfs:range :ChildrenCare .
+
+:partOfManagePersonalHealthData
+    a owl:ObjectProperty ;
+    rdfs:comment "ManagePersonalHealthData partOfManagePersonalHealthData PregnantWomenCare" ;
+    rdfs:domain :ManagePersonalHealthData ;
+    rdfs:range :PregnantWomenCare .
+
+:partOfMedicationManagement
+    a owl:ObjectProperty ;
+    rdfs:comment "MedicationManagement partOfMedicationManagement ChronicDiseaseManagement" ;
+    rdfs:domain :MedicationManagement ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfNutrition
+    a owl:ObjectProperty ;
+    rdfs:comment "Nutrition partOfNutrition CarePlanManagement" ;
+    rdfs:domain :Nutrition ;
+    rdfs:range :CarePlanManagement .
+
+:partOfOrderingATest
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingATest partOfOrderingATest DiseaseManagement" ;
+    rdfs:domain :OrderingATest ;
+    rdfs:range :DiseaseManagement .
+
+:partOfOrderingMedication
+    a owl:ObjectProperty ;
+    rdfs:comment "OrderingMedication partOfOrderingMedication ChronicDiseaseManagement" ;
+    rdfs:domain :OrderingMedication ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfReminderForControling
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForControling partOfReminderForControling ChronicDiseaseManagement" ;
+    rdfs:domain :ReminderForControling ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfReminderForControlling
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForControlling partOfReminderForControlling DisabilityCare" ;
+    rdfs:domain :ReminderForControling ;
+    rdfs:range :DisabilityCare .
+
+:partOfReminderForTheTest
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderForTheTest partOfReminderForTheTest ChronicDiseaseManagement" ;
+    rdfs:domain :ReminderForTheTest ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfReminderTherapyProcess
+    a owl:ObjectProperty ;
+    rdfs:comment "ReminderTherapyProcess partOfReminderTherapyProcess ChronicDiseaseManagement" ;
+    rdfs:domain :ReminderTherapyProcess ;
+    rdfs:range :ChronicDiseaseManagement .
+
+:partOfRemotelyControl
+    a owl:ObjectProperty ;
+    rdfs:comment "RemotelyControl partOfRemotelyControl ElderlyPeopleCare" ;
+    rdfs:domain :RemotelyControl ;
+    rdfs:range :ElderlyPeopleCare .
+
+:partOfTestResultReceiptAndAnalysis
+    a owl:ObjectProperty ;
+    rdfs:comment "TestResultReceiptAndAnalysis partOfTestResultReceiptAndAnalysis Covid-19Pandemic" ;
+    rdfs:domain :TestResultReceiptAndAnalysis ;
+    rdfs:range :Covid-19Pandemic .
+
+:partOfTreatment
+    a owl:ObjectProperty ;
+    rdfs:comment "Treatment partOfTreatment PregnantWomenCare" ;
+    rdfs:domain :Treatment ;
+    rdfs:range :PregnantWomenCare .
+
+:subpartOfEducate
+    a owl:ObjectProperty ;
+    rdfs:comment "Educate subpartOfEducate DisabilityCare" ;
+    rdfs:domain :Educate ;
+    rdfs:range :DisabilityCare .
+
